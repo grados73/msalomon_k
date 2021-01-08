@@ -6525,37 +6525,37 @@ OUTPUT(05_msn_maszyna_stanow.elf elf32-littlearm)
  .debug_macro   0x0000000000019386      0x429 USB_HOST/Target/usbh_conf.o
  .debug_macro   0x00000000000197af      0x219 USB_HOST/Target/usbh_platform.o
 
-.debug_line     0x0000000000000000    0x16e6f
+.debug_line     0x0000000000000000    0x16e6e
  .debug_line    0x0000000000000000      0x99e Core/Src/button.o
  .debug_line    0x000000000000099e      0x904 Core/Src/gpio.o
  .debug_line    0x00000000000012a2      0x913 Core/Src/i2c.o
  .debug_line    0x0000000000001bb5      0x958 Core/Src/i2s.o
- .debug_line    0x000000000000250d      0x9bf Core/Src/main.o
- .debug_line    0x0000000000002ecc      0x915 Core/Src/spi.o
- .debug_line    0x00000000000037e1      0x8e2 Core/Src/stm32f4xx_hal_msp.o
- .debug_line    0x00000000000040c3      0x99b Core/Src/stm32f4xx_it.o
- .debug_line    0x0000000000004a5e      0x773 Core/Src/sysmem.o
- .debug_line    0x00000000000051d1      0x8fc Core/Src/system_stm32f4xx.o
- .debug_line    0x0000000000005acd       0x85 Core/Startup/startup_stm32f411vetx.o
- .debug_line    0x0000000000005b52      0xae6 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_line    0x0000000000006638      0xc0a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_line    0x0000000000007242      0xa89 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
- .debug_line    0x0000000000007ccb      0xd81 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o
- .debug_line    0x0000000000008a4c     0x1d94 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
- .debug_line    0x000000000000a7e0      0xf82 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o
- .debug_line    0x000000000000b762     0x10b0 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_line    0x000000000000c812      0xb3e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
- .debug_line    0x000000000000d350      0xa23 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_line    0x000000000000dd73     0x12a2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
- .debug_line    0x000000000000f015     0x1011 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o
- .debug_line    0x0000000000010026      0xf44 Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.o
- .debug_line    0x0000000000010f6a     0x106f Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.o
- .debug_line    0x0000000000011fd9      0xf56 Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o
- .debug_line    0x0000000000012f2f      0xd5c Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.o
- .debug_line    0x0000000000013c8b      0xd14 Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.o
- .debug_line    0x000000000001499f      0xd15 USB_HOST/App/usb_host.o
- .debug_line    0x00000000000156b4      0xeae USB_HOST/Target/usbh_conf.o
- .debug_line    0x0000000000016562      0x90d USB_HOST/Target/usbh_platform.o
+ .debug_line    0x000000000000250d      0x9be Core/Src/main.o
+ .debug_line    0x0000000000002ecb      0x915 Core/Src/spi.o
+ .debug_line    0x00000000000037e0      0x8e2 Core/Src/stm32f4xx_hal_msp.o
+ .debug_line    0x00000000000040c2      0x99b Core/Src/stm32f4xx_it.o
+ .debug_line    0x0000000000004a5d      0x773 Core/Src/sysmem.o
+ .debug_line    0x00000000000051d0      0x8fc Core/Src/system_stm32f4xx.o
+ .debug_line    0x0000000000005acc       0x85 Core/Startup/startup_stm32f411vetx.o
+ .debug_line    0x0000000000005b51      0xae6 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_line    0x0000000000006637      0xc0a Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_line    0x0000000000007241      0xa89 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_line    0x0000000000007cca      0xd81 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o
+ .debug_line    0x0000000000008a4b     0x1d94 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o
+ .debug_line    0x000000000000a7df      0xf82 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o
+ .debug_line    0x000000000000b761     0x10b0 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o
+ .debug_line    0x000000000000c811      0xb3e Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_line    0x000000000000d34f      0xa23 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+ .debug_line    0x000000000000dd72     0x12a2 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+ .debug_line    0x000000000000f014     0x1011 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o
+ .debug_line    0x0000000000010025      0xf44 Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.o
+ .debug_line    0x0000000000010f69     0x106f Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.o
+ .debug_line    0x0000000000011fd8      0xf56 Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.o
+ .debug_line    0x0000000000012f2e      0xd5c Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.o
+ .debug_line    0x0000000000013c8a      0xd14 Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.o
+ .debug_line    0x000000000001499e      0xd15 USB_HOST/App/usb_host.o
+ .debug_line    0x00000000000156b3      0xeae USB_HOST/Target/usbh_conf.o
+ .debug_line    0x0000000000016561      0x90d USB_HOST/Target/usbh_platform.o
 
 .debug_str      0x0000000000000000    0x8e3a8
  .debug_str     0x0000000000000000    0x82d1e Core/Src/button.o
