@@ -1,0 +1,32 @@
+09:08:57 **** Incremental Build of configuration Debug for project 04_msalomon_mx ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/CMSIS/RTOS2/Template/cmsis_os1.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/CMSIS/RTOS2/Template/cmsis_os1.d" -MT"Drivers/CMSIS/RTOS2/Template/cmsis_os1.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/RTOS2/Template/cmsis_os1.o"
+arm-none-eabi-gcc "../Drivers/CMSIS/RTOS2/Source/os_systick.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/CMSIS/RTOS2/Source/os_systick.d" -MT"Drivers/CMSIS/RTOS2/Source/os_systick.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/RTOS2/Source/os_systick.o"
+arm-none-eabi-gcc "../Drivers/CMSIS/RTOS2/Source/os_tick_gtim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/CMSIS/RTOS2/Source/os_tick_gtim.d" -MT"Drivers/CMSIS/RTOS2/Source/os_tick_gtim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/RTOS2/Source/os_tick_gtim.o"
+arm-none-eabi-gcc "../Drivers/CMSIS/RTOS2/Source/os_tick_ptim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/CMSIS/RTOS2/Source/os_tick_ptim.d" -MT"Drivers/CMSIS/RTOS2/Source/os_tick_ptim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/RTOS2/Source/os_tick_ptim.o"
+../Drivers/CMSIS/RTOS2/Source/os_systick.c:28:10: fatal error: RTE_Components.h: No such file or directory
+ #include "RTE_Components.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+../Drivers/CMSIS/RTOS2/Source/os_tick_gtim.c:26:10: fatal error: irq_ctrl.h: No such file or directory
+ #include "irq_ctrl.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+../Drivers/CMSIS/RTOS2/Source/os_tick_ptim.c:25:10: fatal error: RTE_Components.h: No such file or directory
+ #include "RTE_Components.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/CMSIS/RTOS2/Source/subdir.mk:24: Drivers/CMSIS/RTOS2/Source/os_systick.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Drivers/CMSIS/RTOS2/Source/subdir.mk:26: Drivers/CMSIS/RTOS2/Source/os_tick_gtim.o] Error 1
+make: *** [Drivers/CMSIS/RTOS2/Source/subdir.mk:28: Drivers/CMSIS/RTOS2/Source/os_tick_ptim.o] Error 1
+In file included from ../Drivers/CMSIS/RTOS2/Template/cmsis_os1.c:28:0:
+../Drivers/CMSIS/RTOS2/Template/cmsis_os.h:157:10: fatal error: cmsis_os2.h: No such file or directory
+ #include "cmsis_os2.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/CMSIS/RTOS2/Template/subdir.mk:18: Drivers/CMSIS/RTOS2/Template/cmsis_os1.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+09:09:00 Build Failed. 9 errors, 0 warnings. (took 2s.279ms)
+

@@ -1,0 +1,10 @@
+14:14:23 **** Incremental Build of configuration Debug for project 05_msn_maszyna_stanow ****
+make -j4 all 
+arm-none-eabi-size   05_msn_maszyna_stanow.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32316	    152	   3648	  36116	   8d14	05_msn_maszyna_stanow.elf
+Finished building: default.size.stdout
+ 
+
+14:14:23 Build Finished. 0 errors, 0 warnings. (took 377ms)
+

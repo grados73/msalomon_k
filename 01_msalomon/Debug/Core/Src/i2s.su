@@ -1,0 +1,4 @@
+i2s.c:31:6:MX_I2S2_Init	8	static
+i2s.c:50:6:MX_I2S3_Init	8	static
+i2s.c:69:6:HAL_I2S_MspInit	64	static
+i2s.c:150:6:HAL_I2S_MspDeInit	16	static

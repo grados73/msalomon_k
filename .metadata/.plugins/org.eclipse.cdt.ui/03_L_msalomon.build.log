@@ -1,0 +1,10 @@
+08:27:56 **** Incremental Build of configuration Debug for project 03_L_msalomon ****
+make -j4 all 
+arm-none-eabi-size   03_L_msalomon.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10848	     20	   1700	  12568	   3118	03_L_msalomon.elf
+Finished building: default.size.stdout
+ 
+
+08:27:56 Build Finished. 0 errors, 0 warnings. (took 251ms)
+

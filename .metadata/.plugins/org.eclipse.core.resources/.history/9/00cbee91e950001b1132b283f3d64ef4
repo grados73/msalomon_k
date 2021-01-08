@@ -1,0 +1,65 @@
+/*
+ * button.c
+ *
+ *  Created on: Jan 7, 2021
+ *      Author: grad_
+ */
+#include "main.h"
+#include "button.h"
+
+TButton BlueKey;
+
+void ButtonInitKey(TButton* Key, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin)
+{
+	Key->State = IDLE;
+}
+
+void ButtonIdleRoutine(TButton* Key)
+{
+	if(HAL_GPIO_ReadPin(Key->GpioPort, Key->GpioPin) == GPIO_PIN_SET)
+	{
+		Key->State = DEBOUNCE;
+		Key->Timer = Key->TimerDebounce;
+
+		Key->LastTick = HAL_GetTick();
+	}
+}
+
+void ButtonDebounceRoutine(TButton* Key)
+{
+
+}
+
+void ButtonPressedRoutine(TButton* Key)
+{
+
+}
+
+void ButtonRepeatRoutine(TButton* Key)
+{
+
+}
+
+void ButtonTask(TButton* Key)
+{
+	switch(Key -> State){
+	case IDLE:
+		ButtonIdleRoutine(Key);
+		break;
+	case DEBOUNCE:
+		ButtonDebounceRoutine(Key);
+		break;
+	case PRESSED:
+		ButtonPressedRoutine(Key);
+		break;
+	case REPEAT:
+		ButtonRepeatRoutine(Key);
+		break;
+	default:
+		break;
+
+
+
+
+	}
+}
