@@ -2160,3 +2160,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-01-08 09:38:29.585
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-08 16:38:29.090
+!MESSAGE Indexed '06_moja_maszyna_stanow' (36 sources, 99 headers) in 4.13 sec: 7,617 declarations; 48,723 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-01-08 21:04:07.748
+!MESSAGE Won't launch debug session since we failed to locate the binary.
