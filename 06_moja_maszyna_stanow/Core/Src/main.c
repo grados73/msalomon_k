@@ -36,6 +36,7 @@ PROGRAM WYJŚCIOWY
 
 /* USER CODE BEGIN PV */
 extern TButton BlueKey;
+extern TButton ExternalKey;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -43,9 +44,18 @@ void SystemClock_Config(void);
 void MX_USB_HOST_Process(void);
 
 /* USER CODE BEGIN PFP */
-void TurnOnLed(void);
-void TurnOffLed(void);
-void ToggleLed(void);
+void TurnOnLed3(void);
+void TurnOffLed3(void);
+void ToggleLed3(void);
+void TurnOnLed4(void);
+void TurnOffLed4(void);
+void ToggleLed4(void);
+void TurnOnLed5(void);
+void TurnOffLed5(void);
+void ToggleLed5(void);
+void TurnOnLed6(void);
+void TurnOffLed6(void);
+void ToggleLed6(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -88,9 +98,9 @@ int main(void)
   MX_USB_HOST_Init();
   /* USER CODE BEGIN 2 */
   ButtonInitKey(&BlueKey, B1_GPIO_Port, B1_Pin, 10, 30, 2000, 500);
-  ButtonRegisterPressCallback(&BlueKey, TurnOnLed);
-  ButtonRegisterLongPressCallback(&BlueKey, TurnOffLed);
-  ButtonRegisterRepeatPressCallback(&BlueKey, ToggleLed);
+  ButtonRegisterPressCallback(&BlueKey, TurnOnLed3);
+  ButtonRegisterLongPressCallback(&BlueKey, TurnOffLed3);
+  ButtonRegisterRepeatPressCallback(&BlueKey, ToggleLed4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -160,21 +170,66 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void TurnOnLed(void)
+void TurnOnLed3(void)
+{
+	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+}
+
+void TurnOffLed3(void)
+{
+	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+}
+
+void ToggleLed3(void)
+{
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+}
+//////////////////////////////////////////////////////
+void TurnOnLed4(void)
 {
 	HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_SET);
 }
 
-void TurnOffLed(void)
+void TurnOffLed4(void)
 {
 	HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
 }
-void ToggleLed(void)
+
+void ToggleLed4(void)
+{
+	HAL_GPIO_TogglePin(LD4_GPIO_Port, LD4_Pin);
+}
+///////////////////////////////////////////////////////
+void TurnOnLed5(void)
+{
+	HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_SET);
+}
+
+void TurnOffLed5(void)
+{
+	HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
+}
+
+void ToggleLed5(void)
 {
 	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+}
+///////////////////////////////////////////////////////
+void TurnOnLed6(void)
+{
+	HAL_GPIO_WritePin(LD6_GPIO_Port, LD6_Pin, GPIO_PIN_SET);
+}
+
+void TurnOffLed6(void)
+{
+	HAL_GPIO_WritePin(LD6_GPIO_Port, LD6_Pin, GPIO_PIN_RESET);
+}
+
+void ToggleLed6(void)
+{
 	HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin);
 }
+
 /* USER CODE END 4 */
 
 /**

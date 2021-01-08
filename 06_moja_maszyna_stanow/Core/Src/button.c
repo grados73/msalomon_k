@@ -8,6 +8,7 @@
 #include "button.h"
 
 TButton BlueKey;
+TButton ExternalKey;
 
 void ButtonInitKey(TButton* Key, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uint32_t TimerIdle, uint32_t TimerDebounce,
 		uint32_t TimerPressed, uint32_t TimerRepeat)
