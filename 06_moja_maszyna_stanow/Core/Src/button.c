@@ -15,7 +15,6 @@ void ButtonInitKey(TButton* Key, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uint3
 	Key->GpioPort =GpioPort;
 	Key->GpioPin = GpioPin;
 	Key->State = IDLE;
-//	Key->Timer = 0;
 	Key->TimerIdle = TimerIdle;
 	Key->TimerDebounce = TimerDebounce;
 	Key->TimerPressed = TimerPressed;
@@ -42,12 +41,10 @@ void ButtonIdleRoutine(TButton* Key)
 		if(HAL_GPIO_ReadPin(Key->GpioPort, Key->GpioPin) == GPIO_PIN_SET) // czy jest wcisniety ciagle
 		{
 			Key->State = DEBOUNCE; // zmiana stanu
-//			Key->Timer = Key->TimerDebounce; // -------------------OUT
 		}
 		else
 		{
 			Key->State = IDLE;
-//			Key->Timer = Key->TimerIdle; // --------------------------OUT
 		}
 		Key->LastTick = HAL_GetTick();
 	}
@@ -64,15 +61,12 @@ void ButtonDebounceRoutine(TButton* Key)
 					Key->ButtonPress();
 				}
 				Key->State = PRESSED;
-//				Key->Timer = Key->TimerPressed; // ------------------------OUT
-
 				Key->LastTick = HAL_GetTick();
 			}
 		}
 		else
 		{
 			Key->State = IDLE;
-//			Key->Timer = Key->TimerIdle; // --------------OUT
 		}
 
 }
@@ -89,15 +83,12 @@ void ButtonPressedRoutine(TButton* Key)
 						Key->ButtonLongPress();
 					}
 					Key->State = REPEAT;
-//					Key->Timer = Key->TimerRepeat; // ---------------------OUT
-
 					Key->LastTick = HAL_GetTick();
 				}
 			}
 			else
 			{
 				Key->State = IDLE;
-//				Key->Timer = Key->TimerIdle; // --------------------OUT
 			}
 
 }
@@ -118,7 +109,6 @@ void ButtonRepeatRoutine(TButton* Key)
 				else
 				{
 					Key->State = IDLE;
-//					Key->Timer = Key->TimerIdle; // -------------------OUT
 				}
 }
 

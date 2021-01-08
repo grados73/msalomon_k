@@ -22,7 +22,6 @@ typedef struct button_struct
 	GPIO_TypeDef*	GpioPort;
 	uint16_t		GpioPin;
 	uint32_t		LastTick;
-	uint32_t		Timer;
 	uint32_t		TimerIdle;
 	uint32_t		TimerDebounce;
 	uint32_t		TimerPressed;
