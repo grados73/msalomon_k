@@ -284,15 +284,29 @@ void EButtonRepeatRoutine(TButton* EKey)
 }
 void EButtonReleaseRoutine(TButton* EKey)
 {
-		if(HAL_GPIO_ReadPin(EKey->GpioPort, EKey->GpioPin) == GPIO_PIN_RESET)
+	if(HAL_GPIO_ReadPin(EKey->GpioPort, EKey->GpioPin) == GPIO_PIN_RESET)
+		{
+			if(BlinksCounter < 6)
 			{
-				EKey->ButtonRelease();
+				if(HAL_GetTick() - LastBlink >= TimerBlinks)
+				{
+					EKey->ButtonRelease();
+					BlinksCounter++;
+					LastBlink = HAL_GetTick();
+				}
+
+			}
+			else
+			{
 				EKey->State = IDLE;
+				BlinksCounter = 0;
 			}
-		else
-			{
-					EKey->State = DEBOUNCE;
-			}
+
+		}
+	else
+		{
+			EKey->State = DEBOUNCE;
+		}
 }
 
 void EButtonTask(TButton* EKey)
