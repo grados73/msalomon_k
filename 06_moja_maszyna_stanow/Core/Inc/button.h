@@ -16,6 +16,7 @@ typedef enum
 	REPEAT    //3
 } BUTTON_STATE;
 
+
 typedef struct button_struct
 {
 	BUTTON_STATE	State;
@@ -31,6 +32,7 @@ typedef struct button_struct
 	void(*ButtonRepeatPress)(void);
 }TButton;
 
+//FIRST BUTTON - BLUE BUTTON
 void ButtonInitKey(TButton* Key, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uint32_t TimerIdle, uint32_t TimerDebounce,
 		uint32_t TimerPressed, uint32_t TimerRepeat);
 
@@ -39,5 +41,15 @@ void ButtonRegisterLongPressCallback(TButton* Key, void* Callback);
 void ButtonRegisterRepeatPressCallback(TButton* Key, void* Callback);
 
 void ButtonTask(TButton* Key);
+
+//SECOND BUTTON - EXTERNAL BUTTON
+void EButtonInitKey(TButton* EKey, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uint32_t TimerIdle, uint32_t TimerDebounce,
+		uint32_t TimerPressed, uint32_t TimerRepeat);
+
+void EButtonRegisterPressCallback(TButton* EKey, void* Callback);
+void EButtonRegisterLongPressCallback(TButton* EKey, void* Callback);
+void EButtonRegisterRepeatPressCallback(TButton* EKey, void* Callback);
+
+void EButtonTask(TButton* EKey);
 
 #endif /* INC_BUTTON_H_ */

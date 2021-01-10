@@ -97,10 +97,15 @@ int main(void)
   MX_SPI1_Init();
   MX_USB_HOST_Init();
   /* USER CODE BEGIN 2 */
-  ButtonInitKey(&BlueKey, B1_GPIO_Port, B1_Pin, 10, 30, 2000, 500);
+  ButtonInitKey(&BlueKey, B2_GPIO_Port, B2_Pin, 10, 30, 2000, 500);
   ButtonRegisterPressCallback(&BlueKey, TurnOnLed3);
   ButtonRegisterLongPressCallback(&BlueKey, TurnOffLed3);
   ButtonRegisterRepeatPressCallback(&BlueKey, ToggleLed4);
+
+  EButtonInitKey(&ExternalKey, B1_GPIO_Port, B1_Pin, 10, 30, 2000, 500);
+  EButtonRegisterPressCallback(&ExternalKey, TurnOnLed5);
+  EButtonRegisterLongPressCallback(&ExternalKey, TurnOffLed5);
+  EButtonRegisterRepeatPressCallback(&ExternalKey, ToggleLed6);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,6 +113,7 @@ int main(void)
   while (1)
   {
 	ButtonTask(&BlueKey);
+	EButtonTask(&ExternalKey);
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
 
