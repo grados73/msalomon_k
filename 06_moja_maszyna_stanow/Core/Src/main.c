@@ -246,29 +246,9 @@ void ThreeBlinks3(void)
 {
 
 	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
 }
 void ThreeBlinks5(void)
 {
-	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
-	HAL_Delay(70);
-	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
-	HAL_Delay(70);
 	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
 }
 

@@ -10,6 +10,11 @@
 TButton BlueKey;
 TButton ExternalKey;
 
+// MOVE IT TO button_struct!!!
+uint32_t BlinksCounter = 0;
+uint32_t TimerBlinks = 100;
+uint32_t LastBlink = 0;
+
 void ButtonInitKey(TButton* Key, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uint32_t TimerIdle, uint32_t TimerDebounce,
 		uint32_t TimerPressed, uint32_t TimerRepeat)
 {
@@ -121,8 +126,26 @@ void ButtonReleaseRoutine(TButton* Key)
 {
 		if(HAL_GPIO_ReadPin(Key->GpioPort, Key->GpioPin) == GPIO_PIN_RESET)
 			{
-				Key->ButtonRelease();
-				Key->State = IDLE;
+				if(BlinksCounter < 6)
+				{
+					if(HAL_GetTick() - LastBlink >= TimerBlinks)
+					{
+						Key->ButtonRelease();
+						BlinksCounter++;
+						LastBlink = HAL_GetTick();
+					}
+
+				}
+				else
+				{
+					Key->State = IDLE;
+					BlinksCounter = 0;
+				}
+
+			}
+		else
+			{
+				Key->State = DEBOUNCE;
 			}
 }
 
@@ -265,6 +288,10 @@ void EButtonReleaseRoutine(TButton* EKey)
 			{
 				EKey->ButtonRelease();
 				EKey->State = IDLE;
+			}
+		else
+			{
+					EKey->State = DEBOUNCE;
 			}
 }
 
