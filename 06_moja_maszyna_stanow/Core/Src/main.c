@@ -58,6 +58,7 @@ void TurnOnLed6(void);
 void TurnOffLed6(void);
 void ToggleLed6(void);
 void ThreeBlinks3(void);
+void ThreeBlinks5(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -109,6 +110,7 @@ int main(void)
   EButtonRegisterPressCallback(&ExternalKey, TurnOnLed5);
   EButtonRegisterLongPressCallback(&ExternalKey, TurnOffLed5);
   EButtonRegisterRepeatPressCallback(&ExternalKey, ToggleLed6);
+  EButtonRegisterReleasePressCallback(&ExternalKey, ThreeBlinks5);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -244,8 +246,30 @@ void ThreeBlinks3(void)
 {
 
 	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	HAL_Delay(100);
+	HAL_Delay(70);
 	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+}
+void ThreeBlinks5(void)
+{
+	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
+	HAL_Delay(70);
+	HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
 }
 
 

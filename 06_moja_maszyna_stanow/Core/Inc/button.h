@@ -52,6 +52,7 @@ void EButtonInitKey(TButton* EKey, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uin
 void EButtonRegisterPressCallback(TButton* EKey, void* Callback);
 void EButtonRegisterLongPressCallback(TButton* EKey, void* Callback);
 void EButtonRegisterRepeatPressCallback(TButton* EKey, void* Callback);
+void EButtonRegisterReleasePressCallback(TButton* EKey, void* Callback);
 
 void EButtonTask(TButton* EKey);
 
