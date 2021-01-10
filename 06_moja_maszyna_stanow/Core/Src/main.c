@@ -37,6 +37,7 @@ PROGRAM WYJŚCIOWY
 /* USER CODE BEGIN PV */
 extern TButton BlueKey;
 extern TButton ExternalKey;
+uint32_t ReleaseBlinkTimer = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -56,6 +57,7 @@ void ToggleLed5(void);
 void TurnOnLed6(void);
 void TurnOffLed6(void);
 void ToggleLed6(void);
+void ThreeBlinks3(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -97,12 +99,13 @@ int main(void)
   MX_SPI1_Init();
   MX_USB_HOST_Init();
   /* USER CODE BEGIN 2 */
-  ButtonInitKey(&BlueKey, B2_GPIO_Port, B2_Pin, 10, 30, 2000, 500);
+  ButtonInitKey(&BlueKey, B1_GPIO_Port, B1_Pin, 10, 30, 2000, 500);
   ButtonRegisterPressCallback(&BlueKey, TurnOnLed3);
   ButtonRegisterLongPressCallback(&BlueKey, TurnOffLed3);
   ButtonRegisterRepeatPressCallback(&BlueKey, ToggleLed4);
+  ButtonRegisterReleasePressCallback(&BlueKey, ThreeBlinks3);
 
-  EButtonInitKey(&ExternalKey, B1_GPIO_Port, B1_Pin, 10, 30, 2000, 500);
+  EButtonInitKey(&ExternalKey, B2_GPIO_Port, B2_Pin, 10, 30, 2000, 500);
   EButtonRegisterPressCallback(&ExternalKey, TurnOnLed5);
   EButtonRegisterLongPressCallback(&ExternalKey, TurnOffLed5);
   EButtonRegisterRepeatPressCallback(&ExternalKey, ToggleLed6);
@@ -235,6 +238,16 @@ void ToggleLed6(void)
 {
 	HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin);
 }
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+void ThreeBlinks3(void)
+{
+
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	HAL_Delay(100);
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+}
+
 
 /* USER CODE END 4 */
 

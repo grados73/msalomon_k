@@ -11,9 +11,10 @@
 typedef enum
 {
 	IDLE = 0,
-	DEBOUNCE,  //1
+	DEBOUNCE, //1
 	PRESSED,  //2
-	REPEAT    //3
+	REPEAT,   //3
+	RELEASE   //4
 } BUTTON_STATE;
 
 
@@ -30,6 +31,7 @@ typedef struct button_struct
 	void(*ButtonPress)(void); // Callback funkcji obslugującej wcisniecie, wskaznik na funkcję przyjmująca voida
 	void(*ButtonLongPress)(void);
 	void(*ButtonRepeatPress)(void);
+	void(*ButtonRelease)(void);
 }TButton;
 
 //FIRST BUTTON - BLUE BUTTON
@@ -39,6 +41,7 @@ void ButtonInitKey(TButton* Key, GPIO_TypeDef*	GpioPort, uint16_t	GpioPin, uint3
 void ButtonRegisterPressCallback(TButton* Key, void* Callback);
 void ButtonRegisterLongPressCallback(TButton* Key, void* Callback);
 void ButtonRegisterRepeatPressCallback(TButton* Key, void* Callback);
+void ButtonRegisterReleasePressCallback(TButton* Key, void* Callback);
 
 void ButtonTask(TButton* Key);
 

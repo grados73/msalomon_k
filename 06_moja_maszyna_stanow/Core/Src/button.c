@@ -34,6 +34,10 @@ void ButtonRegisterRepeatPressCallback(TButton* Key, void* Callback)
 {
 	Key-> ButtonRepeatPress = Callback; // Przypisanie funkcji repeatpress do callbacka
 }
+void ButtonRegisterReleasePressCallback(TButton* Key, void* Callback)
+{
+	Key-> ButtonRelease = Callback; // Przypisanie funkcji ReleaseRoutine do callbacka
+}
 
 void ButtonIdleRoutine(TButton* Key)
 {
@@ -89,7 +93,7 @@ void ButtonPressedRoutine(TButton* Key)
 			}
 			else
 			{
-				Key->State = IDLE;
+				Key->State = RELEASE;
 			}
 
 }
@@ -109,8 +113,17 @@ void ButtonRepeatRoutine(TButton* Key)
 				}
 				else
 				{
-					Key->State = IDLE;
+					Key->State = RELEASE;
 				}
+}
+
+void ButtonReleaseRoutine(TButton* Key)
+{
+		if(HAL_GPIO_ReadPin(Key->GpioPort, Key->GpioPin) == GPIO_PIN_RESET)
+			{
+				Key->ButtonRelease();
+				Key->State = IDLE;
+			}
 }
 
 void ButtonTask(TButton* Key)
@@ -127,6 +140,9 @@ void ButtonTask(TButton* Key)
 		break;
 	case REPEAT:
 		ButtonRepeatRoutine(Key);
+		break;
+	case RELEASE:
+		ButtonReleaseRoutine(Key);
 		break;
 	default:
 		break;
