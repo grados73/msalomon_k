@@ -26,10 +26,12 @@
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
 #include "string.h"
+#include "ring_buffer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+
 
 /* USER CODE END PTD */
 
@@ -46,8 +48,11 @@
 
 /* USER CODE BEGIN PV */
 uint8_t MessageToSend[32];
+//uint8_t MessageToRead[32];
 uint8_t LenToSend;
 uint8_t i;
+RingBuffer MessageToRead;
+uint8_t Value;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -96,7 +101,10 @@ int main(void)
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
   LenToSend = sprintf(MessageToSend, "Int nr: %d\r\n", i);
-  HAL_UART_Transmit_IT(&huart2, MessageToSend, LenToSend);
+  //NADAWANIE
+ // HAL_UART_Transmit_IT(&huart2, MessageToSend, LenToSend);
+
+  HAL_UART_Receive_IT(&huart2, &Value, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -166,7 +174,7 @@ static void MX_NVIC_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) // funkcja wywolywana po pomyslnym przeslaniu uarta
 {
 	if(huart == &huart2) // spr czy nasz uart 2 przychodzi, huart to wskaznik, a huart2 to struktura, wiec potrzebujemy jej adres do spr ==
 	{
@@ -174,6 +182,17 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 		LenToSend = sprintf(MessageToSend, "Int nr: %d\r\n", i);
 		HAL_UART_Transmit_IT(&huart2, MessageToSend, LenToSend);
 	}
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if(huart == &huart2)
+	{
+
+		HAL_UART_Receive_IT(&huart2, &Value, 1); // wywolanie przerwania po otrzymaniu 1 znaku
+		RB_Write(&MessageToRead, Value);
+	}
+
 }
 
 /* USER CODE END 4 */
