@@ -3245,3 +3245,18 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-01-13 21:15:52.315
 !MESSAGE Indexed '10_msn_nuc_UART_Interrupt' (22 sources, 81 headers) in 2.29 sec: 4,580 declarations; 21,270 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0077%)
+
+!ENTRY org.eclipse.debug.core 4 5012 2021-01-13 21:35:05.120
+!MESSAGE Launch configuration 09_msn_nuc_RingBuffer Debug at file:/D:/STM32/workspace/09_msn_nuc_RingBuffer/09_msn_nuc_RingBuffer%20Debug.launch does not exist.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-13 21:48:04.928
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 33 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-13 21:48:04.931
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-13 21:48:04.932
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 33 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-01-13 21:48:04.933
+!MESSAGE Existing sessions are:
