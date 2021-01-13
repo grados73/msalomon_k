@@ -3233,3 +3233,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-01-11 19:24:41.125
 !MESSAGE Indexed '07_msm_przerwania' (36 sources, 99 headers) in 3.49 sec: 7,617 declarations; 48,723 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-12 18:56:39.623
+!MESSAGE Indexed '08_msn_nuc_UART' (22 sources, 81 headers) in 2.64 sec: 4,580 declarations; 21,270 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0077%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-12 19:42:17.888
+!MESSAGE Indexed '08_msn_nuc_UART_Polling' (24 sources, 86 headers) in 0.977 sec: 4,789 declarations; 21,430 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-12 20:56:15.410
+!MESSAGE Indexed '09_msn_nuc_RingBuffer' (22 sources, 81 headers) in 2.42 sec: 4,580 declarations; 21,270 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0077%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-13 21:15:52.315
+!MESSAGE Indexed '10_msn_nuc_UART_Interrupt' (22 sources, 81 headers) in 2.29 sec: 4,580 declarations; 21,270 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0077%)
