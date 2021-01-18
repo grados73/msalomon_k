@@ -18,3 +18,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:07_msm_przerwania\ Debug/active
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:08_msn_nuc_UART\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:09_msn_nuc_RingBuffer\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_msn_nuc_UART_Interrupt\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_msn_nuc_UART_Interrupt\ Debug/activeLaunchTarget=null\:---

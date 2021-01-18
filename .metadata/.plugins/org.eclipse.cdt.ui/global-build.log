@@ -4077,3 +4077,89 @@ arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf
   12396	    120	   1728	  14244	   37a4	10_msn_nuc_UART_Interrupt.elf
 Finished building: default.size.stdout
  
+19:08:14 **** Incremental Build of configuration Debug for project 10_msn_nuc_UART_Interrupt ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   LenToSend = sprintf(MessageToSend, "Int nr: %d\r\n", i);
+                       ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:0:
+d:\stm32\programs\stm32_cube_ide\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Core/Src/main.c: In function 'HAL_UART_TxCpltCallback':
+../Core/Src/main.c:184:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   LenToSend = sprintf(MessageToSend, "Int nr: %d\r\n", i);
+                       ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:0:
+d:\stm32\programs\stm32_cube_ide\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+arm-none-eabi-gcc -o "10_msn_nuc_UART_Interrupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\10_msn_nuc_UART_Interrupt\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_msn_nuc_UART_Interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_msn_nuc_UART_Interrupt.elf
+ 
+arm-none-eabi-objdump -h -S  10_msn_nuc_UART_Interrupt.elf  > "10_msn_nuc_UART_Interrupt.list"
+arm-none-eabi-objcopy  -O binary  10_msn_nuc_UART_Interrupt.elf  "10_msn_nuc_UART_Interrupt.bin"
+arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12396	    120	   1728	  14244	   37a4	10_msn_nuc_UART_Interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 10_msn_nuc_UART_Interrupt.bin
+ 
+Finished building: 10_msn_nuc_UART_Interrupt.list
+ 
+19:08:24 **** Incremental Build of configuration Debug for project 10_msn_nuc_UART_Interrupt ****
+make -j4 all 
+arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12396	    120	   1728	  14244	   37a4	10_msn_nuc_UART_Interrupt.elf
+Finished building: default.size.stdout
+ 
+19:15:25 **** Incremental Build of configuration Debug for project 10_msn_nuc_UART_Interrupt ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_TxCpltCallback':
+../Core/Src/main.c:183:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   LenToSend = sprintf(MessageToSend, "Int nr: %d\r\n", i);
+                       ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:27:0:
+d:\stm32\programs\stm32_cube_ide\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+arm-none-eabi-gcc -o "10_msn_nuc_UART_Interrupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\10_msn_nuc_UART_Interrupt\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_msn_nuc_UART_Interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_msn_nuc_UART_Interrupt.elf
+ 
+arm-none-eabi-objdump -h -S  10_msn_nuc_UART_Interrupt.elf  > "10_msn_nuc_UART_Interrupt.list"
+arm-none-eabi-objcopy  -O binary  10_msn_nuc_UART_Interrupt.elf  "10_msn_nuc_UART_Interrupt.bin"
+arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12356	    120	   1728	  14204	   377c	10_msn_nuc_UART_Interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 10_msn_nuc_UART_Interrupt.bin
+Finished building: 10_msn_nuc_UART_Interrupt.list
+ 
+ 
+19:16:52 **** Incremental Build of configuration Debug for project 10_msn_nuc_UART_Interrupt ****
+make -j4 all 
+arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12356	    120	   1728	  14204	   377c	10_msn_nuc_UART_Interrupt.elf
+Finished building: default.size.stdout
+ 
+19:17:01 **** Incremental Build of configuration Debug for project 10_msn_nuc_UART_Interrupt ****
+make -j4 all 
+arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12356	    120	   1728	  14204	   377c	10_msn_nuc_UART_Interrupt.elf
+Finished building: default.size.stdout
+ 
+19:17:07 **** Incremental Build of configuration Debug for project 10_msn_nuc_UART_Interrupt ****
+make -j4 all 
+arm-none-eabi-size   10_msn_nuc_UART_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12356	    120	   1728	  14204	   377c	10_msn_nuc_UART_Interrupt.elf
+Finished building: default.size.stdout
+ 
