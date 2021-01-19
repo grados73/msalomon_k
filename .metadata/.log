@@ -4255,3 +4255,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-01-18 18:53:34.738
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-18 19:28:52.657
+!MESSAGE Indexed '11_msm_nuc_UART_DMA' (22 sources, 81 headers) in 2.93 sec: 4,580 declarations; 21,270 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0077%)
+
+!ENTRY org.eclipse.debug.core 4 5012 2021-01-18 19:29:24.945
+!MESSAGE Launch configuration 10_msn_nuc_UART_Interrupt Debug at file:/D:/STM32/workspace/10_msn_nuc_UART_Interrupt/10_msn_nuc_UART_Interrupt%20Debug.launch does not exist.
