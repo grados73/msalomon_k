@@ -6362,3 +6362,6 @@ java.io.IOException: Not ELF format
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-01-20 19:51:21.465
 !MESSAGE Indexed '12_msm_nuc_UART_DMA_RX_TX' (27 sources, 104 headers) in 1.2 sec: 7,966 declarations; 29,298 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.39%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-23 09:28:54.775
+!MESSAGE Indexed '13_msm_nuc_UART_DMA_RX_TX_Pars' (27 sources, 103 headers) in 1.26 sec: 7,960 declarations; 28,082 references; 6 unresolved inclusions; 302 syntax errors; 1,041 unresolved names (2.8%)
