@@ -46,6 +46,7 @@
 
 /* USER CODE BEGIN PV */
 UARTDMA_HandleTypeDef huartdma2;
+uint8_t BufferReceive[64];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -91,18 +92,24 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   UARTDMA_Init(&huartdma2, &huart2);
-
-  UARTDMA_Print(&huartdma2, "Siema\n");
-  UARTDMA_Print(&huartdma2, "Co tam?\n");
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  //
+	  // RECEIVE
+	  //
+	  if(UARTDMA_IsDataReceivedReady(&huartdma2))
+	  {
+		  UARTDMA_GetLineFromReceiveBuffer(&huartdma2, (char*)BufferReceive);
+	  }
+
+	  //
+	  // TRANSMIT
+	  //
 	  UARTDMA_TransmitEvent(&huartdma2); // Must be for Transmit
-	  HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

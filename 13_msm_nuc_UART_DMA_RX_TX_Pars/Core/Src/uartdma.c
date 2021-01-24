@@ -59,6 +59,11 @@ void UARTDMA_DmaReceiveIrqHandler(UARTDMA_HandleTypeDef *huartdma)
 		for(i = 0; i < Length; i++) // Write all bytes into Ring Buffer
 		{
 			RB_Write(&huartdma->UART_RX_Buffer, DmaBufferPointer[i]);
+
+			if(DmaBufferPointer[i] == '\n') // Check if end line byte occurs
+			{
+				huartdma->UartTxBufferLines++; // Increment line to received counter
+			}
 		}
 
 		DmaRegisters->IFCR = 0x3FU << huartdma->huart->hdmarx->StreamIndex; 		// Clear all interrupts
@@ -79,6 +84,29 @@ int UARTDMA_PutCharToTxBuffer(UARTDMA_HandleTypeDef *huartdma, char c)
 		return 1; // Error code
 	}
 	return 0; // Success code
+}
+
+//
+// Get complete line (end with '\n') from UART buffer
+//
+uint8_t UARTDMA_GetLineFromReceiveBuffer(UARTDMA_HandleTypeDef *huartdma, char *OutPuffer)
+{
+	char *OurBufferPtr; // wskaznik pomocniczy, lokalny
+	OurBufferPtr = OutPuffer;
+
+	if(huartdma->UartRxBufferLines)
+	{
+		while(RB_OK == (RB_Read(&huartdma->UART_RX_Buffer, (uint8_t*)OurBufferPtr))) // Write all bytes into Ring Buffer
+		{
+			if(*OurBufferPtr == '\n') // Check if end line byte occurs
+			{
+				huartdma->UartRxBufferLines--;
+			}
+			OurBufferPtr++; // zwiekszamy aby wyciagac nastepny z kolei znak
+		}
+		return 0;
+	}
+	return 1;
 }
 
 //
@@ -108,6 +136,17 @@ void UARTDMA_Print(UARTDMA_HandleTypeDef *huartdma, char *Message)
 uint8_t UARTDMA_IsDataTransferReady(UARTDMA_HandleTypeDef *huartdma)
 {
 	if(huartdma->UartTxBufferLines)
+		return 1; // At least one line is available
+	else
+		return 0; // No lines are available
+}
+
+//
+// Check if received data are ready
+//
+uint8_t UARTDMA_IsDataReceivedReady(UARTDMA_HandleTypeDef *huartdma)
+{
+	if(huartdma->UartRxBufferLines)
 		return 1; // At least one line is available
 	else
 		return 0; // No lines are available

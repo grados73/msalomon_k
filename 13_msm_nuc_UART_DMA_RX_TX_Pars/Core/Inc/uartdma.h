@@ -44,4 +44,7 @@ void UARTDMA_Print(UARTDMA_HandleTypeDef *huartdma, char *Message); // Printing 
 
 void UARTDMA_TransmitEvent(UARTDMA_HandleTypeDef *huartdma); // Put this in main loop
 
+uint8_t UARTDMA_IsDataReceivedReady(UARTDMA_HandleTypeDef *huartdma);
+uint8_t UARTDMA_GetLineFromReceiveBuffer(UARTDMA_HandleTypeDef *huartdma, char *OutPuffer);
+
 #endif /* INC_UARTDMA_H_ */
