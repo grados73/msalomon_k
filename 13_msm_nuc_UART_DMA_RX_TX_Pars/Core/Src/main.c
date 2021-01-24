@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "uartdma.h"
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,7 +104,18 @@ int main(void)
 	  //
 	  if(UARTDMA_IsDataReceivedReady(&huartdma2))
 	  {
-		  UARTDMA_GetLineFromReceiveBuffer(&huartdma2, (char*)BufferReceive);
+		  if(!UARTDMA_GetLineFromReceiveBuffer(&huartdma2, (char*)BufferReceive))
+		  {
+			  if(strcmp((char*)BufferReceive, "ON") == 0) //znaczy, ze przyszedl komunikat ON
+			  {
+				  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+			  }
+			  else if(strcmp((char*)BufferReceive, "OFF") == 0) //znaczy, ze przyszedl komunikat ON
+			  {
+				  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+			  }
+		  }
+
 	  }
 
 	  //

@@ -21,5 +21,5 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_msn_nuc_UART_Interrupt\ Debu
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_msn_nuc_UART_Interrupt\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_msm_nuc_UART_DMA\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:12_msm_nuc_UART_DMA_RX_TX\ Debug/activeLaunchMode=debug
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:13_msm_nuc_UART_DMA_RX_TX_Pars\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:13_msm_nuc_UART_DMA_RX_TX_Pars\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:13_msm_nuc_UART_DMA_RX_TX_Pars\ Debug/activeLaunchTarget=null\:---

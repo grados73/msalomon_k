@@ -243,3 +243,35 @@ arm-none-eabi-size   13_msm_nuc_UART_DMA_RX_TX_Pars.elf
   13448	     20	   2156	  15624	   3d08	13_msm_nuc_UART_DMA_RX_TX_Pars.elf
 Finished building: default.size.stdout
  
+18:47:21 **** Incremental Build of configuration Debug for project 13_msm_nuc_UART_DMA_RX_TX_Pars ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uartdma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F411xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uartdma.d" -MT"Core/Src/uartdma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uartdma.o"
+arm-none-eabi-gcc -o "13_msm_nuc_UART_DMA_RX_TX_Pars.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\13_msm_nuc_UART_DMA_RX_TX_Pars\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_msm_nuc_UART_DMA_RX_TX_Pars.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_msm_nuc_UART_DMA_RX_TX_Pars.elf
+ 
+arm-none-eabi-objdump -h -S  13_msm_nuc_UART_DMA_RX_TX_Pars.elf  > "13_msm_nuc_UART_DMA_RX_TX_Pars.list"
+arm-none-eabi-objcopy  -O binary  13_msm_nuc_UART_DMA_RX_TX_Pars.elf  "13_msm_nuc_UART_DMA_RX_TX_Pars.bin"
+arm-none-eabi-size   13_msm_nuc_UART_DMA_RX_TX_Pars.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13544	     20	   2156	  15720	   3d68	13_msm_nuc_UART_DMA_RX_TX_Pars.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_msm_nuc_UART_DMA_RX_TX_Pars.bin
+ 
+Finished building: 13_msm_nuc_UART_DMA_RX_TX_Pars.list
+ 
+18:48:46 **** Incremental Build of configuration Debug for project 13_msm_nuc_UART_DMA_RX_TX_Pars ****
+make -j4 all 
+arm-none-eabi-size   13_msm_nuc_UART_DMA_RX_TX_Pars.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13544	     20	   2156	  15720	   3d68	13_msm_nuc_UART_DMA_RX_TX_Pars.elf
+Finished building: default.size.stdout
+ 
+18:50:41 **** Incremental Build of configuration Debug for project 13_msm_nuc_UART_DMA_RX_TX_Pars ****
+make -j4 all 
+arm-none-eabi-size   13_msm_nuc_UART_DMA_RX_TX_Pars.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13544	     20	   2156	  15720	   3d68	13_msm_nuc_UART_DMA_RX_TX_Pars.elf
+Finished building: default.size.stdout
+ 
