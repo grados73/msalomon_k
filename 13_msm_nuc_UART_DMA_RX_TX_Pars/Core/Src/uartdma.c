@@ -1,10 +1,3 @@
-/*
- * uartdma.c
- *
- *  Created on: Aug 21, 2020
- *      Author: Mateusz Salamon
- */
-
 #include "main.h"
 #include "uartdma.h"
 
@@ -60,9 +53,9 @@ void UARTDMA_DmaReceiveIrqHandler(UARTDMA_HandleTypeDef *huartdma)
 		{
 			RB_Write(&huartdma->UART_RX_Buffer, DmaBufferPointer[i]);
 
-			if(DmaBufferPointer[i] == '\n') // Check if end line byte occurs
+			if(DmaBufferPointer[i] == '\n')
 			{
-				huartdma->UartTxBufferLines++; // Increment line to received counter
+				huartdma->UartRxBufferLines++;
 			}
 		}
 
@@ -87,26 +80,29 @@ int UARTDMA_PutCharToTxBuffer(UARTDMA_HandleTypeDef *huartdma, char c)
 }
 
 //
-// Get complete line (end with '\n') from UART buffer
+// Get complete line (end with \n) from UART buffer
 //
-uint8_t UARTDMA_GetLineFromReceiveBuffer(UARTDMA_HandleTypeDef *huartdma, char *OutPuffer)
+uint8_t UARTDMA_GetLineFromReceiveBuffer(UARTDMA_HandleTypeDef *huartdma, char *OutBuffer)
 {
-	char *OurBufferPtr; // wskaznik pomocniczy, lokalny
-	OurBufferPtr = OutPuffer;
+	char *OurBufferPtr; // Helper pointer
 
-	if(huartdma->UartRxBufferLines)
+	OurBufferPtr = OutBuffer; // Set helper pointer
+	if(huartdma->UartRxBufferLines) // If there id something to read
 	{
-		while(RB_OK == (RB_Read(&huartdma->UART_RX_Buffer, (uint8_t*)OurBufferPtr))) // Write all bytes into Ring Buffer
+		while(RB_OK == RB_Read(&huartdma->UART_RX_Buffer, (uint8_t*)OurBufferPtr)) // Get from Ring Buffer till end
 		{
-			if(*OurBufferPtr == '\n') // Check if end line byte occurs
+			if(*OurBufferPtr == '\n') // If end line byte hit
 			{
-				huartdma->UartRxBufferLines--;
+				*OurBufferPtr = 0; // Change it to end cstring '\0' byte
+				huartdma->UartRxBufferLines--; // Decrease received lines counter
+				return 0; // Exit if end line
 			}
-			OurBufferPtr++; // zwiekszamy aby wyciagac nastepny z kolei znak
+
+			OurBufferPtr++; // Increase pointer
 		}
-		return 0;
+		return 0; // Return o error (but no full line... place for improovement)
 	}
-	return 1;
+	return 1; // Return an error
 }
 
 //
