@@ -125,6 +125,16 @@ void UARTDMA_Print(UARTDMA_HandleTypeDef *huartdma, char *Message)
 		}
 	}
 }
+//
+// Check if received data are ready
+//
+uint8_t UARTDMA_IsDataReceivedReady(UARTDMA_HandleTypeDef *huartdma)
+{
+	if(huartdma->UartRxBufferLines)
+		return 1; // At least one line is available
+	else
+		return 0; // No lines are available
+}
 
 //
 // Check if data for transfer are ready
@@ -138,50 +148,30 @@ uint8_t UARTDMA_IsDataTransferReady(UARTDMA_HandleTypeDef *huartdma)
 }
 
 //
-// Check if received data are ready
-//
-uint8_t UARTDMA_IsDataReceivedReady(UARTDMA_HandleTypeDef *huartdma)
-{
-	if(huartdma->UartRxBufferLines)
-		return 1; // At least one line is available
-	else
-		return 0; // No lines are available
-}
-
-//
 //	UART Transmit interrupt handler
 //		Put in main loop
 //
 void UARTDMA_TransmitEvent(UARTDMA_HandleTypeDef *huartdma)
 {
 	char CharToSend; // Current char to transmit
-	RB_Status Status; // Status variable
 	uint16_t i = 0; // Iterator
 
-	if(UARTDMA_IsDataTransferReady(huartdma)) // If something is to send
+	if(huartdma->huart->hdmatx->State != HAL_DMA_STATE_BUSY) // If DMA is ready to transmit
 	{
-		if(huartdma->huart->hdmatx->State != HAL_DMA_STATE_BUSY) // If DMA is ready to transmit
+		while(RB_OK == RB_Read(&huartdma->UART_TX_Buffer, (uint8_t*)&CharToSend)) // If there is something to transfer
 		{
-			do
+			if(CharToSend == '\n') // Check end line byte
 			{
-				Status = RB_Read(&huartdma->UART_TX_Buffer, (uint8_t*)&CharToSend); // Read byte from Ring Buffer
-
-				if(Status == RB_OK) // Check if something was read
-				{
-					huartdma->DMA_TX_Buffer[i++] = CharToSend; // Put this char into DMA buffer
-				}
-
-			}while((CharToSend != '\n') && (Status == RB_OK )); // End if end line or nothing to read from Ring Buffer
-
-			if(CharToSend == '\n') // If end line hit
-			{
-				huartdma->UartTxBufferLines--; // Decrease lines to transmit counter
+				huartdma->UartTxBufferLines--; // Decrease lines (may be delete because it is no more used)
 			}
 
-			HAL_UART_Transmit_DMA(huartdma->huart, huartdma->DMA_TX_Buffer, i); // Push DMA buffer to UART
+			huartdma->DMA_TX_Buffer[i++] = CharToSend; // Put this char into DMA buffer
 		}
+
+		HAL_UART_Transmit_DMA(huartdma->huart, huartdma->DMA_TX_Buffer, i); // Push DMA buffer to UART
 	}
 }
+
 
 
 //

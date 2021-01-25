@@ -36,3 +36,4 @@ RB_Status RB_Write(RingBuffer *rb, uint8_t Value)
 
 	return RB_OK;	// Return Success
 }
+

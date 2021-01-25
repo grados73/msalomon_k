@@ -26,7 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "uartdma.h"
-#include "string.h"
+#include "parser.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -104,26 +104,14 @@ int main(void)
 	  //
 	  if(UARTDMA_IsDataReceivedReady(&huartdma2))
 	  {
-	  if(!UARTDMA_GetLineFromReceiveBuffer(&huartdma2, (char*)BufferReceive))
-		  {
-			  if(strcmp((char*)BufferReceive, "ON") == 0) //znaczy, ze przyszedl komunikat ON
-			  {
-				  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-				  UARTDMA_Print(&huartdma2, "LED ON!\n\r");
-			  }
-			  else if(strcmp((char*)BufferReceive, "OFF") == 0) //znaczy, ze przyszedl komunikat ON
-			  {
-				  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-				  UARTDMA_Print(&huartdma2, "LED OFF!\n\r");
-			  }
-		  }
-
+		  UART_ParseLine(&huartdma2); // Parsing function
 	  }
 
 	  //
 	  // TRANSMIT
 	  //
-	  UARTDMA_TransmitEvent(&huartdma2); // Must be for Transmit
+	  UARTDMA_TransmitEvent(&huartdma2);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
