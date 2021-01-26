@@ -1,1 +1,3 @@
 HAL_GetTick()
+TimerCounterDown
+TimerCounterUp
