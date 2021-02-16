@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:15_msm_nuc_TimerN1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:07_msm_przerwania Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_nuc_hc_sr04 Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:20_msm_nuc_WWDG Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_msalomon/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_msalomon/activeLaunchTarget=null\:---
@@ -28,3 +28,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:15_msm_nuc_TimerN1\ Debug/activ
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:15_msm_nuc_TimerN1\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:16_msm_nuc_timer_Input_capture\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_nuc_hc_sr04\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_nuc_hc_sr04\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:18_msm_nuc_TIM_PWM\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:19_msm_nuc_IWDG\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:19_msm_nuc_IWDG\ Debug/activeLaunchTarget=null\:---
