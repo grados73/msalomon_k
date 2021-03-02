@@ -33,7 +33,7 @@
         (++) max time (mS) = 1000 * (Counter - 0x40) / WWDG clock
     (+) Typical values:
         (++) Counter min (T[5;0] = 0x00) @42MHz (PCLK1) with zero prescaler:
-             max timeout before reset: approximately 97.52µs
+             max timeout before reset: approximately 97.52ï¿½s
         (++) Counter max (T[5;0] = 0x3F) @42MHz (PCLK1) with prescaler dividing by 8:
              max timeout before reset: approximately 49.93ms
 
@@ -384,7 +384,7 @@ void HAL_WWDG_IRQHandler(WWDG_HandleTypeDef *hwwdg)
   *                the configuration information for the specified WWDG module.
   * @retval None
   */
-__weak void HAL_WWDG_EarlyWakeupCallback(WWDG_HandleTypeDef *hwwdg)
+__weak
 {
   /* Prevent unused argument(s) compilation warning */
   UNUSED(hwwdg);
