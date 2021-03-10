@@ -108,7 +108,9 @@ int main(void)
 
 	  if(OldSeconds != RtcTime.Seconds)
 	  {
-	  MessageLen = sprintf((char*)Message, "Time: %02d:%02d:%02d\n\r", RtcTime.Hours, RtcTime.Minutes, RtcTime.Seconds);
+	  MessageLen = sprintf((char*)Message, "Time: %02d:%02d:%02d \n\r", RtcTime.Hours, RtcTime.Minutes, RtcTime.Seconds);
+	  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
+	  MessageLen = sprintf((char*)Message, "Date: %02d.%02d.%02d r. \n\n\r", RtcDate.Date, RtcDate.Month, RtcDate.Year);
 	  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
 	  OldSeconds = RtcTime.Seconds;
 	  }
