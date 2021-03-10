@@ -48,6 +48,8 @@
 
 RTC_TimeTypeDef RtcTime;
 RTC_DateTypeDef RtcDate;
+
+uint8_t OldSeconds;
 uint8_t Message[64];
 uint8_t MessageLen;
 /* USER CODE END PV */
@@ -102,9 +104,14 @@ int main(void)
   while (1)
   {
 	  HAL_RTC_GetTime(&hrtc, &RtcTime, RTC_FORMAT_BIN);
+	  HAL_RTC_GetDate(&hrtc, &RtcDate, RTC_FORMAT_BIN);
 
-	  MessageLen = sprintf((char*)Message, "Time: %02d:%02d:%02d\n\r", RtcDate.Date, RtcDate.Month, RtcDate.Year);
+	  if(OldSeconds != RtcTime.Seconds)
+	  {
+	  MessageLen = sprintf((char*)Message, "Time: %02d:%02d:%02d\n\r", RtcTime.Hours, RtcTime.Minutes, RtcTime.Seconds);
 	  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
+	  OldSeconds = RtcTime.Seconds;
+	  }
 
     /* USER CODE END WHILE */
 

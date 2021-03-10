@@ -36,3 +36,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:19_msm_nuc_IWDG\ Debug/activeLa
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:19_msm_nuc_IWDG\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:22_Mast_nuc_nvic\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:23_msm_RTC_2\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:23_msm_RTC_2\ Debug/activeLaunchTarget=null\:---
