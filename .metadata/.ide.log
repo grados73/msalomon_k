@@ -21499,3 +21499,52 @@
 2021-03-10 18:22:07,872 [INFO] ApiDb:267 - User favorites MCUs=[]
 2021-03-10 18:22:07,873 [INFO] ApiDb:263 - Save user favorites file C:\Users\grad_/.stm32cubeide/favorites.boards.txt: 0 item(s)
 2021-03-10 18:22:07,873 [INFO] ApiDb:267 - User favorites Boards=[]
+2021-03-10 18:25:27,884 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 740835040 Bytes (986710016)
+2021-03-10 18:26:00,028 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 716445176 Bytes (986710016)
+2021-03-10 18:26:01,578 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 727453184 Bytes (986710016)
+2021-03-10 18:26:02,979 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 806096384 Bytes (986710016)
+2021-03-10 18:26:03,232 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RTC
+2021-03-10 18:26:03,232 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-10 18:26:03,232 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-10 18:26:03,232 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-10 18:26:03,232 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-10 18:26:03,232 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-10 18:26:03,232 [INFO] CodeGenerator:639 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.1.202012091304\\db\
+2021-03-10 18:26:03,464 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\MXTmpFiles\license.tmp_save
+2021-03-10 18:26:03,535 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\MXTmpFiles\license.tmp
+2021-03-10 18:26:03,552 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Src\gpio.c_save
+2021-03-10 18:26:03,614 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Src\gpio.c
+2021-03-10 18:26:03,614 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Inc\gpio.h_save
+2021-03-10 18:26:03,665 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Inc\gpio.h
+2021-03-10 18:26:03,734 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-10 18:26:03,734 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Src\rtc.c_save
+2021-03-10 18:26:03,812 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Src\rtc.c
+2021-03-10 18:26:03,812 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Inc\rtc.h_save
+2021-03-10 18:26:03,856 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Inc\rtc.h
+2021-03-10 18:26:03,856 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-10 18:26:03,866 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Src\usart.c_save
+2021-03-10 18:26:03,937 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Src\usart.c
+2021-03-10 18:26:03,937 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Inc\usart.h_save
+2021-03-10 18:26:03,995 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Inc\usart.h
+2021-03-10 18:26:04,005 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Src\stm32f4xx_it.c_save
+2021-03-10 18:26:04,068 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Src\stm32f4xx_it.c
+2021-03-10 18:26:04,068 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Inc\stm32f4xx_it.h_save
+2021-03-10 18:26:04,121 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Inc\stm32f4xx_it.h
+2021-03-10 18:26:04,121 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Src\stm32f4xx_hal_msp.c_save
+2021-03-10 18:26:04,224 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Src\stm32f4xx_hal_msp.c
+2021-03-10 18:26:04,227 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\MXTmpFiles\system.tmp_save
+2021-03-10 18:26:04,288 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\MXTmpFiles\system.tmp
+2021-03-10 18:26:04,294 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-03-10 18:26:04,384 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Inc\stm32f4xx_hal_conf.h
+2021-03-10 18:26:04,424 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Inc\main.h_save
+2021-03-10 18:26:04,488 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Inc\main.h
+2021-03-10 18:26:04,492 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\23_msm_RTC_2\Core\Src\main.c_save
+2021-03-10 18:26:04,571 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\23_msm_RTC_2\Core\Src\main.c
+2021-03-10 18:26:05,330 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 139mS.
+2021-03-10 18:26:05,334 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-03-10 18:26:05,576 [INFO] ConfigFileManager:1238 - The Die is : DIE431
+2021-03-10 18:26:07,264 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1930mS.
+2021-03-10 18:26:07,264 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-03-10 18:26:07,265 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-03-10 18:28:05,874 [INFO] DbMcusDocs:145 - JSON generation date=Mon Feb 08 14:35:07 CET 2021 (1612791307)
+2021-03-10 18:28:06,005 [INFO] DbMcusDocs:81 - Found 617 MCUs documents
