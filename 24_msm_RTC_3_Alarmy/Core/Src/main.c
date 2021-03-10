@@ -56,8 +56,9 @@ uint8_t MessageLen;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
-
+void SetAlarm(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -95,6 +96,9 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_RTC_Init();
+
+  /* Initialize interrupts */
+  MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -108,11 +112,17 @@ int main(void)
 
 	  if(OldSeconds != RtcTime.Seconds)
 	  {
-	  MessageLen = sprintf((char*)Message, "Time: %02d:%02d:%02d \n\r", RtcTime.Hours, RtcTime.Minutes, RtcTime.Seconds);
-	  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
-	  MessageLen = sprintf((char*)Message, "Date: %02d.%02d.%02d r. \n\n\r", RtcDate.Date, RtcDate.Month, RtcDate.Year);
-	  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
-	  OldSeconds = RtcTime.Seconds;
+		  MessageLen = sprintf((char*)Message, "Time: %02d:%02d:%02d \n\r", RtcTime.Hours, RtcTime.Minutes, RtcTime.Seconds);
+		  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
+		  MessageLen = sprintf((char*)Message, "Date: %02d.%02d.%02d r. \n\n\r", RtcDate.Date, RtcDate.Month, RtcDate.Year);
+		  HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
+		  OldSeconds = RtcTime.Seconds;
+	  }
+
+	  if(HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET)
+	  {
+		SetAlarm();
+		while(HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin) == GPIO_PIN_RESET);
 	  }
 
     /* USER CODE END WHILE */
@@ -174,8 +184,72 @@ void SystemClock_Config(void)
   }
 }
 
-/* USER CODE BEGIN 4 */
+/**
+  * @brief NVIC Configuration.
+  * @retval None
+  */
+static void MX_NVIC_Init(void)
+{
+  /* RTC_Alarm_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(RTC_Alarm_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(RTC_Alarm_IRQn);
+}
 
+/* USER CODE BEGIN 4 */
+void SetAlarm(void)
+{
+	  RTC_TimeTypeDef sTime = {0};
+	  RTC_DateTypeDef sDate = {0};
+	  RTC_AlarmTypeDef sAlarm = {0};
+
+	  /** Initialize RTC and set the Time and Date
+	    */
+	    sTime.Hours = 19;
+	    sTime.Minutes = 21;
+	    sTime.Seconds = 0;
+	    sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	    sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+	    if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
+	    {
+	      Error_Handler();
+	    }
+	    sDate.WeekDay = RTC_WEEKDAY_WEDNESDAY;
+	    sDate.Month = RTC_MONTH_MARCH;
+	    sDate.Date = 10;
+	    sDate.Year = 20;
+
+	    if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
+	    {
+	      Error_Handler();
+	    }
+	    /** Enable the Alarm A
+	    */
+	    sAlarm.AlarmTime.Hours = 19;
+	    sAlarm.AlarmTime.Minutes = 21;
+	    sAlarm.AlarmTime.Seconds = 15;
+	    sAlarm.AlarmTime.SubSeconds = 0;
+	    sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	    sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
+	    sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+	    sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+	    sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_DATE;
+	    sAlarm.AlarmDateWeekDay = RTC_WEEKDAY_WEDNESDAY;
+	    sAlarm.Alarm = RTC_ALARM_A;
+	    if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BIN) != HAL_OK)
+	    {
+	      Error_Handler();
+	    }
+
+	  }
+
+
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
+{
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	MessageLen = sprintf((char*)Message, "!!! ALARM O GODZINIE: %02d:%02d:%02d !!! \n\r", RtcTime.Hours, RtcTime.Minutes, RtcTime.Seconds);
+	HAL_UART_Transmit(&huart2, Message, MessageLen, 100);
+
+}
 /* USER CODE END 4 */
 
 /**
