@@ -3592,3 +3592,12 @@ java.net.NoRouteToHostException: No route to host: connect
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-03-15 19:29:37.719
 !MESSAGE Indexed '26_msm_nuc_ADC_IC_SingleConv' (22 sources, 82 headers) in 2.2 sec: 4,693 declarations; 21,887 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0075%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-15 19:50:20.422
+!MESSAGE Indexed '26_msm_nuc_ADC_DMA_SingleConv' (28 sources, 105 headers) in 2.28 sec: 8,550 declarations; 33,029 references; 6 unresolved inclusions; 396 syntax errors; 1,289 unresolved names (3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-15 19:51:23.816
+!MESSAGE Indexed '26_msm_nuc_ADC_IC_SingleConv' (28 sources, 106 headers) in 2.15 sec: 8,556 declarations; 34,617 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.34%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-15 19:52:25.820
+!MESSAGE Indexed '27_msm_nuc_ADC_DMA_SingleConv' (22 sources, 82 headers) in 1.99 sec: 4,693 declarations; 21,887 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0075%)
