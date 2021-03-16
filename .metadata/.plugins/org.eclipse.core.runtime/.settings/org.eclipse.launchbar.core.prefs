@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:28_msm_nuc_ADC_DMA_MultiConv Debug
+configDescList=
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_msalomon/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_msalomon/activeLaunchTarget=null\:---
@@ -42,3 +42,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:26_msm_nuc_ADC_IC_SingleConv\ D
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:27_msm_nuc_ADC_DMA_SingleConv/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:27_msm_nuc_ADC_DMA_SingleConv/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:28_msm_nuc_ADC_DMA_MultiConv\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:28_msm_nuc_ADC_DMA_MultiConv\ Debug/activeLaunchTarget=null\:---
