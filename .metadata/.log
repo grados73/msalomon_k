@@ -7084,3 +7084,6 @@ java.lang.IllegalStateException: Call stack for thread main
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-23 20:49:36.957
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-29 18:08:08.778
+!MESSAGE Indexed '32_msm_nuc_i2c_bmp280' (22 sources, 82 headers) in 2.79 sec: 4,693 declarations; 21,887 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0075%)
