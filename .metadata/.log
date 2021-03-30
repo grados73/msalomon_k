@@ -7087,3 +7087,40 @@ java.lang.IllegalStateException: Call stack for thread main
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-03-29 18:08:08.778
 !MESSAGE Indexed '32_msm_nuc_i2c_bmp280' (22 sources, 82 headers) in 2.79 sec: 4,693 declarations; 21,887 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0075%)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2021-03-29 18:21:59.110
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2021-03-29 18:21:59.110
+!MESSAGE session context was:(profile=STM32CubeIDE, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.api,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.cm,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.core,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.epl,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.patches,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.ui,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.ui.client,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.codetogether.webicons,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.genericeditor,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.lsp4e,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: osgi.bundle,com.genuitec.eclipse.tm4e.languageconfiguration,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.genuitec.eclipse.codetogether.client.feature,4.0.0.202103231503
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-03-29 18:21:59.110
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.genuitec.eclipse.codetogether.feature,4.0.0.202103231503
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-30 11:04:05.331
+!MESSAGE Indexed '33_msm_nuc_i2c_bmp280_oled' (31 sources, 114 headers) in 2.74 sec: 9,305 declarations; 41,508 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-30 11:12:04.116
+!MESSAGE Indexed '34_msm_nuc_i2c_oled' (27 sources, 88 headers) in 2.31 sec: 7,960 declarations; 39,529 references; 2 unresolved inclusions; 42 syntax errors; 145 unresolved names (0.3%)
