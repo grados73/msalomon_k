@@ -107,6 +107,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  ILI9341_ClearDisplay(ILI9341_BLUE);
+	  ILI9341_ClearDisplay(ILI9341_YELLOW);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -11,6 +11,8 @@
 #define ILI9341_USE_HW_RESET 1  // czy używamy hardwerowego pinu RESET
 #define ILI9341_USE_CS 1        // czy używamy pinu CS
 
+#define ILI9341_OPTIMIZE_HAL_SPI 1 // wlaczamy i wylaczamy optymalizacje
+
 ////////////////////////////////////////////////////////////////////////////////////
 //
 // Makra do operacji na Pinach

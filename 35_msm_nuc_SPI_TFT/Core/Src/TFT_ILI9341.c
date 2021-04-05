@@ -22,6 +22,8 @@ static void ILI9341_Delay(uint32_t ms)
 
 static void ILI9341_SendToTFT(uint8_t *Byte, uint32_t Length)
 {
+#if (ILI9341_OPTIMIZE_HAL_SP1 == 1)
+	// That is taken from HAL Transmit function
     while (Length > 0U)
     {
       /* Wait until TXE flag is set to send data */
@@ -36,15 +38,16 @@ static void ILI9341_SendToTFT(uint8_t *Byte, uint32_t Length)
       }
     }
 
-    // Wait for Transfer end - czekamy na gotowosc SPI
+    // Wait for Transfer end - czekmay na zakonczenie transmisji i gotowosc SPI
 	while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_BSY) != RESET)
 	{
 
 	}
-
-
-	//HAL_SPI_Transmit(Tft_hspi, Byte, Length, ILI9341_SPI_TIMEOUT); // - wersja bez optymalizacji wysylania
+#else
+	HAL_SPI_Transmit(Tft_hspi, Byte, Length, ILI9341_SPI_TIMEOUT); 	// Send the command byte
+#endif
 }
+
 
 static void ILI9341_SendComand(uint8_t Command)
 {
@@ -91,7 +94,7 @@ static void ILI9341_SendCommandAndData(uint8_t Command, uint8_t *Data, uint16_t 
 #endif
 
 }
-
+#if (ILI9341_OPTIMIZE_HAL_SP1 == 0)
 static void ILI9341_SendData16(uint16_t Data)
 {
 #if (ILI9341_USE_CS == 1)
@@ -109,7 +112,7 @@ static void ILI9341_SendData16(uint16_t Data)
 	ILI9341_CS_HIGH;
 #endif
 }
-
+#endif
 
 ////////////////////////////////////////////////////////////////////////////////////
 //
@@ -174,43 +177,53 @@ void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color)
 
 void ILI9341_ClearDisplay(uint16_t Color)
 {
-	uint32_t Length = ILI9341_TFTWIDTH * ILI9341_TFTHEIGHT;
 	// Set window for whole screen
 	ILI9341_SetAddrWindow(0, 0, ILI9341_TFTWIDTH, ILI9341_TFTHEIGHT);
 	// Set RAM writing
 	ILI9341_SendComand(ILI9341_RAMWR);
+
+#if (ILI9341_OPTIMIZE_HAL_SP1 == 1)
+	uint32_t Length = ILI9341_TFTWIDTH * ILI9341_TFTHEIGHT;
 
 #if (ILI9341_USE_CS == 1)
 	ILI9341_CS_LOW;
 #endif
 	ILI9341_DC_HIGH;	// Data mode
 
+    while (Length > 0U)
+    {
+      /* Wait until TXE flag is set to send data */
+      if(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE))
+      {
+    	  // Write higher byte of color to DR
+        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (Color >> 8);
+        // Wait for transfer
+        while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE) != SET)
+        {}
+        // Write lower byt of color to DR
+        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (Color & 0xFF);
+        // Decrease Lenght
+        Length--;
+      }
+    }
 
-	while (Length > 0U)
-	    {
-	      /* Wait until TXE flag is set to send data */
-	      if(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE))
-	      {
-	    	  // Write higher byte of color to DR
-	        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (Color >> 8);
-	        // Wait for transfer - oczekiwanie na zakończenie transferu
-	        while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE) != SET)
-	        {}
-	        // Write lower byt of color to DR
-	        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (Color & 0xFF);
-	        // Decrease Lenght
-	        Length--;
-	      }
-	    }
+    // Wait for the end of transfer
+	while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_BSY) != RESET)
+	{
 
-	// Wait for the end of transfer
-		while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_BSY) != RESET)
-		{
+	}
 
-		}
 #if (ILI9341_USE_CS == 1)
 	ILI9341_CS_HIGH;
 #endif
+#else
+	for(uint32_t i = 0; i < (ILI9341_TFTWIDTH * ILI9341_TFTHEIGHT); i++)
+	{
+		// Send Color bytes
+		ILI9341_SendData16(Color);
+	}
+#endif
+
 
 }
 
@@ -254,8 +267,9 @@ void ILI9341_Init(SPI_HandleTypeDef *hspi)
 	Tft_hspi = hspi;
 	uint8_t cmd, x, numArgs;
 	const uint8_t *addr = initcmd;
-
+#if (ILI9341_OPTIMIZE_HAL_SP1 == 1)
 	__HAL_SPI_ENABLE(hspi);
+#endif
 
 	//Resetowanie kontrolera TFT
 #if (ILI9341_USE_HW_RESET == 1) // uzywamy hardwer resetu
