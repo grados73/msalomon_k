@@ -26,6 +26,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "TFT_ILI9341.h"
+#include "GFX_Color.h"
+#include "fonts/fonts.h"
 
 /* USER CODE END Includes */
 
@@ -92,6 +94,7 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   ILI9341_Init(&hspi1);
+  GFX_SetFont(font_8x5);
 
 //  for(uint16_t i = 0; i < ILI9341_TFTWIDTH; i++)
 //  {
@@ -100,15 +103,16 @@ int main(void)
 //		  ILI9341_WritePixel(i, j, ILI9341_BLUE);
 //	  }
 //  }
-  ILI9341_ClearDisplay(ILI9341_YELLOW);
+  ILI9341_ClearDisplay(ILI9341_WHITE);
+  GFX_DrawRectangle(10, 10, 100, 50, ILI9341_BLUE);
+  GFX_DrawString(10, 200, "GRAD", ILI9341_BLACK);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ILI9341_ClearDisplay(ILI9341_BLUE);
-	  ILI9341_ClearDisplay(ILI9341_YELLOW);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
