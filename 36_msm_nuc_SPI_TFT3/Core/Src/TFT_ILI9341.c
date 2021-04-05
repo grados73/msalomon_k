@@ -7,7 +7,22 @@
 
 #include "main.h"
 #include "TFT_ILI9341.h"
+
+//
+// Rotation stuff
+//
+#define MADCTL_MY 0x80  ///< Bottom to top
+#define MADCTL_MX 0x40  ///< Right to left
+#define MADCTL_MV 0x20  ///< Reverse Mode
+#define MADCTL_ML 0x10  ///< LCD refresh Bottom to top
+#define MADCTL_RGB 0x00 ///< Red-Green-Blue pixel order
+#define MADCTL_BGR 0x08 ///< Blue-Green-Red pixel order
+#define MADCTL_MH 0x04  ///< LCD refresh right to left
+
 SPI_HandleTypeDef *Tft_hspi;
+
+
+
 
 ////////////////////////////////////////////////////////////////////////////////////
 //
@@ -120,6 +135,35 @@ static void ILI9341_SendData16(uint16_t Data)
 // TFT Functions
 //
 ////////////////////////////////////////////////////////////////////////////////////
+
+void ILI9341_SetRotation(uint8_t Rotation)
+{
+	if(Rotation > 3)
+		return;
+
+	//
+	// Set appropriate bits for Rotation
+	//
+	switch(Rotation)
+	{
+	case 0:
+		Rotation = (MADCTL_MX | MADCTL_BGR);
+		break;
+	case 1:
+		Rotation = (MADCTL_MV | MADCTL_BGR);
+		break;
+	case 2:
+		Rotation = (MADCTL_MY | MADCTL_BGR);
+		break;
+	case 3:
+		Rotation = (MADCTL_MX | MADCTL_MY | MADCTL_MV | MADCTL_BGR);
+		break;
+	}
+
+	// Write indo MAD Control register our Rotation data
+	ILI9341_SendCommandAndData(ILI9341_MADCTL, &Rotation, 1);
+}
+
 
 // ustawienie adresu obszaru rysowania
 void ILI9341_SetAddrWindow(uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)
@@ -304,4 +348,5 @@ void ILI9341_Init(SPI_HandleTypeDef *hspi)
 	    	  ILI9341_Delay(150);
 	      }
 	    }
+	ILI9341_SetRotation(ILI9341_ROTATION);
 }

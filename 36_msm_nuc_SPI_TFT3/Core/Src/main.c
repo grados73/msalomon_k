@@ -98,7 +98,8 @@ int main(void)
   ILI9341_Init(&hspi1);
   GFX_SetFont(font_8x5);
 
-  ILI9341_ClearDisplay(ILI9341_DARKGREEN);
+  ILI9341_ClearDisplay(ILI9341_BLACK);
+  ILI9341_DrawImage(0, 0, logo, 240, 240);
 
   /* USER CODE END 2 */
 
@@ -106,6 +107,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  for(uint8_t i = 0; i <=3; i++)
+	  {
+		  ILI9341_SetRotation(i);
+		  ILI9341_ClearDisplay(ILI9341_BLACK);
+		  ILI9341_DrawImage(0, 0, logo, 240, 240);
+		  HAL_Delay(2000);
+	  }
 
 
     /* USER CODE END WHILE */

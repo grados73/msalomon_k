@@ -8,6 +8,8 @@
 #ifndef INC_TFT_ILI9341_H_
 #define INC_TFT_ILI9341_H_
 
+#define ILI9341_ROTATION 3 // 0- 0', 1 - 90', 2 - 180', 3 - 270'
+
 #define ILI9341_USE_HW_RESET 1  // czy używamy hardwerowego pinu RESET
 #define ILI9341_USE_CS 1        // czy używamy pinu CS
 
@@ -37,8 +39,14 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////
 
+#if (ILI9341_ROTATION == 0) || (ILI9341_ROTATION == 2) // PORTRETOWE
 #define ILI9341_TFTWIDTH 240  ///< ILI9341 max TFT width
 #define ILI9341_TFTHEIGHT 320 ///< ILI9341 max TFT height
+#elif (ILI9341_ROTATION == 1) || (ILI9341_ROTATION == 3) // HORYZONTALNE
+#define ILI9341_TFTWIDTH 320  ///< ILI9341 max TFT width
+#define ILI9341_TFTHEIGHT 240 ///< ILI9341 max TFT height
+#endif
+
 
 #define ILI9341_NOP 0x00     ///< No-op register
 #define ILI9341_SWRESET 0x01 ///< Software reset register
@@ -123,5 +131,6 @@ void ILI9341_Init(SPI_HandleTypeDef *hspi);
 void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
 void ILI9341_ClearDisplay(uint16_t Color);
 void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+void ILI9341_SetRotation(uint8_t Rotation);;
 
 #endif /* INC_TFT_ILI9341_H_ */
