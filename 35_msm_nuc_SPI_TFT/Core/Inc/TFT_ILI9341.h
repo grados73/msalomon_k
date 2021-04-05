@@ -117,4 +117,7 @@
 #define ILI9341_GREENYELLOW 0xAFE5 ///< 173, 255,  41
 #define ILI9341_PINK 0xFC18        ///< 255, 130, 198
 
+void ILI9341_Init(SPI_HandleTypeDef *hspi);
+void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
+
 #endif /* INC_TFT_ILI9341_H_ */

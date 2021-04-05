@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "TFT_ILI9341.h"
 
 /* USER CODE END Includes */
 
@@ -90,7 +91,15 @@ int main(void)
   MX_USART2_UART_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+  ILI9341_Init(&hspi1);
 
+  for(uint16_t i = 0; i < ILI9341_TFTWIDTH; i++)
+  {
+	  for(uint16_t j = 0; j < ILI9341_TFTHEIGHT; j++)
+	  {
+		  ILI9341_WritePixel(i, j, ILI9341_BLUE);
+	  }
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
