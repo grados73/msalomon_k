@@ -4037,3 +4037,1082 @@ arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf
   11308	     24	   1736	  13068	   330c	35_msm_nuc_SPI_TFT.elf
 Finished building: default.size.stdout
  
+17:08:52 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:08:52 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:08:59 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:19:06 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:19:07 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/GFX_Color.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_Color.d" -MT"Core/Src/GFX_Color.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_Color.o"
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:20:16 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:20:16 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:23: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  111 |   ILI9341_DrawImage((0, 40, profilowe, 240, 240);
+      |                       ^
+../Core/Src/main.c:111:27: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  111 |   ILI9341_DrawImage((0, 40, profilowe, 240, 240);
+      |                           ^
+../Core/Src/main.c:111:38: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  111 |   ILI9341_DrawImage((0, 40, profilowe, 240, 240);
+      |                                      ^
+../Core/Src/main.c:111:43: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  111 |   ILI9341_DrawImage((0, 40, profilowe, 240, 240);
+      |                                           ^
+../Core/Src/main.c:111:49: error: expected ')' before ';' token
+  111 |   ILI9341_DrawImage((0, 40, profilowe, 240, 240);
+      |                                                 ^
+      |                                                 )
+../Core/Src/main.c:111:3: error: too few arguments to function 'ILI9341_DrawImage'
+  111 |   ILI9341_DrawImage((0, 40, profilowe, 240, 240);
+      |   ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:28:
+../Core/Inc/TFT_ILI9341.h:125:6: note: declared here
+  125 | void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:122:4: error: expected ';' before '}' token
+  122 |   }
+      |    ^
+      |    ;
+  123 |   /* USER CODE END 3 */
+  124 | }
+      | ~   
+make: *** [Core/Src/subdir.mk:55: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:20:32 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:20:32 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:20:36 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:21:11 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:21:11 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125596	     20	   1732	 127348	  1f174	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:21:16 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125596	     20	   1732	 127348	  1f174	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:21:51 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:21:51 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:21:57 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:22:49 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:22:50 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:22:56 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:32:06 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:32:06 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:32:09 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:33:05 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:33:06 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:33:10 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:34:40 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:34:41 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:34:45 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:36:11 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:36:11 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:36:17 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:38:30 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:38:30 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:38:34 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:40:08 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:40:09 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+ 
+17:40:13 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:42:03 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:42:04 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125740	     20	   1732	 127492	  1f204	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:42:21 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:42:22 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:42:30 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:42:55 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:42:55 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+ 
+17:42:59 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:43:15 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:43:16 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:43:19 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:44:15 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:44:16 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:44:21 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125592	     20	   1732	 127344	  1f170	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:44:41 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:44:42 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+ 
+17:44:52 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:44:53 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:44:56 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:45:14 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:45:14 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125596	     20	   1732	 127348	  1f174	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:45:19 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125596	     20	   1732	 127348	  1f174	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:45:41 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:45:42 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:45:47 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:46:08 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:46:08 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:46:14 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:46:34 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:46:34 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:46:40 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:47:03 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:47:03 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:47:09 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:47:26 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:47:27 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:47:31 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:47:57 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:47:57 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:48:04 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:48:46 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:48:47 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:48:51 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:49:17 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:49:17 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 125588	     20	   1732	 127340	  1f16c	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:52:26 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:52:26 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124604	     20	   1732	 126356	  1ed94	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:52:32 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124604	     20	   1732	 126356	  1ed94	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:53:02 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:53:03 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124604	     20	   1732	 126356	  1ed94	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:53:07 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124604	     20	   1732	 126356	  1ed94	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:58:00 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:58:00 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/GFX_Color.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_Color.d" -MT"Core/Src/GFX_Color.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_Color.o"
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124652	     20	   1732	 126404	  1edc4	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+17:58:09 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+17:58:09 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124652	     20	   1732	 126404	  1edc4	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+17:58:19 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124652	     20	   1732	 126404	  1edc4	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+18:00:47 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+18:00:48 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124652	     20	   1732	 126404	  1edc4	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+18:00:51 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124652	     20	   1732	 126404	  1edc4	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+18:02:19 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+18:02:20 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 239904	     20	   1732	 241656	  3aff8	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+18:02:28 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 239904	     20	   1732	 241656	  3aff8	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+18:03:36 **** Incremental Build of configuration Debug for project 34_msm_nuc_i2c_oled ****
+make -j4 all 
+arm-none-eabi-size   34_msm_nuc_i2c_oled.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11876	     20	   2236	  14132	   3734	34_msm_nuc_i2c_oled.elf
+Finished building: default.size.stdout
+ 
+18:03:36 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 239916	     20	   1732	 241668	  3b004	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+18:03:40 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 239916	     20	   1732	 241668	  3b004	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 

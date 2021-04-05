@@ -28,6 +28,8 @@
 #include "TFT_ILI9341.h"
 #include "GFX_Color.h"
 #include "fonts/fonts.h"
+#include "profilowe.h"
+#include "logo.h"
 
 /* USER CODE END Includes */
 
@@ -103,15 +105,23 @@ int main(void)
 //		  ILI9341_WritePixel(i, j, ILI9341_BLUE);
 //	  }
 //  }
-  ILI9341_ClearDisplay(ILI9341_WHITE);
-  GFX_DrawRectangle(10, 10, 100, 50, ILI9341_BLUE);
-  GFX_DrawString(10, 200, "GRAD", ILI9341_BLACK);
+  ILI9341_ClearDisplay(ILI9341_BLACK);
+//  GFX_DrawRectangle(10, 10, 100, 50, ILI9341_BLUE);
+//  GFX_DrawString(10, 200, "GRAD", ILI9341_BLACK);
+ //GFX_Image(0, 40, logo, 240, 240);
+  ILI9341_DrawImage(0, 40, logo, 240, 240);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  HAL_Delay(2000);
+	  ILI9341_ClearDisplay(ILI9341_WHITE);
+	  ILI9341_DrawImage(0, 40, profilowe, 240, 240);
+	  HAL_Delay(2000);
+	  ILI9341_ClearDisplay(ILI9341_BLACK);
+	  ILI9341_DrawImage(0, 40, logo, 240, 240);
 
     /* USER CODE END WHILE */
 

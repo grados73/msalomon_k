@@ -11,7 +11,7 @@
 #define ILI9341_USE_HW_RESET 1  // czy używamy hardwerowego pinu RESET
 #define ILI9341_USE_CS 1        // czy używamy pinu CS
 
-#define ILI9341_OPTIMIZE_HAL_SPI 1 // wlaczamy i wylaczamy optymalizacje
+#define ILI9341_OPTIMIZE_HAL_SP1 1 // wlaczamy i wylaczamy optymalizacje
 
 ////////////////////////////////////////////////////////////////////////////////////
 //
@@ -122,5 +122,6 @@
 void ILI9341_Init(SPI_HandleTypeDef *hspi);
 void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
 void ILI9341_ClearDisplay(uint16_t Color);
+void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
 
 #endif /* INC_TFT_ILI9341_H_ */

@@ -38,7 +38,7 @@ static void ILI9341_SendToTFT(uint8_t *Byte, uint32_t Length)
       }
     }
 
-    // Wait for Transfer end - czekmay na zakonczenie transmisji i gotowosc SPI
+    // Wait for Transfer end
 	while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_BSY) != RESET)
 	{
 
@@ -47,6 +47,7 @@ static void ILI9341_SendToTFT(uint8_t *Byte, uint32_t Length)
 	HAL_SPI_Transmit(Tft_hspi, Byte, Length, ILI9341_SPI_TIMEOUT); 	// Send the command byte
 #endif
 }
+
 
 
 static void ILI9341_SendComand(uint8_t Command)
@@ -69,7 +70,7 @@ static void ILI9341_SendComand(uint8_t Command)
 }
 
 
-static void ILI9341_SendCommandAndData(uint8_t Command, uint8_t *Data, uint16_t Length)
+static void ILI9341_SendCommandAndData(uint8_t Command, uint8_t *Data, uint32_t Length)
 {
 	// CS LOW
 #if (ILI9341_USE_CS == 1)
@@ -123,16 +124,6 @@ static void ILI9341_SendData16(uint16_t Data)
 // ustawienie adresu obszaru rysowania
 void ILI9341_SetAddrWindow(uint16_t x1, uint16_t y1, uint16_t w, uint16_t h)
 {
-//	uint16_t x2 = (x1 + w - 1), y2 = (y1 + h - 1);
-//	ILI9341_SendComand(ILI9341_CASET); // adres kolumny ustawiamy
-//	ILI9341_SendData16(x1);
-//	ILI9341_SendData16(x2);
-//	ILI9341_SendComand(ILI9341_PASET); // adres wiersza ustawiamy
-//	ILI9341_SendData16(y1);
-//	ILI9341_SendData16(y2);
-//	ILI9341_SendComand(ILI9341_RAMWR); // zapisujemy to do ramu
-
-
 	uint8_t DataToTransfer[4];
 	// Calculate end ranges
 	uint16_t x2 = (x1 + w - 1), y2 = (y1 + h - 1);
@@ -174,6 +165,19 @@ void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color)
 	}
 
 }
+
+void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h)
+{
+	// Check if image will fit into screen - cannot make it outside by hardware
+	if ((x >= 0) && ((x + w) <= ILI9341_TFTWIDTH) && (y >= 0) && ((y + h) <= ILI9341_TFTHEIGHT))
+	{
+		// Set window for image
+		ILI9341_SetAddrWindow(x, y, w, h);
+		// Push image to RAM
+		ILI9341_SendCommandAndData(ILI9341_RAMWR, (uint8_t *)img, (w*h*2));
+	}
+}
+
 
 void ILI9341_ClearDisplay(uint16_t Color)
 {

@@ -7130,3 +7130,15 @@ java.lang.IllegalStateException: Call stack for thread main
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-04-02 00:05:15.316
 !MESSAGE Indexed '35_msm_nuc_SPI_TFT' (22 sources, 82 headers) in 2.85 sec: 4,693 declarations; 21,887 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0075%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-04-05 18:03:52.462
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 58 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-04-05 18:03:52.469
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-04-05 18:03:52.470
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 58 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-04-05 18:03:52.471
+!MESSAGE Existing sessions are:
