@@ -3599,3 +3599,30 @@ arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf
    9760	     20	   1732	  11512	   2cf8	35_msm_nuc_SPI_TFT.elf
 Finished building: default.size.stdout
  
+13:11:42 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+../Core/Src/TFT_ILI9341.c:95:13: warning: 'ILI9341_SendData16' defined but not used [-Wunused-function]
+   95 | static void ILI9341_SendData16(uint16_t Data)
+      |             ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8792	     20	   1732	  10544	   2930	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+ 
+13:12:02 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8792	     20	   1732	  10544	   2930	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 

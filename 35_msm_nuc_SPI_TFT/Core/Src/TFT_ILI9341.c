@@ -22,7 +22,28 @@ static void ILI9341_Delay(uint32_t ms)
 
 static void ILI9341_SendToTFT(uint8_t *Byte, uint32_t Length)
 {
-	HAL_SPI_Transmit(Tft_hspi, Byte, Length, ILI9341_SPI_TIMEOUT);
+    while (Length > 0U)
+    {
+      /* Wait until TXE flag is set to send data */
+      if(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE))
+      {
+    	//Fill Data Register in SPI
+        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (*Byte);
+        // Next byte
+        Byte++;
+        // Length decrement
+        Length--;
+      }
+    }
+
+    // Wait for Transfer end - czekamy na gotowosc SPI
+	while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_BSY) != RESET)
+	{
+
+	}
+
+
+	//HAL_SPI_Transmit(Tft_hspi, Byte, Length, ILI9341_SPI_TIMEOUT); // - wersja bez optymalizacji wysylania
 }
 
 static void ILI9341_SendComand(uint8_t Command)
@@ -191,6 +212,8 @@ void ILI9341_Init(SPI_HandleTypeDef *hspi)
 	Tft_hspi = hspi;
 	uint8_t cmd, x, numArgs;
 	const uint8_t *addr = initcmd;
+
+	__HAL_SPI_ENABLE(hspi);
 
 	//Resetowanie kontrolera TFT
 #if (ILI9341_USE_HW_RESET == 1) // uzywamy hardwer resetu
