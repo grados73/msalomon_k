@@ -3626,3 +3626,97 @@ arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf
    8792	     20	   1732	  10544	   2930	35_msm_nuc_SPI_TFT.elf
 Finished building: default.size.stdout
  
+13:24:02 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/TFT_ILI9341.c: In function 'ILI9341_ClearDisplay':
+../Core/Src/TFT_ILI9341.c:181:2: warning: implicit declaration of function 'ILI9341_SendCommand'; did you mean 'ILI9341_SendComand'? [-Wimplicit-function-declaration]
+  181 |  ILI9341_SendCommand(ILI9341_RAMWR);
+      |  ^~~~~~~~~~~~~~~~~~~
+      |  ILI9341_SendComand
+At top level:
+../Core/Src/TFT_ILI9341.c:95:13: warning: 'ILI9341_SendData16' defined but not used [-Wunused-function]
+   95 | static void ILI9341_SendData16(uint16_t Data)
+      |             ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\stm32\programs\stm32_cube_ide\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\bin\ld.exe: Core/Src/TFT_ILI9341.o: in function `ILI9341_ClearDisplay':
+D:/STM32/workspace/35_msm_nuc_SPI_TFT/Debug/../Core/Src/TFT_ILI9341.c:181: undefined reference to `ILI9341_SendCommand'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: 35_msm_nuc_SPI_TFT.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:24:57 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+../Core/Src/TFT_ILI9341.c:95:13: warning: 'ILI9341_SendData16' defined but not used [-Wunused-function]
+   95 | static void ILI9341_SendData16(uint16_t Data)
+      |             ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8828	     20	   1732	  10580	   2954	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+13:25:05 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8828	     20	   1732	  10580	   2954	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+13:26:52 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+../Core/Src/TFT_ILI9341.c:95:13: warning: 'ILI9341_SendData16' defined but not used [-Wunused-function]
+   95 | static void ILI9341_SendData16(uint16_t Data)
+      |             ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "35_msm_nuc_SPI_TFT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\35_msm_nuc_SPI_TFT\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="35_msm_nuc_SPI_TFT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 35_msm_nuc_SPI_TFT.elf
+ 
+arm-none-eabi-objdump -h -S  35_msm_nuc_SPI_TFT.elf  > "35_msm_nuc_SPI_TFT.list"
+arm-none-eabi-objcopy  -O binary  35_msm_nuc_SPI_TFT.elf  "35_msm_nuc_SPI_TFT.bin"
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8824	     20	   1732	  10576	   2950	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 35_msm_nuc_SPI_TFT.bin
+ 
+Finished building: 35_msm_nuc_SPI_TFT.list
+ 
+13:26:55 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8824	     20	   1732	  10576	   2950	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+13:27:07 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8824	     20	   1732	  10576	   2950	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+13:27:36 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8824	     20	   1732	  10576	   2950	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 
+13:27:38 **** Incremental Build of configuration Debug for project 35_msm_nuc_SPI_TFT ****
+make -j4 all 
+arm-none-eabi-size   35_msm_nuc_SPI_TFT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8824	     20	   1732	  10576	   2950	35_msm_nuc_SPI_TFT.elf
+Finished building: default.size.stdout
+ 

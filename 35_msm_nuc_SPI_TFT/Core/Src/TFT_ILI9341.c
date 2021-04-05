@@ -172,6 +172,48 @@ void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color)
 
 }
 
+void ILI9341_ClearDisplay(uint16_t Color)
+{
+	uint32_t Length = ILI9341_TFTWIDTH * ILI9341_TFTHEIGHT;
+	// Set window for whole screen
+	ILI9341_SetAddrWindow(0, 0, ILI9341_TFTWIDTH, ILI9341_TFTHEIGHT);
+	// Set RAM writing
+	ILI9341_SendComand(ILI9341_RAMWR);
+
+#if (ILI9341_USE_CS == 1)
+	ILI9341_CS_LOW;
+#endif
+	ILI9341_DC_HIGH;	// Data mode
+
+
+	while (Length > 0U)
+	    {
+	      /* Wait until TXE flag is set to send data */
+	      if(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE))
+	      {
+	    	  // Write higher byte of color to DR
+	        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (Color >> 8);
+	        // Wait for transfer - oczekiwanie na zakończenie transferu
+	        while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE) != SET)
+	        {}
+	        // Write lower byt of color to DR
+	        *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (Color & 0xFF);
+	        // Decrease Lenght
+	        Length--;
+	      }
+	    }
+
+	// Wait for the end of transfer
+		while(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_BSY) != RESET)
+		{
+
+		}
+#if (ILI9341_USE_CS == 1)
+	ILI9341_CS_HIGH;
+#endif
+
+}
+
 ////////////////////////////////////////////////////////////////////////////////////
 //
 // Inicjalizacja

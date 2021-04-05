@@ -119,5 +119,6 @@
 
 void ILI9341_Init(SPI_HandleTypeDef *hspi);
 void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
+void ILI9341_ClearDisplay(uint16_t Color);
 
 #endif /* INC_TFT_ILI9341_H_ */

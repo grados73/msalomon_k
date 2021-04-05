@@ -93,13 +93,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ILI9341_Init(&hspi1);
 
-  for(uint16_t i = 0; i < ILI9341_TFTWIDTH; i++)
-  {
-	  for(uint16_t j = 0; j < ILI9341_TFTHEIGHT; j++)
-	  {
-		  ILI9341_WritePixel(i, j, ILI9341_BLUE);
-	  }
-  }
+//  for(uint16_t i = 0; i < ILI9341_TFTWIDTH; i++)
+//  {
+//	  for(uint16_t j = 0; j < ILI9341_TFTHEIGHT; j++)
+//	  {
+//		  ILI9341_WritePixel(i, j, ILI9341_BLUE);
+//	  }
+//  }
+  ILI9341_ClearDisplay(ILI9341_YELLOW);
   /* USER CODE END 2 */
 
   /* Infinite loop */
