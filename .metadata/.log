@@ -7169,3 +7169,12 @@ java.lang.IllegalStateException: Call stack for thread main
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-04-05 18:27:19.385
 !MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-07 19:18:46.688
+!MESSAGE Indexed '36_msm_nuc_SPI_TFT4_czzcionki' (28 sources, 110 headers) in 2.77 sec: 8,752 declarations; 35,394 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.33%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-07 19:19:06.351
+!MESSAGE Indexed '37_msm_nuc_SPI_TFT4_czzcionki' (28 sources, 110 headers) in 2.62 sec: 8,752 declarations; 35,394 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.33%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-07 19:19:51.965
+!MESSAGE Indexed '37_msm_nuc_SPI_TFT4_czcionki' (28 sources, 110 headers) in 2.63 sec: 8,752 declarations; 35,394 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.33%)
