@@ -5434,3 +5434,1943 @@ arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf
    9440	     20	   1732	  11192	   2bb8	37_msm_nuc_SPI_TFT4_czcionki.elf
 Finished building: default.size.stdout
  
+21:09:33 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/GFX_Color.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_Color.d" -MT"Core/Src/GFX_Color.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_Color.o"
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc "../Core/Src/EnhancedFonts/Arial_20pts_Bold.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/EnhancedFonts/Arial_20pts_Bold.d" -MT"Core/Src/EnhancedFonts/Arial_20pts_Bold.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/EnhancedFonts/Arial_20pts_Bold.o"
+arm-none-eabi-gcc "../Core/Src/GFX_EnhancedFonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_EnhancedFonts.d" -MT"Core/Src/GFX_EnhancedFonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_EnhancedFonts.o"
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:6:7: error: unknown type name 'uint8_t'
+    6 | const uint8_t arial_20ptBitmaps[] =
+      |       ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2831:7: error: unknown type name 'FONT_CHAR_INFO'
+ 2831 | const FONT_CHAR_INFO arial_20ptDescriptors[] =
+      |       ^~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:2: warning: braces around scalar initializer
+ 2833 |  {4, 0},   /* ! */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:2: note: (near initialization for 'arial_20ptDescriptors[0]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:6: warning: excess elements in scalar initializer
+ 2833 |  {4, 0},   /* ! */
+      |      ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:6: note: (near initialization for 'arial_20ptDescriptors[0]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:2: warning: braces around scalar initializer
+ 2834 |  {10, 28},   /* " */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:2: note: (near initialization for 'arial_20ptDescriptors[1]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:7: warning: excess elements in scalar initializer
+ 2834 |  {10, 28},   /* " */
+      |       ^~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:7: note: (near initialization for 'arial_20ptDescriptors[1]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:2: warning: braces around scalar initializer
+ 2835 |  {15, 84},   /* # */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:2: note: (near initialization for 'arial_20ptDescriptors[2]')
+../Core/Src/GFX_EnhancedFonts.c:9:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before string constant
+    9 | include "main.h"
+      |         ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:10:
+../Core/Inc/GFX_EnhancedFonts.h:19:3: warning: data definition has no type or storage class
+   19 | } BG_FONT;
+      |   ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:19:3: warning: type defaults to 'int' in declaration of 'BG_FONT' [-Wimplicit-int]
+../Core/Inc/GFX_EnhancedFonts.h:26:2: error: unknown type name 'uint8_t'
+   26 |  uint8_t CharWidth;
+      |  ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:27:2: error: unknown type name 'uint16_t'
+   27 |  uint16_t CharOffset;
+      |  ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:7: warning: excess elements in scalar initializer
+ 2835 |  {15, 84},   /* # */
+      |       ^~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:7: note: (near initialization for 'arial_20ptDescriptors[2]')
+../Core/Inc/GFX_EnhancedFonts.h:35:2: error: unknown type name 'uint8_t'
+   35 |  uint8_t CharHeight;
+      |  ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:36:2: error: unknown type name 'uint8_t'
+   36 |  uint8_t StartChar;
+      |  ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:37:2: error: unknown type name 'uint8_t'
+   37 |  uint8_t EndChar;
+      |  ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:38:2: error: unknown type name 'uint8_t'
+   38 |  uint8_t SpaceWidth;
+      |  ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:2: warning: braces around scalar initializer
+ 2836 |  {12, 140},   /* $ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:2: note: (near initialization for 'arial_20ptDescriptors[3]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:7: warning: excess elements in scalar initializer
+ 2836 |  {12, 140},   /* $ */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:7: note: (near initialization for 'arial_20ptDescriptors[3]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:2: warning: braces around scalar initializer
+ 2837 |  {22, 196},   /* % */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:2: note: (near initialization for 'arial_20ptDescriptors[4]')
+../Core/Inc/GFX_EnhancedFonts.h:40:8: error: unknown type name 'uint8_t'
+   40 |  const uint8_t *CharBitmaps;
+      |        ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:7: warning: excess elements in scalar initializer
+ 2837 |  {22, 196},   /* % */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:7: note: (near initialization for 'arial_20ptDescriptors[4]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:2: warning: braces around scalar initializer
+ 2838 |  {18, 280},   /* & */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:2: note: (near initialization for 'arial_20ptDescriptors[5]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:7: warning: excess elements in scalar initializer
+ 2838 |  {18, 280},   /* & */
+      |       ^~~
+../Core/Inc/GFX_EnhancedFonts.h:45:1: error: unknown type name 'uint8_t'
+   45 | uint8_t EF_GetFontHeight(void);
+      | ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:7: note: (near initialization for 'arial_20ptDescriptors[5]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:2: warning: braces around scalar initializer
+ 2839 |  {4, 364},   /* ' */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:2: note: (near initialization for 'arial_20ptDescriptors[6]')
+../Core/Inc/GFX_EnhancedFonts.h:46:1: error: unknown type name 'uint8_t'
+   46 | uint8_t EF_GetFontStartChar(void);
+      | ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:6: warning: excess elements in scalar initializer
+ 2839 |  {4, 364},   /* ' */
+      |      ^~~
+../Core/Inc/GFX_EnhancedFonts.h:47:1: error: unknown type name 'uint8_t'
+   47 | uint8_t EF_GetFontEndChar(void);
+      | ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:6: note: (near initialization for 'arial_20ptDescriptors[6]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:2: warning: braces around scalar initializer
+ 2840 |  {7, 392},   /* ( */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:2: note: (near initialization for 'arial_20ptDescriptors[7]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:6: warning: excess elements in scalar initializer
+ 2840 |  {7, 392},   /* ( */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:6: note: (near initialization for 'arial_20ptDescriptors[7]')
+../Core/Inc/GFX_EnhancedFonts.h:48:1: error: unknown type name 'uint8_t'
+   48 | uint8_t EF_GetFontSpaceWidth(void);
+      | ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:2: warning: braces around scalar initializer
+ 2841 |  {7, 420},   /* ) */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:2: note: (near initialization for 'arial_20ptDescriptors[8]')
+../Core/Inc/GFX_EnhancedFonts.h:50:1: error: unknown type name 'uint8_t'
+   50 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, uint8_t Btransparent, uint16_t Bcolor);
+      | ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:50:29: error: unknown type name 'uint16_t'
+   50 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, uint8_t Btransparent, uint16_t Bcolor);
+      |                             ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:6: warning: excess elements in scalar initializer
+ 2841 |  {7, 420},   /* ) */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:6: note: (near initialization for 'arial_20ptDescriptors[8]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:2: warning: braces around scalar initializer
+ 2842 |  {10, 448},   /* * */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:2: note: (near initialization for 'arial_20ptDescriptors[9]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:7: warning: excess elements in scalar initializer
+ 2842 |  {10, 448},   /* * */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:7: note: (near initialization for 'arial_20ptDescriptors[9]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:2: warning: braces around scalar initializer
+ 2843 |  {14, 504},   /* + */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:2: note: (near initialization for 'arial_20ptDescriptors[10]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:7: warning: excess elements in scalar initializer
+ 2843 |  {14, 504},   /* + */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:7: note: (near initialization for 'arial_20ptDescriptors[10]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:2: warning: braces around scalar initializer
+ 2844 |  {4, 560},   /* , */
+      |  ^
+../Core/Inc/GFX_EnhancedFonts.h:50:44: error: unknown type name 'uint16_t'
+   50 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, uint8_t Btransparent, uint16_t Bcolor);
+      |                                            ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:2: note: (near initialization for 'arial_20ptDescriptors[11]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:6: warning: excess elements in scalar initializer
+ 2844 |  {4, 560},   /* , */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:6: note: (near initialization for 'arial_20ptDescriptors[11]')
+../Core/Inc/GFX_EnhancedFonts.h:50:59: error: unknown type name 'uint16_t'
+   50 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, uint8_t Btransparent, uint16_t Bcolor);
+      |                                                           ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:2: warning: braces around scalar initializer
+ 2845 |  {8, 588},   /* - */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:2: note: (near initialization for 'arial_20ptDescriptors[12]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:6: warning: excess elements in scalar initializer
+ 2845 |  {8, 588},   /* - */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:6: note: (near initialization for 'arial_20ptDescriptors[12]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:2: warning: braces around scalar initializer
+ 2846 |  {4, 616},   /* . */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:2: note: (near initialization for 'arial_20ptDescriptors[13]')
+../Core/Inc/GFX_EnhancedFonts.h:50:76: error: unknown type name 'uint8_t'
+   50 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, uint8_t Btransparent, uint16_t Bcolor);
+      |                                                                            ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:6: warning: excess elements in scalar initializer
+ 2846 |  {4, 616},   /* . */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:6: note: (near initialization for 'arial_20ptDescriptors[13]')
+../Core/Inc/GFX_EnhancedFonts.h:50:98: error: unknown type name 'uint16_t'
+   50 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, uint8_t Btransparent, uint16_t Bcolor);
+      |                                                                                                  ^~~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:1: error: unknown type name 'uint8_t'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      | ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:28: error: unknown type name 'uint8_t'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      |                            ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:43: error: unknown type name 'uint16_t'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      |                                           ^~~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:58: error: unknown type name 'uint16_t'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      |                                                          ^~~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:73: error: unknown type name 'uint16_t'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      |                                                                         ^~~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:90: error: expected declaration specifiers or '...' before 'BG_FONT'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      |                                                                                          ^~~~~~~
+../Core/Inc/GFX_EnhancedFonts.h:51:112: error: unknown type name 'uint16_t'
+   51 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor);
+      |                                                                                                                ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:80:24: error: unknown type name 'uint8_t'
+   80 | void GFX_SetFont(const uint8_t* font_t);
+      |                        ^~~~~~~
+../Core/Inc/GFX_Color.h:81:22: error: unknown type name 'uint8_t'
+   81 | void GFX_SetFontSize(uint8_t size_t);
+      |                      ^~~~~~~
+../Core/Inc/GFX_Color.h:82:1: error: unknown type name 'uint8_t'
+   82 | uint8_t GFX_GetFontHeight(void);
+      | ^~~~~~~
+../Core/Inc/GFX_Color.h:83:1: error: unknown type name 'uint8_t'
+   83 | uint8_t GFX_GetFontWidth(void);
+      | ^~~~~~~
+../Core/Inc/GFX_Color.h:84:1: error: unknown type name 'uint8_t'
+   84 | uint8_t  GFX_GetFontSize(void);
+      | ^~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:85:43: note: in expansion of macro 'ColorType'
+   85 | void GFX_DrawChar(int x, int y, char chr, ColorType color);
+      |                                           ^~~~~~~~~
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:86:46: note: in expansion of macro 'ColorType'
+   86 | void GFX_DrawString(int x, int y, char* str, ColorType color);
+      |                                              ^~~~~~~~~
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:90:67: note: in expansion of macro 'ColorType'
+   90 | void GFX_DrawLine(int x_start, int y_start, int x_end, int y_end, ColorType color);
+      |                                                                   ^~~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:94:38: error: unknown type name 'uint16_t'
+   94 | void GFX_DrawRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color);
+      |                                      ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:2: warning: braces around scalar initializer
+ 2847 |  {8, 644},   /* / */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:2: note: (near initialization for 'arial_20ptDescriptors[14]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:6: warning: excess elements in scalar initializer
+ 2847 |  {8, 644},   /* / */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:6: note: (near initialization for 'arial_20ptDescriptors[14]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:2: warning: braces around scalar initializer
+ 2848 |  {13, 672},   /* 0 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:2: note: (near initialization for 'arial_20ptDescriptors[15]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:7: warning: excess elements in scalar initializer
+ 2848 |  {13, 672},   /* 0 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:7: note: (near initialization for 'arial_20ptDescriptors[15]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:2: warning: braces around scalar initializer
+ 2849 |  {9, 728},   /* 1 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:2: note: (near initialization for 'arial_20ptDescriptors[16]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:6: warning: excess elements in scalar initializer
+ 2849 |  {9, 728},   /* 1 */
+      |      ^~~
+../Core/Inc/GFX_Color.h:94:50: error: unknown type name 'uint16_t'
+   94 | void GFX_DrawRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color);
+      |                                                  ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:94:62: note: in expansion of macro 'ColorType'
+   94 | void GFX_DrawRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color);
+      |                                                              ^~~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:97:42: error: unknown type name 'uint16_t'
+   97 | void GFX_DrawFillRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color);
+      |                                          ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:6: note: (near initialization for 'arial_20ptDescriptors[16]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:2: warning: braces around scalar initializer
+ 2850 |  {13, 784},   /* 2 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:2: note: (near initialization for 'arial_20ptDescriptors[17]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:7: warning: excess elements in scalar initializer
+ 2850 |  {13, 784},   /* 2 */
+      |       ^~~
+../Core/Inc/GFX_Color.h:97:54: error: unknown type name 'uint16_t'
+   97 | void GFX_DrawFillRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color);
+      |                                                      ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:7: note: (near initialization for 'arial_20ptDescriptors[17]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:2: warning: braces around scalar initializer
+ 2851 |  {13, 840},   /* 3 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:2: note: (near initialization for 'arial_20ptDescriptors[18]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:7: warning: excess elements in scalar initializer
+ 2851 |  {13, 840},   /* 3 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:7: note: (near initialization for 'arial_20ptDescriptors[18]')
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:97:66: note: in expansion of macro 'ColorType'
+   97 | void GFX_DrawFillRectangle(int x, int y, uint16_t w, uint16_t h, ColorType color);
+      |                                                                  ^~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:2: warning: braces around scalar initializer
+ 2852 |  {14, 896},   /* 4 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:2: note: (near initialization for 'arial_20ptDescriptors[19]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:7: warning: excess elements in scalar initializer
+ 2852 |  {14, 896},   /* 4 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:7: note: (near initialization for 'arial_20ptDescriptors[19]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:2: warning: braces around scalar initializer
+ 2853 |  {13, 952},   /* 5 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:2: note: (near initialization for 'arial_20ptDescriptors[20]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:7: warning: excess elements in scalar initializer
+ 2853 |  {13, 952},   /* 5 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:7: note: (near initialization for 'arial_20ptDescriptors[20]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:2: warning: braces around scalar initializer
+ 2854 |  {13, 1008},   /* 6 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:2: note: (near initialization for 'arial_20ptDescriptors[21]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:7: warning: excess elements in scalar initializer
+ 2854 |  {13, 1008},   /* 6 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:7: note: (near initialization for 'arial_20ptDescriptors[21]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:2: warning: braces around scalar initializer
+ 2855 |  {13, 1064},   /* 7 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:2: note: (near initialization for 'arial_20ptDescriptors[22]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:7: warning: excess elements in scalar initializer
+ 2855 |  {13, 1064},   /* 7 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:7: note: (near initialization for 'arial_20ptDescriptors[22]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:2: warning: braces around scalar initializer
+ 2856 |  {13, 1120},   /* 8 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:2: note: (near initialization for 'arial_20ptDescriptors[23]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:7: warning: excess elements in scalar initializer
+ 2856 |  {13, 1120},   /* 8 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:7: note: (near initialization for 'arial_20ptDescriptors[23]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:2: warning: braces around scalar initializer
+ 2857 |  {13, 1176},   /* 9 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:2: note: (near initialization for 'arial_20ptDescriptors[24]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:7: warning: excess elements in scalar initializer
+ 2857 |  {13, 1176},   /* 9 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:7: note: (near initialization for 'arial_20ptDescriptors[24]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:2: warning: braces around scalar initializer
+ 2858 |  {4, 1232},   /* : */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:2: note: (near initialization for 'arial_20ptDescriptors[25]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:6: warning: excess elements in scalar initializer
+ 2858 |  {4, 1232},   /* : */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:6: note: (near initialization for 'arial_20ptDescriptors[25]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:2: warning: braces around scalar initializer
+ 2859 |  {4, 1260},   /* ; */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:2: note: (near initialization for 'arial_20ptDescriptors[26]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:6: warning: excess elements in scalar initializer
+ 2859 |  {4, 1260},   /* ; */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:6: note: (near initialization for 'arial_20ptDescriptors[26]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:2: warning: braces around scalar initializer
+ 2860 |  {13, 1288},   /* < */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:2: note: (near initialization for 'arial_20ptDescriptors[27]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:7: warning: excess elements in scalar initializer
+ 2860 |  {13, 1288},   /* < */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:7: note: (near initialization for 'arial_20ptDescriptors[27]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:2: warning: braces around scalar initializer
+ 2861 |  {14, 1344},   /* = */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:2: note: (near initialization for 'arial_20ptDescriptors[28]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:7: warning: excess elements in scalar initializer
+ 2861 |  {14, 1344},   /* = */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:7: note: (near initialization for 'arial_20ptDescriptors[28]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:2: warning: braces around scalar initializer
+ 2862 |  {13, 1400},   /* > */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:2: note: (near initialization for 'arial_20ptDescriptors[29]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:7: warning: excess elements in scalar initializer
+ 2862 |  {13, 1400},   /* > */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:7: note: (near initialization for 'arial_20ptDescriptors[29]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:2: warning: braces around scalar initializer
+ 2863 |  {14, 1456},   /* ? */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:2: note: (near initialization for 'arial_20ptDescriptors[30]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:7: warning: excess elements in scalar initializer
+ 2863 |  {14, 1456},   /* ? */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:7: note: (near initialization for 'arial_20ptDescriptors[30]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:2: warning: braces around scalar initializer
+ 2864 |  {25, 1512},   /* @ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:2: note: (near initialization for 'arial_20ptDescriptors[31]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:7: warning: excess elements in scalar initializer
+ 2864 |  {25, 1512},   /* @ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:7: note: (near initialization for 'arial_20ptDescriptors[31]')
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:100:37: error: unknown type name 'uint16_t'
+  100 | void GFX_DrawCircle(int x0, int y0, uint16_t r, ColorType color);
+      |                                     ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:100:49: note: in expansion of macro 'ColorType'
+  100 | void GFX_DrawCircle(int x0, int y0, uint16_t r, ColorType color);
+      |                                                 ^~~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:103:41: error: unknown type name 'uint16_t'
+  103 | void GFX_DrawFillCircle(int x0, int y0, uint16_t r, ColorType color);
+      |                                         ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:103:53: note: in expansion of macro 'ColorType'
+  103 | void GFX_DrawFillCircle(int x0, int y0, uint16_t r, ColorType color);
+      |                                                     ^~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:2: warning: braces around scalar initializer
+ 2865 |  {19, 1624},   /* A */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:2: note: (near initialization for 'arial_20ptDescriptors[32]')
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:106:43: error: unknown type name 'uint16_t'
+  106 | void GFX_DrawRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                           ^~~~~~~~
+../Core/Inc/GFX_Color.h:106:55: error: unknown type name 'uint16_t'
+  106 | void GFX_DrawRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                                       ^~~~~~~~
+../Core/Inc/GFX_Color.h:106:67: error: unknown type name 'uint16_t'
+  106 | void GFX_DrawRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                                                   ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:106:79: note: in expansion of macro 'ColorType'
+  106 | void GFX_DrawRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                                                               ^~~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:109:47: error: unknown type name 'uint16_t'
+  109 | void GFX_DrawFillRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                               ^~~~~~~~
+../Core/Inc/GFX_Color.h:109:59: error: unknown type name 'uint16_t'
+  109 | void GFX_DrawFillRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                                           ^~~~~~~~
+../Core/Inc/GFX_Color.h:109:71: error: unknown type name 'uint16_t'
+  109 | void GFX_DrawFillRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                                                       ^~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:109:83: note: in expansion of macro 'ColorType'
+  109 | void GFX_DrawFillRoundRectangle(int x, int y, uint16_t w, uint16_t h, uint16_t r, ColorType color);
+      |                                                                                   ^~~~~~~~~
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:112:71: note: in expansion of macro 'ColorType'
+  112 | void GFX_DrawTriangle(int x0, int y0, int x1, int y1, int x2, int y2, ColorType color);
+      |                                                                       ^~~~~~~~~
+../Core/Inc/GFX_Color.h:31:19: error: unknown type name 'uint16_t'
+   31 | #define ColorType uint16_t
+      |                   ^~~~~~~~
+../Core/Inc/GFX_Color.h:115:75: note: in expansion of macro 'ColorType'
+  115 | void GFX_DrawFillTriangle(int x0, int y0, int x1, int y1, int x2, int y2, ColorType color);
+      |                                                                           ^~~~~~~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:11:
+../Core/Inc/GFX_Color.h:122:36: error: unknown type name 'uint8_t'
+  122 | void GFX_Image(int x, int y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                    ^~~~~~~
+../Core/Inc/GFX_Color.h:122:50: error: unknown type name 'uint16_t'
+  122 | void GFX_Image(int x, int y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                                  ^~~~~~~~
+../Core/Inc/GFX_Color.h:122:62: error: unknown type name 'uint16_t'
+  122 | void GFX_Image(int x, int y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                                              ^~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:7: warning: excess elements in scalar initializer
+ 2865 |  {19, 1624},   /* A */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:7: note: (near initialization for 'arial_20ptDescriptors[32]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:2: warning: braces around scalar initializer
+ 2866 |  {17, 1708},   /* B */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:2: note: (near initialization for 'arial_20ptDescriptors[33]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:7: warning: excess elements in scalar initializer
+ 2866 |  {17, 1708},   /* B */
+      |       ^~~~
+In file included from ../Core/Src/GFX_EnhancedFonts.c:12:
+../Core/Inc/TFT_ILI9341.h:130:19: error: unknown type name 'SPI_HandleTypeDef'
+  130 | void ILI9341_Init(SPI_HandleTypeDef *hspi);
+      |                   ^~~~~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:7: note: (near initialization for 'arial_20ptDescriptors[33]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:2: warning: braces around scalar initializer
+ 2867 |  {18, 1792},   /* C */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:2: note: (near initialization for 'arial_20ptDescriptors[34]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:7: warning: excess elements in scalar initializer
+ 2867 |  {18, 1792},   /* C */
+      |       ^~~~
+../Core/Inc/TFT_ILI9341.h:131:25: error: unknown type name 'int16_t'
+  131 | void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
+      |                         ^~~~~~~
+../Core/Inc/TFT_ILI9341.h:131:36: error: unknown type name 'int16_t'
+  131 | void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
+      |                                    ^~~~~~~
+../Core/Inc/TFT_ILI9341.h:131:47: error: unknown type name 'uint16_t'
+  131 | void ILI9341_WritePixel(int16_t x, int16_t y, uint16_t color);
+      |                                               ^~~~~~~~
+../Core/Inc/TFT_ILI9341.h:132:27: error: unknown type name 'uint16_t'
+  132 | void ILI9341_ClearDisplay(uint16_t Color);
+      |                           ^~~~~~~~
+../Core/Inc/TFT_ILI9341.h:133:24: error: unknown type name 'uint16_t'
+  133 | void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                        ^~~~~~~~
+../Core/Inc/TFT_ILI9341.h:133:36: error: unknown type name 'uint16_t'
+  133 | void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                    ^~~~~~~~
+../Core/Inc/TFT_ILI9341.h:133:54: error: unknown type name 'uint8_t'
+  133 | void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                                      ^~~~~~~
+../Core/Inc/TFT_ILI9341.h:133:68: error: unknown type name 'uint16_t'
+  133 | void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                                                    ^~~~~~~~
+../Core/Inc/TFT_ILI9341.h:133:80: error: unknown type name 'uint16_t'
+  133 | void ILI9341_DrawImage(uint16_t x, uint16_t y, const uint8_t *img, uint16_t w, uint16_t h);
+      |                                                                                ^~~~~~~~
+../Core/Inc/TFT_ILI9341.h:134:26: error: unknown type name 'uint8_t'
+  134 | void ILI9341_SetRotation(uint8_t Rotation);;
+      |                          ^~~~~~~
+../Core/Src/GFX_EnhancedFonts.c:23:1: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+   23 | uint8_t EF_GetFontHeight(void)
+      | ^~~~~~~
+      | wint_t
+../Core/Src/GFX_EnhancedFonts.c:28:1: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+   28 | uint8_t EF_GetFontStartChar(void)
+      | ^~~~~~~
+      | wint_t
+../Core/Src/GFX_EnhancedFonts.c:33:1: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+   33 | uint8_t EF_GetFontEndChar(void)
+      | ^~~~~~~
+      | wint_t
+../Core/Src/GFX_EnhancedFonts.c:38:1: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+   38 | uint8_t EF_GetFontSpaceWidth(void)
+      | ^~~~~~~
+      | wint_t
+../Core/Src/GFX_EnhancedFonts.c:43:22: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+   43 | char EF_DecodePolish(uint8_t chMsb, uint8_t chLsb)
+      |                      ^~~~~~~
+      |                      wint_t
+../Core/Src/GFX_EnhancedFonts.c:43:37: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+   43 | char EF_DecodePolish(uint8_t chMsb, uint8_t chLsb)
+      |                                     ^~~~~~~
+      |                                     wint_t
+../Core/Src/GFX_EnhancedFonts.c:121:1: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+  121 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      | ^~~~~~~
+      | wint_t
+../Core/Src/GFX_EnhancedFonts.c:121:29: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  121 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                             ^~~~~~~~
+      |                             wint_t
+../Core/Src/GFX_EnhancedFonts.c:121:44: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  121 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                            ^~~~~~~~
+      |                                            wint_t
+../Core/Src/GFX_EnhancedFonts.c:121:59: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  121 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                           ^~~~~~~~
+      |                                                           wint_t
+../Core/Src/GFX_EnhancedFonts.c:121:76: error: expected declaration specifiers or '...' before 'BG_FONT'
+  121 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                                            ^~~~~~~
+../Core/Src/GFX_EnhancedFonts.c:121:98: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  121 | uint8_t EF_PutChar(char ch, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                                                                  ^~~~~~~~
+      |                                                                                                  wint_t
+../Core/Src/GFX_EnhancedFonts.c:202:1: error: unknown type name 'uint8_t'; did you mean 'wint_t'?
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      | ^~~~~~~
+      | wint_t
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:7: note: (near initialization for 'arial_20ptDescriptors[34]')
+../Core/Src/GFX_EnhancedFonts.c:202:28: error: unknown type name 'uint8_t'
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                            ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:2: warning: braces around scalar initializer
+ 2868 |  {17, 1876},   /* D */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:2: note: (near initialization for 'arial_20ptDescriptors[35]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:7: warning: excess elements in scalar initializer
+ 2868 |  {17, 1876},   /* D */
+      |       ^~~~
+../Core/Src/GFX_EnhancedFonts.c:202:43: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                           ^~~~~~~~
+      |                                           wint_t
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:7: note: (near initialization for 'arial_20ptDescriptors[35]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:2: warning: braces around scalar initializer
+ 2869 |  {15, 1960},   /* E */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:2: note: (near initialization for 'arial_20ptDescriptors[36]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:7: warning: excess elements in scalar initializer
+ 2869 |  {15, 1960},   /* E */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:7: note: (near initialization for 'arial_20ptDescriptors[36]')
+../Core/Src/GFX_EnhancedFonts.c:202:58: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                          ^~~~~~~~
+      |                                                          wint_t
+../Core/Src/GFX_EnhancedFonts.c:202:73: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                                         ^~~~~~~~
+      |                                                                         wint_t
+../Core/Src/GFX_EnhancedFonts.c:202:90: error: expected declaration specifiers or '...' before 'BG_FONT'
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                                                          ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:2: warning: braces around scalar initializer
+ 2870 |  {14, 2016},   /* F */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:2: note: (near initialization for 'arial_20ptDescriptors[37]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:7: warning: excess elements in scalar initializer
+ 2870 |  {14, 2016},   /* F */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:7: note: (near initialization for 'arial_20ptDescriptors[37]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:2: warning: braces around scalar initializer
+ 2871 |  {18, 2072},   /* G */
+      |  ^
+../Core/Src/GFX_EnhancedFonts.c:202:112: error: unknown type name 'uint16_t'; did you mean 'wint_t'?
+  202 | uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t Fcolor, BG_FONT Btransparent, uint16_t Bcolor)
+      |                                                                                                                ^~~~~~~~
+      |                                                                                                                wint_t
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:2: note: (near initialization for 'arial_20ptDescriptors[38]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:7: warning: excess elements in scalar initializer
+ 2871 |  {18, 2072},   /* G */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:7: note: (near initialization for 'arial_20ptDescriptors[38]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:2: warning: braces around scalar initializer
+ 2872 |  {16, 2156},   /* H */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:2: note: (near initialization for 'arial_20ptDescriptors[39]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:7: warning: excess elements in scalar initializer
+ 2872 |  {16, 2156},   /* H */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:7: note: (near initialization for 'arial_20ptDescriptors[39]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:2: warning: braces around scalar initializer
+ 2873 |  {4, 2212},   /* I */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:2: note: (near initialization for 'arial_20ptDescriptors[40]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:6: warning: excess elements in scalar initializer
+ 2873 |  {4, 2212},   /* I */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:6: note: (near initialization for 'arial_20ptDescriptors[40]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:2: warning: braces around scalar initializer
+ 2874 |  {13, 2240},   /* J */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:2: note: (near initialization for 'arial_20ptDescriptors[41]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:7: warning: excess elements in scalar initializer
+ 2874 |  {13, 2240},   /* J */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:7: note: (near initialization for 'arial_20ptDescriptors[41]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:2: warning: braces around scalar initializer
+ 2875 |  {17, 2296},   /* K */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:2: note: (near initialization for 'arial_20ptDescriptors[42]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:7: warning: excess elements in scalar initializer
+ 2875 |  {17, 2296},   /* K */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:7: note: (near initialization for 'arial_20ptDescriptors[42]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:2: warning: braces around scalar initializer
+ 2876 |  {14, 2380},   /* L */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:2: note: (near initialization for 'arial_20ptDescriptors[43]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:7: warning: excess elements in scalar initializer
+ 2876 |  {14, 2380},   /* L */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:7: note: (near initialization for 'arial_20ptDescriptors[43]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:2: warning: braces around scalar initializer
+ 2877 |  {19, 2436},   /* M */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:2: note: (near initialization for 'arial_20ptDescriptors[44]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:7: warning: excess elements in scalar initializer
+ 2877 |  {19, 2436},   /* M */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:7: note: (near initialization for 'arial_20ptDescriptors[44]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:2: warning: braces around scalar initializer
+ 2878 |  {16, 2520},   /* N */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:2: note: (near initialization for 'arial_20ptDescriptors[45]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:7: warning: excess elements in scalar initializer
+ 2878 |  {16, 2520},   /* N */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:7: note: (near initialization for 'arial_20ptDescriptors[45]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:2: warning: braces around scalar initializer
+ 2879 |  {19, 2576},   /* O */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:2: note: (near initialization for 'arial_20ptDescriptors[46]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:7: warning: excess elements in scalar initializer
+ 2879 |  {19, 2576},   /* O */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:7: note: (near initialization for 'arial_20ptDescriptors[46]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:2: warning: braces around scalar initializer
+ 2880 |  {15, 2660},   /* P */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:2: note: (near initialization for 'arial_20ptDescriptors[47]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:7: warning: excess elements in scalar initializer
+ 2880 |  {15, 2660},   /* P */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:7: note: (near initialization for 'arial_20ptDescriptors[47]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:2: warning: braces around scalar initializer
+ 2881 |  {20, 2716},   /* Q */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:2: note: (near initialization for 'arial_20ptDescriptors[48]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:7: warning: excess elements in scalar initializer
+ 2881 |  {20, 2716},   /* Q */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:7: note: (near initialization for 'arial_20ptDescriptors[48]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:2: warning: braces around scalar initializer
+ 2882 |  {18, 2800},   /* R */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:2: note: (near initialization for 'arial_20ptDescriptors[49]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:7: warning: excess elements in scalar initializer
+ 2882 |  {18, 2800},   /* R */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:7: note: (near initialization for 'arial_20ptDescriptors[49]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:2: warning: braces around scalar initializer
+ 2883 |  {16, 2884},   /* S */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:2: note: (near initialization for 'arial_20ptDescriptors[50]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:7: warning: excess elements in scalar initializer
+ 2883 |  {16, 2884},   /* S */
+      |       ^~~~
+make: *** [Core/Src/subdir.mk:54: Core/Src/GFX_EnhancedFonts.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:7: note: (near initialization for 'arial_20ptDescriptors[50]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:2: warning: braces around scalar initializer
+ 2884 |  {16, 2940},   /* T */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:2: note: (near initialization for 'arial_20ptDescriptors[51]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:7: warning: excess elements in scalar initializer
+ 2884 |  {16, 2940},   /* T */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:7: note: (near initialization for 'arial_20ptDescriptors[51]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:2: warning: braces around scalar initializer
+ 2885 |  {16, 2996},   /* U */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:2: note: (near initialization for 'arial_20ptDescriptors[52]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:7: warning: excess elements in scalar initializer
+ 2885 |  {16, 2996},   /* U */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:7: note: (near initialization for 'arial_20ptDescriptors[52]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:2: warning: braces around scalar initializer
+ 2886 |  {17, 3052},   /* V */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:2: note: (near initialization for 'arial_20ptDescriptors[53]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:7: warning: excess elements in scalar initializer
+ 2886 |  {17, 3052},   /* V */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:7: note: (near initialization for 'arial_20ptDescriptors[53]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:2: warning: braces around scalar initializer
+ 2887 |  {25, 3136},   /* W */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:2: note: (near initialization for 'arial_20ptDescriptors[54]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:7: warning: excess elements in scalar initializer
+ 2887 |  {25, 3136},   /* W */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:7: note: (near initialization for 'arial_20ptDescriptors[54]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:2: warning: braces around scalar initializer
+ 2888 |  {16, 3248},   /* X */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:2: note: (near initialization for 'arial_20ptDescriptors[55]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:7: warning: excess elements in scalar initializer
+ 2888 |  {16, 3248},   /* X */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:7: note: (near initialization for 'arial_20ptDescriptors[55]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:2: warning: braces around scalar initializer
+ 2889 |  {18, 3304},   /* Y */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:2: note: (near initialization for 'arial_20ptDescriptors[56]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:7: warning: excess elements in scalar initializer
+ 2889 |  {18, 3304},   /* Y */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:7: note: (near initialization for 'arial_20ptDescriptors[56]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:2: warning: braces around scalar initializer
+ 2890 |  {16, 3388},   /* Z */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:2: note: (near initialization for 'arial_20ptDescriptors[57]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:7: warning: excess elements in scalar initializer
+ 2890 |  {16, 3388},   /* Z */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:7: note: (near initialization for 'arial_20ptDescriptors[57]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:2: warning: braces around scalar initializer
+ 2891 |  {7, 3444},   /* [ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:2: note: (near initialization for 'arial_20ptDescriptors[58]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:6: warning: excess elements in scalar initializer
+ 2891 |  {7, 3444},   /* [ */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:6: note: (near initialization for 'arial_20ptDescriptors[58]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:2: warning: braces around scalar initializer
+ 2892 |  {8, 3472},   /* \ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:2: note: (near initialization for 'arial_20ptDescriptors[59]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:6: warning: excess elements in scalar initializer
+ 2892 |  {8, 3472},   /* \ */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:6: note: (near initialization for 'arial_20ptDescriptors[59]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:2: warning: braces around scalar initializer
+ 2893 |  {7, 3500},   /* ] */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:2: note: (near initialization for 'arial_20ptDescriptors[60]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:6: warning: excess elements in scalar initializer
+ 2893 |  {7, 3500},   /* ] */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:6: note: (near initialization for 'arial_20ptDescriptors[60]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:2: warning: braces around scalar initializer
+ 2894 |  {12, 3528},   /* ^ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:2: note: (near initialization for 'arial_20ptDescriptors[61]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:7: warning: excess elements in scalar initializer
+ 2894 |  {12, 3528},   /* ^ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:7: note: (near initialization for 'arial_20ptDescriptors[61]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:2: warning: braces around scalar initializer
+ 2895 |  {16, 3584},   /* _ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:2: note: (near initialization for 'arial_20ptDescriptors[62]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:7: warning: excess elements in scalar initializer
+ 2895 |  {16, 3584},   /* _ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:7: note: (near initialization for 'arial_20ptDescriptors[62]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:2: warning: braces around scalar initializer
+ 2896 |  {6, 3640},   /* ` */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:2: note: (near initialization for 'arial_20ptDescriptors[63]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:6: warning: excess elements in scalar initializer
+ 2896 |  {6, 3640},   /* ` */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:6: note: (near initialization for 'arial_20ptDescriptors[63]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:2: warning: braces around scalar initializer
+ 2897 |  {13, 3668},   /* a */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:2: note: (near initialization for 'arial_20ptDescriptors[64]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:7: warning: excess elements in scalar initializer
+ 2897 |  {13, 3668},   /* a */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:7: note: (near initialization for 'arial_20ptDescriptors[64]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:2: warning: braces around scalar initializer
+ 2898 |  {14, 3724},   /* b */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:2: note: (near initialization for 'arial_20ptDescriptors[65]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:7: warning: excess elements in scalar initializer
+ 2898 |  {14, 3724},   /* b */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:7: note: (near initialization for 'arial_20ptDescriptors[65]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:2: warning: braces around scalar initializer
+ 2899 |  {13, 3780},   /* c */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:2: note: (near initialization for 'arial_20ptDescriptors[66]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:7: warning: excess elements in scalar initializer
+ 2899 |  {13, 3780},   /* c */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:7: note: (near initialization for 'arial_20ptDescriptors[66]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:2: warning: braces around scalar initializer
+ 2900 |  {14, 3836},   /* d */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:2: note: (near initialization for 'arial_20ptDescriptors[67]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:7: warning: excess elements in scalar initializer
+ 2900 |  {14, 3836},   /* d */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:7: note: (near initialization for 'arial_20ptDescriptors[67]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:2: warning: braces around scalar initializer
+ 2901 |  {13, 3892},   /* e */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:2: note: (near initialization for 'arial_20ptDescriptors[68]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:7: warning: excess elements in scalar initializer
+ 2901 |  {13, 3892},   /* e */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:7: note: (near initialization for 'arial_20ptDescriptors[68]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:2: warning: braces around scalar initializer
+ 2902 |  {10, 3948},   /* f */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:2: note: (near initialization for 'arial_20ptDescriptors[69]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:7: warning: excess elements in scalar initializer
+ 2902 |  {10, 3948},   /* f */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:7: note: (near initialization for 'arial_20ptDescriptors[69]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:2: warning: braces around scalar initializer
+ 2903 |  {14, 4004},   /* g */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:2: note: (near initialization for 'arial_20ptDescriptors[70]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:7: warning: excess elements in scalar initializer
+ 2903 |  {14, 4004},   /* g */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:7: note: (near initialization for 'arial_20ptDescriptors[70]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:2: warning: braces around scalar initializer
+ 2904 |  {13, 4060},   /* h */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:2: note: (near initialization for 'arial_20ptDescriptors[71]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:7: warning: excess elements in scalar initializer
+ 2904 |  {13, 4060},   /* h */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:7: note: (near initialization for 'arial_20ptDescriptors[71]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:2: warning: braces around scalar initializer
+ 2905 |  {4, 4116},   /* i */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:2: note: (near initialization for 'arial_20ptDescriptors[72]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:6: warning: excess elements in scalar initializer
+ 2905 |  {4, 4116},   /* i */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:6: note: (near initialization for 'arial_20ptDescriptors[72]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:2: warning: braces around scalar initializer
+ 2906 |  {7, 4144},   /* j */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:2: note: (near initialization for 'arial_20ptDescriptors[73]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:6: warning: excess elements in scalar initializer
+ 2906 |  {7, 4144},   /* j */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:6: note: (near initialization for 'arial_20ptDescriptors[73]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:2: warning: braces around scalar initializer
+ 2907 |  {12, 4172},   /* k */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:2: note: (near initialization for 'arial_20ptDescriptors[74]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:7: warning: excess elements in scalar initializer
+ 2907 |  {12, 4172},   /* k */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:7: note: (near initialization for 'arial_20ptDescriptors[74]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:2: warning: braces around scalar initializer
+ 2908 |  {4, 4228},   /* l */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:2: note: (near initialization for 'arial_20ptDescriptors[75]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:6: warning: excess elements in scalar initializer
+ 2908 |  {4, 4228},   /* l */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:6: note: (near initialization for 'arial_20ptDescriptors[75]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:2: warning: braces around scalar initializer
+ 2909 |  {22, 4256},   /* m */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:2: note: (near initialization for 'arial_20ptDescriptors[76]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:7: warning: excess elements in scalar initializer
+ 2909 |  {22, 4256},   /* m */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:7: note: (near initialization for 'arial_20ptDescriptors[76]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:2: warning: braces around scalar initializer
+ 2910 |  {13, 4340},   /* n */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:2: note: (near initialization for 'arial_20ptDescriptors[77]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:7: warning: excess elements in scalar initializer
+ 2910 |  {13, 4340},   /* n */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:7: note: (near initialization for 'arial_20ptDescriptors[77]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:2: warning: braces around scalar initializer
+ 2911 |  {15, 4396},   /* o */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:2: note: (near initialization for 'arial_20ptDescriptors[78]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:7: warning: excess elements in scalar initializer
+ 2911 |  {15, 4396},   /* o */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:7: note: (near initialization for 'arial_20ptDescriptors[78]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:2: warning: braces around scalar initializer
+ 2912 |  {14, 4452},   /* p */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:2: note: (near initialization for 'arial_20ptDescriptors[79]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:7: warning: excess elements in scalar initializer
+ 2912 |  {14, 4452},   /* p */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:7: note: (near initialization for 'arial_20ptDescriptors[79]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:2: warning: braces around scalar initializer
+ 2913 |  {14, 4508},   /* q */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:2: note: (near initialization for 'arial_20ptDescriptors[80]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:7: warning: excess elements in scalar initializer
+ 2913 |  {14, 4508},   /* q */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:7: note: (near initialization for 'arial_20ptDescriptors[80]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:2: warning: braces around scalar initializer
+ 2914 |  {9, 4564},   /* r */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:2: note: (near initialization for 'arial_20ptDescriptors[81]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:6: warning: excess elements in scalar initializer
+ 2914 |  {9, 4564},   /* r */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:6: note: (near initialization for 'arial_20ptDescriptors[81]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:2: warning: braces around scalar initializer
+ 2915 |  {13, 4620},   /* s */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:2: note: (near initialization for 'arial_20ptDescriptors[82]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:7: warning: excess elements in scalar initializer
+ 2915 |  {13, 4620},   /* s */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:7: note: (near initialization for 'arial_20ptDescriptors[82]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:2: warning: braces around scalar initializer
+ 2916 |  {9, 4676},   /* t */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:2: note: (near initialization for 'arial_20ptDescriptors[83]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:6: warning: excess elements in scalar initializer
+ 2916 |  {9, 4676},   /* t */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:6: note: (near initialization for 'arial_20ptDescriptors[83]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:2: warning: braces around scalar initializer
+ 2917 |  {13, 4732},   /* u */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:2: note: (near initialization for 'arial_20ptDescriptors[84]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:7: warning: excess elements in scalar initializer
+ 2917 |  {13, 4732},   /* u */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:7: note: (near initialization for 'arial_20ptDescriptors[84]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:2: warning: braces around scalar initializer
+ 2918 |  {13, 4788},   /* v */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:2: note: (near initialization for 'arial_20ptDescriptors[85]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:7: warning: excess elements in scalar initializer
+ 2918 |  {13, 4788},   /* v */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:7: note: (near initialization for 'arial_20ptDescriptors[85]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:2: warning: braces around scalar initializer
+ 2919 |  {21, 4844},   /* w */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:2: note: (near initialization for 'arial_20ptDescriptors[86]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:7: warning: excess elements in scalar initializer
+ 2919 |  {21, 4844},   /* w */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:7: note: (near initialization for 'arial_20ptDescriptors[86]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:2: warning: braces around scalar initializer
+ 2920 |  {13, 4928},   /* x */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:2: note: (near initialization for 'arial_20ptDescriptors[87]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:7: warning: excess elements in scalar initializer
+ 2920 |  {13, 4928},   /* x */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:7: note: (near initialization for 'arial_20ptDescriptors[87]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:2: warning: braces around scalar initializer
+ 2921 |  {15, 4984},   /* y */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:2: note: (near initialization for 'arial_20ptDescriptors[88]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:7: warning: excess elements in scalar initializer
+ 2921 |  {15, 4984},   /* y */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:7: note: (near initialization for 'arial_20ptDescriptors[88]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:2: warning: braces around scalar initializer
+ 2922 |  {12, 5040},   /* z */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:2: note: (near initialization for 'arial_20ptDescriptors[89]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:7: warning: excess elements in scalar initializer
+ 2922 |  {12, 5040},   /* z */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:7: note: (near initialization for 'arial_20ptDescriptors[89]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:2: warning: braces around scalar initializer
+ 2923 |  {9, 5096},   /* { */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:2: note: (near initialization for 'arial_20ptDescriptors[90]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:6: warning: excess elements in scalar initializer
+ 2923 |  {9, 5096},   /* { */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:6: note: (near initialization for 'arial_20ptDescriptors[90]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:2: warning: braces around scalar initializer
+ 2924 |  {3, 5152},   /* | */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:2: note: (near initialization for 'arial_20ptDescriptors[91]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:6: warning: excess elements in scalar initializer
+ 2924 |  {3, 5152},   /* | */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:6: note: (near initialization for 'arial_20ptDescriptors[91]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:2: warning: braces around scalar initializer
+ 2925 |  {9, 5180},   /* } */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:2: note: (near initialization for 'arial_20ptDescriptors[92]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:6: warning: excess elements in scalar initializer
+ 2925 |  {9, 5180},   /* } */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:6: note: (near initialization for 'arial_20ptDescriptors[92]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:2: warning: braces around scalar initializer
+ 2926 |  {14, 5236},   /* ~ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:2: note: (near initialization for 'arial_20ptDescriptors[93]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:7: warning: excess elements in scalar initializer
+ 2926 |  {14, 5236},   /* ~ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:7: note: (near initialization for 'arial_20ptDescriptors[93]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2930:7: error: unknown type name 'FONT_INFO'
+ 2930 | const FONT_INFO arial_20ptFontInfo =
+      |       ^~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2933:2: warning: excess elements in scalar initializer
+ 2933 |  '!', /*  Start character */
+      |  ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2933:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2934:2: warning: excess elements in scalar initializer
+ 2934 |  '~', /*  End character */
+      |  ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2934:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2935:2: warning: excess elements in scalar initializer
+ 2935 |  2, /*  Width, in pixels, of space character */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2935:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2936:2: warning: excess elements in scalar initializer
+ 2936 |  arial_20ptDescriptors, /*  Character descriptor array */
+      |  ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2936:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2937:2: warning: excess elements in scalar initializer
+ 2937 |  arial_20ptBitmaps, /*  Character bitmap array */
+      |  ^~~~~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2937:2: note: (near initialization for 'arial_20ptFontInfo')
+make: *** [Core/Src/EnhancedFonts/subdir.mk:19: Core/Src/EnhancedFonts/Arial_20pts_Bold.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:09:57 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/EnhancedFonts/Arial_20pts_Bold.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/EnhancedFonts/Arial_20pts_Bold.d" -MT"Core/Src/EnhancedFonts/Arial_20pts_Bold.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/EnhancedFonts/Arial_20pts_Bold.o"
+arm-none-eabi-gcc "../Core/Src/GFX_EnhancedFonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_EnhancedFonts.d" -MT"Core/Src/GFX_EnhancedFonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_EnhancedFonts.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:6:7: error: unknown type name 'uint8_t'
+    6 | const uint8_t arial_20ptBitmaps[] =
+      |       ^~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2831:7: error: unknown type name 'FONT_CHAR_INFO'
+ 2831 | const FONT_CHAR_INFO arial_20ptDescriptors[] =
+      |       ^~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:2: warning: braces around scalar initializer
+ 2833 |  {4, 0},   /* ! */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:2: note: (near initialization for 'arial_20ptDescriptors[0]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:6: warning: excess elements in scalar initializer
+ 2833 |  {4, 0},   /* ! */
+      |      ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2833:6: note: (near initialization for 'arial_20ptDescriptors[0]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:2: warning: braces around scalar initializer
+ 2834 |  {10, 28},   /* " */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:2: note: (near initialization for 'arial_20ptDescriptors[1]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:7: warning: excess elements in scalar initializer
+ 2834 |  {10, 28},   /* " */
+      |       ^~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2834:7: note: (near initialization for 'arial_20ptDescriptors[1]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:2: warning: braces around scalar initializer
+ 2835 |  {15, 84},   /* # */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:2: note: (near initialization for 'arial_20ptDescriptors[2]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:7: warning: excess elements in scalar initializer
+ 2835 |  {15, 84},   /* # */
+      |       ^~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2835:7: note: (near initialization for 'arial_20ptDescriptors[2]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:2: warning: braces around scalar initializer
+ 2836 |  {12, 140},   /* $ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:2: note: (near initialization for 'arial_20ptDescriptors[3]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:7: warning: excess elements in scalar initializer
+ 2836 |  {12, 140},   /* $ */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2836:7: note: (near initialization for 'arial_20ptDescriptors[3]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:2: warning: braces around scalar initializer
+ 2837 |  {22, 196},   /* % */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:2: note: (near initialization for 'arial_20ptDescriptors[4]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:7: warning: excess elements in scalar initializer
+ 2837 |  {22, 196},   /* % */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2837:7: note: (near initialization for 'arial_20ptDescriptors[4]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:2: warning: braces around scalar initializer
+ 2838 |  {18, 280},   /* & */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:2: note: (near initialization for 'arial_20ptDescriptors[5]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:7: warning: excess elements in scalar initializer
+ 2838 |  {18, 280},   /* & */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2838:7: note: (near initialization for 'arial_20ptDescriptors[5]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:2: warning: braces around scalar initializer
+ 2839 |  {4, 364},   /* ' */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:2: note: (near initialization for 'arial_20ptDescriptors[6]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:6: warning: excess elements in scalar initializer
+ 2839 |  {4, 364},   /* ' */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2839:6: note: (near initialization for 'arial_20ptDescriptors[6]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:2: warning: braces around scalar initializer
+ 2840 |  {7, 392},   /* ( */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:2: note: (near initialization for 'arial_20ptDescriptors[7]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:6: warning: excess elements in scalar initializer
+ 2840 |  {7, 392},   /* ( */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2840:6: note: (near initialization for 'arial_20ptDescriptors[7]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:2: warning: braces around scalar initializer
+ 2841 |  {7, 420},   /* ) */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:2: note: (near initialization for 'arial_20ptDescriptors[8]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:6: warning: excess elements in scalar initializer
+ 2841 |  {7, 420},   /* ) */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2841:6: note: (near initialization for 'arial_20ptDescriptors[8]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:2: warning: braces around scalar initializer
+ 2842 |  {10, 448},   /* * */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:2: note: (near initialization for 'arial_20ptDescriptors[9]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:7: warning: excess elements in scalar initializer
+ 2842 |  {10, 448},   /* * */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2842:7: note: (near initialization for 'arial_20ptDescriptors[9]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:2: warning: braces around scalar initializer
+ 2843 |  {14, 504},   /* + */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:2: note: (near initialization for 'arial_20ptDescriptors[10]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:7: warning: excess elements in scalar initializer
+ 2843 |  {14, 504},   /* + */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2843:7: note: (near initialization for 'arial_20ptDescriptors[10]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:2: warning: braces around scalar initializer
+ 2844 |  {4, 560},   /* , */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:2: note: (near initialization for 'arial_20ptDescriptors[11]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:6: warning: excess elements in scalar initializer
+ 2844 |  {4, 560},   /* , */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2844:6: note: (near initialization for 'arial_20ptDescriptors[11]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:2: warning: braces around scalar initializer
+ 2845 |  {8, 588},   /* - */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:2: note: (near initialization for 'arial_20ptDescriptors[12]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:6: warning: excess elements in scalar initializer
+ 2845 |  {8, 588},   /* - */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2845:6: note: (near initialization for 'arial_20ptDescriptors[12]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:2: warning: braces around scalar initializer
+ 2846 |  {4, 616},   /* . */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:2: note: (near initialization for 'arial_20ptDescriptors[13]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:6: warning: excess elements in scalar initializer
+ 2846 |  {4, 616},   /* . */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2846:6: note: (near initialization for 'arial_20ptDescriptors[13]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:2: warning: braces around scalar initializer
+ 2847 |  {8, 644},   /* / */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:2: note: (near initialization for 'arial_20ptDescriptors[14]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:6: warning: excess elements in scalar initializer
+ 2847 |  {8, 644},   /* / */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2847:6: note: (near initialization for 'arial_20ptDescriptors[14]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:2: warning: braces around scalar initializer
+ 2848 |  {13, 672},   /* 0 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:2: note: (near initialization for 'arial_20ptDescriptors[15]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:7: warning: excess elements in scalar initializer
+ 2848 |  {13, 672},   /* 0 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2848:7: note: (near initialization for 'arial_20ptDescriptors[15]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:2: warning: braces around scalar initializer
+ 2849 |  {9, 728},   /* 1 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:2: note: (near initialization for 'arial_20ptDescriptors[16]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:6: warning: excess elements in scalar initializer
+ 2849 |  {9, 728},   /* 1 */
+      |      ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2849:6: note: (near initialization for 'arial_20ptDescriptors[16]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:2: warning: braces around scalar initializer
+ 2850 |  {13, 784},   /* 2 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:2: note: (near initialization for 'arial_20ptDescriptors[17]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:7: warning: excess elements in scalar initializer
+ 2850 |  {13, 784},   /* 2 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2850:7: note: (near initialization for 'arial_20ptDescriptors[17]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:2: warning: braces around scalar initializer
+ 2851 |  {13, 840},   /* 3 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:2: note: (near initialization for 'arial_20ptDescriptors[18]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:7: warning: excess elements in scalar initializer
+ 2851 |  {13, 840},   /* 3 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2851:7: note: (near initialization for 'arial_20ptDescriptors[18]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:2: warning: braces around scalar initializer
+ 2852 |  {14, 896},   /* 4 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:2: note: (near initialization for 'arial_20ptDescriptors[19]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:7: warning: excess elements in scalar initializer
+ 2852 |  {14, 896},   /* 4 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2852:7: note: (near initialization for 'arial_20ptDescriptors[19]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:2: warning: braces around scalar initializer
+ 2853 |  {13, 952},   /* 5 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:2: note: (near initialization for 'arial_20ptDescriptors[20]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:7: warning: excess elements in scalar initializer
+ 2853 |  {13, 952},   /* 5 */
+      |       ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2853:7: note: (near initialization for 'arial_20ptDescriptors[20]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:2: warning: braces around scalar initializer
+ 2854 |  {13, 1008},   /* 6 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:2: note: (near initialization for 'arial_20ptDescriptors[21]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:7: warning: excess elements in scalar initializer
+ 2854 |  {13, 1008},   /* 6 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2854:7: note: (near initialization for 'arial_20ptDescriptors[21]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:2: warning: braces around scalar initializer
+ 2855 |  {13, 1064},   /* 7 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:2: note: (near initialization for 'arial_20ptDescriptors[22]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:7: warning: excess elements in scalar initializer
+ 2855 |  {13, 1064},   /* 7 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2855:7: note: (near initialization for 'arial_20ptDescriptors[22]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:2: warning: braces around scalar initializer
+ 2856 |  {13, 1120},   /* 8 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:2: note: (near initialization for 'arial_20ptDescriptors[23]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:7: warning: excess elements in scalar initializer
+ 2856 |  {13, 1120},   /* 8 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2856:7: note: (near initialization for 'arial_20ptDescriptors[23]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:2: warning: braces around scalar initializer
+ 2857 |  {13, 1176},   /* 9 */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:2: note: (near initialization for 'arial_20ptDescriptors[24]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:7: warning: excess elements in scalar initializer
+ 2857 |  {13, 1176},   /* 9 */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2857:7: note: (near initialization for 'arial_20ptDescriptors[24]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:2: warning: braces around scalar initializer
+ 2858 |  {4, 1232},   /* : */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:2: note: (near initialization for 'arial_20ptDescriptors[25]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:6: warning: excess elements in scalar initializer
+ 2858 |  {4, 1232},   /* : */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2858:6: note: (near initialization for 'arial_20ptDescriptors[25]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:2: warning: braces around scalar initializer
+ 2859 |  {4, 1260},   /* ; */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:2: note: (near initialization for 'arial_20ptDescriptors[26]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:6: warning: excess elements in scalar initializer
+ 2859 |  {4, 1260},   /* ; */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2859:6: note: (near initialization for 'arial_20ptDescriptors[26]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:2: warning: braces around scalar initializer
+ 2860 |  {13, 1288},   /* < */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:2: note: (near initialization for 'arial_20ptDescriptors[27]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:7: warning: excess elements in scalar initializer
+ 2860 |  {13, 1288},   /* < */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2860:7: note: (near initialization for 'arial_20ptDescriptors[27]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:2: warning: braces around scalar initializer
+ 2861 |  {14, 1344},   /* = */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:2: note: (near initialization for 'arial_20ptDescriptors[28]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:7: warning: excess elements in scalar initializer
+ 2861 |  {14, 1344},   /* = */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2861:7: note: (near initialization for 'arial_20ptDescriptors[28]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:2: warning: braces around scalar initializer
+ 2862 |  {13, 1400},   /* > */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:2: note: (near initialization for 'arial_20ptDescriptors[29]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:7: warning: excess elements in scalar initializer
+ 2862 |  {13, 1400},   /* > */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2862:7: note: (near initialization for 'arial_20ptDescriptors[29]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:2: warning: braces around scalar initializer
+ 2863 |  {14, 1456},   /* ? */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:2: note: (near initialization for 'arial_20ptDescriptors[30]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:7: warning: excess elements in scalar initializer
+ 2863 |  {14, 1456},   /* ? */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2863:7: note: (near initialization for 'arial_20ptDescriptors[30]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:2: warning: braces around scalar initializer
+ 2864 |  {25, 1512},   /* @ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:2: note: (near initialization for 'arial_20ptDescriptors[31]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:7: warning: excess elements in scalar initializer
+ 2864 |  {25, 1512},   /* @ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2864:7: note: (near initialization for 'arial_20ptDescriptors[31]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:2: warning: braces around scalar initializer
+ 2865 |  {19, 1624},   /* A */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:2: note: (near initialization for 'arial_20ptDescriptors[32]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:7: warning: excess elements in scalar initializer
+ 2865 |  {19, 1624},   /* A */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2865:7: note: (near initialization for 'arial_20ptDescriptors[32]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:2: warning: braces around scalar initializer
+ 2866 |  {17, 1708},   /* B */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:2: note: (near initialization for 'arial_20ptDescriptors[33]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:7: warning: excess elements in scalar initializer
+ 2866 |  {17, 1708},   /* B */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2866:7: note: (near initialization for 'arial_20ptDescriptors[33]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:2: warning: braces around scalar initializer
+ 2867 |  {18, 1792},   /* C */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:2: note: (near initialization for 'arial_20ptDescriptors[34]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:7: warning: excess elements in scalar initializer
+ 2867 |  {18, 1792},   /* C */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2867:7: note: (near initialization for 'arial_20ptDescriptors[34]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:2: warning: braces around scalar initializer
+ 2868 |  {17, 1876},   /* D */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:2: note: (near initialization for 'arial_20ptDescriptors[35]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:7: warning: excess elements in scalar initializer
+ 2868 |  {17, 1876},   /* D */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2868:7: note: (near initialization for 'arial_20ptDescriptors[35]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:2: warning: braces around scalar initializer
+ 2869 |  {15, 1960},   /* E */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:2: note: (near initialization for 'arial_20ptDescriptors[36]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:7: warning: excess elements in scalar initializer
+ 2869 |  {15, 1960},   /* E */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2869:7: note: (near initialization for 'arial_20ptDescriptors[36]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:2: warning: braces around scalar initializer
+ 2870 |  {14, 2016},   /* F */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:2: note: (near initialization for 'arial_20ptDescriptors[37]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:7: warning: excess elements in scalar initializer
+ 2870 |  {14, 2016},   /* F */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2870:7: note: (near initialization for 'arial_20ptDescriptors[37]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:2: warning: braces around scalar initializer
+ 2871 |  {18, 2072},   /* G */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:2: note: (near initialization for 'arial_20ptDescriptors[38]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:7: warning: excess elements in scalar initializer
+ 2871 |  {18, 2072},   /* G */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2871:7: note: (near initialization for 'arial_20ptDescriptors[38]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:2: warning: braces around scalar initializer
+ 2872 |  {16, 2156},   /* H */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:2: note: (near initialization for 'arial_20ptDescriptors[39]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:7: warning: excess elements in scalar initializer
+ 2872 |  {16, 2156},   /* H */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2872:7: note: (near initialization for 'arial_20ptDescriptors[39]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:2: warning: braces around scalar initializer
+ 2873 |  {4, 2212},   /* I */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:2: note: (near initialization for 'arial_20ptDescriptors[40]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:6: warning: excess elements in scalar initializer
+ 2873 |  {4, 2212},   /* I */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2873:6: note: (near initialization for 'arial_20ptDescriptors[40]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:2: warning: braces around scalar initializer
+ 2874 |  {13, 2240},   /* J */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:2: note: (near initialization for 'arial_20ptDescriptors[41]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:7: warning: excess elements in scalar initializer
+ 2874 |  {13, 2240},   /* J */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2874:7: note: (near initialization for 'arial_20ptDescriptors[41]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:2: warning: braces around scalar initializer
+ 2875 |  {17, 2296},   /* K */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:2: note: (near initialization for 'arial_20ptDescriptors[42]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:7: warning: excess elements in scalar initializer
+ 2875 |  {17, 2296},   /* K */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2875:7: note: (near initialization for 'arial_20ptDescriptors[42]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:2: warning: braces around scalar initializer
+ 2876 |  {14, 2380},   /* L */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:2: note: (near initialization for 'arial_20ptDescriptors[43]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:7: warning: excess elements in scalar initializer
+ 2876 |  {14, 2380},   /* L */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2876:7: note: (near initialization for 'arial_20ptDescriptors[43]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:2: warning: braces around scalar initializer
+ 2877 |  {19, 2436},   /* M */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:2: note: (near initialization for 'arial_20ptDescriptors[44]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:7: warning: excess elements in scalar initializer
+ 2877 |  {19, 2436},   /* M */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2877:7: note: (near initialization for 'arial_20ptDescriptors[44]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:2: warning: braces around scalar initializer
+ 2878 |  {16, 2520},   /* N */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:2: note: (near initialization for 'arial_20ptDescriptors[45]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:7: warning: excess elements in scalar initializer
+ 2878 |  {16, 2520},   /* N */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2878:7: note: (near initialization for 'arial_20ptDescriptors[45]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:2: warning: braces around scalar initializer
+ 2879 |  {19, 2576},   /* O */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:2: note: (near initialization for 'arial_20ptDescriptors[46]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:7: warning: excess elements in scalar initializer
+ 2879 |  {19, 2576},   /* O */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2879:7: note: (near initialization for 'arial_20ptDescriptors[46]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:2: warning: braces around scalar initializer
+ 2880 |  {15, 2660},   /* P */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:2: note: (near initialization for 'arial_20ptDescriptors[47]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:7: warning: excess elements in scalar initializer
+ 2880 |  {15, 2660},   /* P */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2880:7: note: (near initialization for 'arial_20ptDescriptors[47]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:2: warning: braces around scalar initializer
+ 2881 |  {20, 2716},   /* Q */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:2: note: (near initialization for 'arial_20ptDescriptors[48]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:7: warning: excess elements in scalar initializer
+ 2881 |  {20, 2716},   /* Q */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2881:7: note: (near initialization for 'arial_20ptDescriptors[48]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:2: warning: braces around scalar initializer
+ 2882 |  {18, 2800},   /* R */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:2: note: (near initialization for 'arial_20ptDescriptors[49]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:7: warning: excess elements in scalar initializer
+ 2882 |  {18, 2800},   /* R */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2882:7: note: (near initialization for 'arial_20ptDescriptors[49]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:2: warning: braces around scalar initializer
+ 2883 |  {16, 2884},   /* S */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:2: note: (near initialization for 'arial_20ptDescriptors[50]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:7: warning: excess elements in scalar initializer
+ 2883 |  {16, 2884},   /* S */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2883:7: note: (near initialization for 'arial_20ptDescriptors[50]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:2: warning: braces around scalar initializer
+ 2884 |  {16, 2940},   /* T */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:2: note: (near initialization for 'arial_20ptDescriptors[51]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:7: warning: excess elements in scalar initializer
+ 2884 |  {16, 2940},   /* T */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2884:7: note: (near initialization for 'arial_20ptDescriptors[51]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:2: warning: braces around scalar initializer
+ 2885 |  {16, 2996},   /* U */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:2: note: (near initialization for 'arial_20ptDescriptors[52]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:7: warning: excess elements in scalar initializer
+ 2885 |  {16, 2996},   /* U */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2885:7: note: (near initialization for 'arial_20ptDescriptors[52]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:2: warning: braces around scalar initializer
+ 2886 |  {17, 3052},   /* V */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:2: note: (near initialization for 'arial_20ptDescriptors[53]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:7: warning: excess elements in scalar initializer
+ 2886 |  {17, 3052},   /* V */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2886:7: note: (near initialization for 'arial_20ptDescriptors[53]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:2: warning: braces around scalar initializer
+ 2887 |  {25, 3136},   /* W */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:2: note: (near initialization for 'arial_20ptDescriptors[54]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:7: warning: excess elements in scalar initializer
+ 2887 |  {25, 3136},   /* W */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2887:7: note: (near initialization for 'arial_20ptDescriptors[54]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:2: warning: braces around scalar initializer
+ 2888 |  {16, 3248},   /* X */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:2: note: (near initialization for 'arial_20ptDescriptors[55]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:7: warning: excess elements in scalar initializer
+ 2888 |  {16, 3248},   /* X */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2888:7: note: (near initialization for 'arial_20ptDescriptors[55]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:2: warning: braces around scalar initializer
+ 2889 |  {18, 3304},   /* Y */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:2: note: (near initialization for 'arial_20ptDescriptors[56]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:7: warning: excess elements in scalar initializer
+ 2889 |  {18, 3304},   /* Y */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2889:7: note: (near initialization for 'arial_20ptDescriptors[56]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:2: warning: braces around scalar initializer
+ 2890 |  {16, 3388},   /* Z */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:2: note: (near initialization for 'arial_20ptDescriptors[57]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:7: warning: excess elements in scalar initializer
+ 2890 |  {16, 3388},   /* Z */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2890:7: note: (near initialization for 'arial_20ptDescriptors[57]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:2: warning: braces around scalar initializer
+ 2891 |  {7, 3444},   /* [ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:2: note: (near initialization for 'arial_20ptDescriptors[58]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:6: warning: excess elements in scalar initializer
+ 2891 |  {7, 3444},   /* [ */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2891:6: note: (near initialization for 'arial_20ptDescriptors[58]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:2: warning: braces around scalar initializer
+ 2892 |  {8, 3472},   /* \ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:2: note: (near initialization for 'arial_20ptDescriptors[59]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:6: warning: excess elements in scalar initializer
+ 2892 |  {8, 3472},   /* \ */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2892:6: note: (near initialization for 'arial_20ptDescriptors[59]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:2: warning: braces around scalar initializer
+ 2893 |  {7, 3500},   /* ] */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:2: note: (near initialization for 'arial_20ptDescriptors[60]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:6: warning: excess elements in scalar initializer
+ 2893 |  {7, 3500},   /* ] */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2893:6: note: (near initialization for 'arial_20ptDescriptors[60]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:2: warning: braces around scalar initializer
+ 2894 |  {12, 3528},   /* ^ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:2: note: (near initialization for 'arial_20ptDescriptors[61]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:7: warning: excess elements in scalar initializer
+ 2894 |  {12, 3528},   /* ^ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2894:7: note: (near initialization for 'arial_20ptDescriptors[61]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:2: warning: braces around scalar initializer
+ 2895 |  {16, 3584},   /* _ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:2: note: (near initialization for 'arial_20ptDescriptors[62]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:7: warning: excess elements in scalar initializer
+ 2895 |  {16, 3584},   /* _ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2895:7: note: (near initialization for 'arial_20ptDescriptors[62]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:2: warning: braces around scalar initializer
+ 2896 |  {6, 3640},   /* ` */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:2: note: (near initialization for 'arial_20ptDescriptors[63]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:6: warning: excess elements in scalar initializer
+ 2896 |  {6, 3640},   /* ` */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2896:6: note: (near initialization for 'arial_20ptDescriptors[63]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:2: warning: braces around scalar initializer
+ 2897 |  {13, 3668},   /* a */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:2: note: (near initialization for 'arial_20ptDescriptors[64]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:7: warning: excess elements in scalar initializer
+ 2897 |  {13, 3668},   /* a */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2897:7: note: (near initialization for 'arial_20ptDescriptors[64]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:2: warning: braces around scalar initializer
+ 2898 |  {14, 3724},   /* b */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:2: note: (near initialization for 'arial_20ptDescriptors[65]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:7: warning: excess elements in scalar initializer
+ 2898 |  {14, 3724},   /* b */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2898:7: note: (near initialization for 'arial_20ptDescriptors[65]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:2: warning: braces around scalar initializer
+ 2899 |  {13, 3780},   /* c */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:2: note: (near initialization for 'arial_20ptDescriptors[66]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:7: warning: excess elements in scalar initializer
+ 2899 |  {13, 3780},   /* c */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2899:7: note: (near initialization for 'arial_20ptDescriptors[66]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:2: warning: braces around scalar initializer
+ 2900 |  {14, 3836},   /* d */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:2: note: (near initialization for 'arial_20ptDescriptors[67]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:7: warning: excess elements in scalar initializer
+ 2900 |  {14, 3836},   /* d */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2900:7: note: (near initialization for 'arial_20ptDescriptors[67]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:2: warning: braces around scalar initializer
+ 2901 |  {13, 3892},   /* e */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:2: note: (near initialization for 'arial_20ptDescriptors[68]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:7: warning: excess elements in scalar initializer
+ 2901 |  {13, 3892},   /* e */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2901:7: note: (near initialization for 'arial_20ptDescriptors[68]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:2: warning: braces around scalar initializer
+ 2902 |  {10, 3948},   /* f */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:2: note: (near initialization for 'arial_20ptDescriptors[69]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:7: warning: excess elements in scalar initializer
+ 2902 |  {10, 3948},   /* f */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2902:7: note: (near initialization for 'arial_20ptDescriptors[69]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:2: warning: braces around scalar initializer
+ 2903 |  {14, 4004},   /* g */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:2: note: (near initialization for 'arial_20ptDescriptors[70]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:7: warning: excess elements in scalar initializer
+ 2903 |  {14, 4004},   /* g */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2903:7: note: (near initialization for 'arial_20ptDescriptors[70]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:2: warning: braces around scalar initializer
+ 2904 |  {13, 4060},   /* h */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:2: note: (near initialization for 'arial_20ptDescriptors[71]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:7: warning: excess elements in scalar initializer
+ 2904 |  {13, 4060},   /* h */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2904:7: note: (near initialization for 'arial_20ptDescriptors[71]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:2: warning: braces around scalar initializer
+ 2905 |  {4, 4116},   /* i */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:2: note: (near initialization for 'arial_20ptDescriptors[72]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:6: warning: excess elements in scalar initializer
+ 2905 |  {4, 4116},   /* i */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2905:6: note: (near initialization for 'arial_20ptDescriptors[72]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:2: warning: braces around scalar initializer
+ 2906 |  {7, 4144},   /* j */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:2: note: (near initialization for 'arial_20ptDescriptors[73]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:6: warning: excess elements in scalar initializer
+ 2906 |  {7, 4144},   /* j */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2906:6: note: (near initialization for 'arial_20ptDescriptors[73]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:2: warning: braces around scalar initializer
+ 2907 |  {12, 4172},   /* k */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:2: note: (near initialization for 'arial_20ptDescriptors[74]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:7: warning: excess elements in scalar initializer
+ 2907 |  {12, 4172},   /* k */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2907:7: note: (near initialization for 'arial_20ptDescriptors[74]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:2: warning: braces around scalar initializer
+ 2908 |  {4, 4228},   /* l */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:2: note: (near initialization for 'arial_20ptDescriptors[75]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:6: warning: excess elements in scalar initializer
+ 2908 |  {4, 4228},   /* l */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2908:6: note: (near initialization for 'arial_20ptDescriptors[75]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:2: warning: braces around scalar initializer
+ 2909 |  {22, 4256},   /* m */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:2: note: (near initialization for 'arial_20ptDescriptors[76]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:7: warning: excess elements in scalar initializer
+ 2909 |  {22, 4256},   /* m */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2909:7: note: (near initialization for 'arial_20ptDescriptors[76]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:2: warning: braces around scalar initializer
+ 2910 |  {13, 4340},   /* n */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:2: note: (near initialization for 'arial_20ptDescriptors[77]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:7: warning: excess elements in scalar initializer
+ 2910 |  {13, 4340},   /* n */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2910:7: note: (near initialization for 'arial_20ptDescriptors[77]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:2: warning: braces around scalar initializer
+ 2911 |  {15, 4396},   /* o */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:2: note: (near initialization for 'arial_20ptDescriptors[78]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:7: warning: excess elements in scalar initializer
+ 2911 |  {15, 4396},   /* o */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2911:7: note: (near initialization for 'arial_20ptDescriptors[78]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:2: warning: braces around scalar initializer
+ 2912 |  {14, 4452},   /* p */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:2: note: (near initialization for 'arial_20ptDescriptors[79]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:7: warning: excess elements in scalar initializer
+ 2912 |  {14, 4452},   /* p */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2912:7: note: (near initialization for 'arial_20ptDescriptors[79]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:2: warning: braces around scalar initializer
+ 2913 |  {14, 4508},   /* q */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:2: note: (near initialization for 'arial_20ptDescriptors[80]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:7: warning: excess elements in scalar initializer
+ 2913 |  {14, 4508},   /* q */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2913:7: note: (near initialization for 'arial_20ptDescriptors[80]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:2: warning: braces around scalar initializer
+ 2914 |  {9, 4564},   /* r */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:2: note: (near initialization for 'arial_20ptDescriptors[81]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:6: warning: excess elements in scalar initializer
+ 2914 |  {9, 4564},   /* r */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2914:6: note: (near initialization for 'arial_20ptDescriptors[81]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:2: warning: braces around scalar initializer
+ 2915 |  {13, 4620},   /* s */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:2: note: (near initialization for 'arial_20ptDescriptors[82]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:7: warning: excess elements in scalar initializer
+ 2915 |  {13, 4620},   /* s */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2915:7: note: (near initialization for 'arial_20ptDescriptors[82]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:2: warning: braces around scalar initializer
+ 2916 |  {9, 4676},   /* t */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:2: note: (near initialization for 'arial_20ptDescriptors[83]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:6: warning: excess elements in scalar initializer
+ 2916 |  {9, 4676},   /* t */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2916:6: note: (near initialization for 'arial_20ptDescriptors[83]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:2: warning: braces around scalar initializer
+ 2917 |  {13, 4732},   /* u */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:2: note: (near initialization for 'arial_20ptDescriptors[84]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:7: warning: excess elements in scalar initializer
+ 2917 |  {13, 4732},   /* u */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2917:7: note: (near initialization for 'arial_20ptDescriptors[84]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:2: warning: braces around scalar initializer
+ 2918 |  {13, 4788},   /* v */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:2: note: (near initialization for 'arial_20ptDescriptors[85]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:7: warning: excess elements in scalar initializer
+ 2918 |  {13, 4788},   /* v */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2918:7: note: (near initialization for 'arial_20ptDescriptors[85]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:2: warning: braces around scalar initializer
+ 2919 |  {21, 4844},   /* w */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:2: note: (near initialization for 'arial_20ptDescriptors[86]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:7: warning: excess elements in scalar initializer
+ 2919 |  {21, 4844},   /* w */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2919:7: note: (near initialization for 'arial_20ptDescriptors[86]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:2: warning: braces around scalar initializer
+ 2920 |  {13, 4928},   /* x */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:2: note: (near initialization for 'arial_20ptDescriptors[87]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:7: warning: excess elements in scalar initializer
+ 2920 |  {13, 4928},   /* x */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2920:7: note: (near initialization for 'arial_20ptDescriptors[87]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:2: warning: braces around scalar initializer
+ 2921 |  {15, 4984},   /* y */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:2: note: (near initialization for 'arial_20ptDescriptors[88]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:7: warning: excess elements in scalar initializer
+ 2921 |  {15, 4984},   /* y */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2921:7: note: (near initialization for 'arial_20ptDescriptors[88]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:2: warning: braces around scalar initializer
+ 2922 |  {12, 5040},   /* z */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:2: note: (near initialization for 'arial_20ptDescriptors[89]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:7: warning: excess elements in scalar initializer
+ 2922 |  {12, 5040},   /* z */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2922:7: note: (near initialization for 'arial_20ptDescriptors[89]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:2: warning: braces around scalar initializer
+ 2923 |  {9, 5096},   /* { */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:2: note: (near initialization for 'arial_20ptDescriptors[90]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:6: warning: excess elements in scalar initializer
+ 2923 |  {9, 5096},   /* { */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2923:6: note: (near initialization for 'arial_20ptDescriptors[90]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:2: warning: braces around scalar initializer
+ 2924 |  {3, 5152},   /* | */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:2: note: (near initialization for 'arial_20ptDescriptors[91]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:6: warning: excess elements in scalar initializer
+ 2924 |  {3, 5152},   /* | */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2924:6: note: (near initialization for 'arial_20ptDescriptors[91]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:2: warning: braces around scalar initializer
+ 2925 |  {9, 5180},   /* } */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:2: note: (near initialization for 'arial_20ptDescriptors[92]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:6: warning: excess elements in scalar initializer
+ 2925 |  {9, 5180},   /* } */
+      |      ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2925:6: note: (near initialization for 'arial_20ptDescriptors[92]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:2: warning: braces around scalar initializer
+ 2926 |  {14, 5236},   /* ~ */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:2: note: (near initialization for 'arial_20ptDescriptors[93]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:7: warning: excess elements in scalar initializer
+ 2926 |  {14, 5236},   /* ~ */
+      |       ^~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2926:7: note: (near initialization for 'arial_20ptDescriptors[93]')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2930:7: error: unknown type name 'FONT_INFO'
+ 2930 | const FONT_INFO arial_20ptFontInfo =
+      |       ^~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2933:2: warning: excess elements in scalar initializer
+ 2933 |  '!', /*  Start character */
+      |  ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2933:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2934:2: warning: excess elements in scalar initializer
+ 2934 |  '~', /*  End character */
+      |  ^~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2934:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2935:2: warning: excess elements in scalar initializer
+ 2935 |  2, /*  Width, in pixels, of space character */
+      |  ^
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2935:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2936:2: warning: excess elements in scalar initializer
+ 2936 |  arial_20ptDescriptors, /*  Character descriptor array */
+      |  ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2936:2: note: (near initialization for 'arial_20ptFontInfo')
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2937:2: warning: excess elements in scalar initializer
+ 2937 |  arial_20ptBitmaps, /*  Character bitmap array */
+      |  ^~~~~~~~~~~~~~~~~
+../Core/Src/EnhancedFonts/Arial_20pts_Bold.c:2937:2: note: (near initialization for 'arial_20ptFontInfo')
+make: *** [Core/Src/EnhancedFonts/subdir.mk:19: Core/Src/EnhancedFonts/Arial_20pts_Bold.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+21:10:56 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/EnhancedFonts/Arial_20pts_Bold.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/EnhancedFonts/Arial_20pts_Bold.d" -MT"Core/Src/EnhancedFonts/Arial_20pts_Bold.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/EnhancedFonts/Arial_20pts_Bold.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9440	     20	   1732	  11192	   2bb8	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:11:05 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9440	     20	   1732	  11192	   2bb8	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 

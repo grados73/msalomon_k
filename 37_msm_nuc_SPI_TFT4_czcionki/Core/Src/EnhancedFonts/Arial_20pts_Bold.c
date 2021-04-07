@@ -2,6 +2,10 @@
 **  Font data for Arial 20pt
 */
 
+#include "main.h"
+#include "GFX_EnhancedFonts.h"
+
+
 /* Character bitmaps for Arial 20pt */
 const uint8_t arial_20ptBitmaps[] = 
 {

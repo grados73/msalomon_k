@@ -29,6 +29,7 @@
 #include "GFX_Color.h"
 #include "fonts/fonts.h"
 #include "logo.h"
+#include "GFX_EnhancedFonts.h"
 
 /* USER CODE END Includes */
 
