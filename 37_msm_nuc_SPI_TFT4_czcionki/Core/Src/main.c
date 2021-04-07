@@ -28,7 +28,6 @@
 #include "TFT_ILI9341.h"
 #include "GFX_Color.h"
 #include "fonts/fonts.h"
-#include "profilowe.h"
 #include "logo.h"
 
 /* USER CODE END Includes */
@@ -99,7 +98,6 @@ int main(void)
   GFX_SetFont(font_8x5);
 
   ILI9341_ClearDisplay(ILI9341_BLACK);
-  ILI9341_DrawImage(0, 0, logo, 240, 240);
 
   /* USER CODE END 2 */
 
