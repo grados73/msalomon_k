@@ -7374,3 +7374,10 @@ arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf
    9440	     20	   1732	  11192	   2bb8	37_msm_nuc_SPI_TFT4_czcionki.elf
 Finished building: default.size.stdout
  
+19:42:47 **** Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9440	     20	   1732	  11192	   2bb8	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
