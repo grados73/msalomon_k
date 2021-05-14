@@ -90,7 +90,7 @@ int main(void)
   ILI9341_Init(&hspi1);
   GFX_SetFont(font_8x5);
 
-  ILI9341_ClearDisplay(ILI9341_BLACK);
+  ILI9341_ClearDisplay(ILI9341_YELLOW);
 
   /* USER CODE END 2 */
 

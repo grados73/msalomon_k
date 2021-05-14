@@ -1,8 +1,9 @@
 /*
- * TFT_ILI9341.c
+ * ILI9341.h
  *
- *  Created on: Apr 2, 2021
- *      Author: grados73
+ *  	Author: grados73
+ *  	Created on the basis of Adafruit Library from the recipe of msalomon (under MIT Licence).
+ *
  */
 
 #include "main.h"
@@ -42,7 +43,7 @@ static void ILI9341_SendToTFT(uint8_t *Byte, uint32_t Length)
     while (Length > 0U)
     {
       /* Wait until TXE flag is set to send data */
-      if(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE))
+      if(__HAL_SPI_GET_FLAG(Tft_hspi, SPI_FLAG_TXE)) // TXE -flaga tranfer ready
       {
     	//Fill Data Register in SPI
         *((__IO uint8_t *)&Tft_hspi->Instance->DR) = (*Byte);

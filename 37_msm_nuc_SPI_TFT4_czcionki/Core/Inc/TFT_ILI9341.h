@@ -1,8 +1,9 @@
 /*
  * ILI9341.h
  *
- *  Created on: Apr 2, 2021
- *      Author: grados73
+ *  	Author: grados73
+ *  	Created on the basis of Adafruit Library from the recipe of msalomon (under MIT Licence).
+ *
  */
 
 #ifndef INC_TFT_ILI9341_H_

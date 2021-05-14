@@ -1,11 +1,10 @@
 /*
- * GFX_BW.h
+ * GFX_Color.h
  *
- *  The MIT License.
- *  Created on: 25.05.2017
- *      Author: Mateusz Salamon
- *      www.msalamon.pl
- *      mateusz@msalamon.pl
+ *  	Author: grados73
+ *  	Created on the basis of Adafruit Library from the recipe of msalomon (under MIT Licence).
+ *
+ *
  */
 
 #ifndef GFX_Color_H_

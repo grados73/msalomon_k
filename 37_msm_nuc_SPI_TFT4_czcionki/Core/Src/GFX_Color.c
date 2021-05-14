@@ -1,3 +1,12 @@
+/*
+ * GFX_Color.c
+ *
+ *  	Author: grados73
+ *  	Created on the basis of Adafruit Library from the recipe of msalomon (under MIT Licence).
+ *
+ *
+ */
+
 #include "main.h"
 #include "GFX_Color.h"
 
