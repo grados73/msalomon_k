@@ -3,7 +3,7 @@
  *
  *  	Author: grados73
  *  	Created on the basis of Adafruit Library from the recipe of msalomon (under MIT Licence).
- *
+ *		https://github.com/grados73
  *
  */
 
