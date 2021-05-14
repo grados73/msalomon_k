@@ -42,11 +42,11 @@
 ////////////////////////////////////////////////////////////////////////////////////
 
 #if (ILI9341_ROTATION == 0) || (ILI9341_ROTATION == 2) // PORTRETOWE
-#define ILI9341_TFTWIDTH 240  ///< ILI9341 max TFT width
-#define ILI9341_TFTHEIGHT 320 ///< ILI9341 max TFT height
+#define ILI9341_TFTWIDTH 240  ///< ILI9341 max TFT width - X
+#define ILI9341_TFTHEIGHT 320 ///< ILI9341 max TFT height - Y
 #elif (ILI9341_ROTATION == 1) || (ILI9341_ROTATION == 3) // HORYZONTALNE
-#define ILI9341_TFTWIDTH 320  ///< ILI9341 max TFT width
-#define ILI9341_TFTHEIGHT 240 ///< ILI9341 max TFT height
+#define ILI9341_TFTWIDTH 320  ///< ILI9341 max TFT width - Y
+#define ILI9341_TFTHEIGHT 240 ///< ILI9341 max TFT height - X
 #endif
 
 

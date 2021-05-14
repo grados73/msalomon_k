@@ -90,7 +90,11 @@ int main(void)
   ILI9341_Init(&hspi1);
   GFX_SetFont(font_8x5);
 
-  ILI9341_ClearDisplay(ILI9341_YELLOW);
+  ILI9341_ClearDisplay(ILI9341_RED);
+  //GFX_DrawRectangle(250, 100, 50, 100, ILI9341_BLUE);
+  //GFX_DrawString(10, 10, "GRAD", ILI9341_BLACK);
+  //GFX_Image(40, 0, logo, 240, 240); // softwerowe rysowanie
+  ILI9341_DrawImage(40, 0, logo, 240, 240); // "sprzętowe" rysowanie
 
   /* USER CODE END 2 */
 

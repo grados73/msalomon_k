@@ -7578,3 +7578,276 @@ arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf
    9444	     20	   1732	  11196	   2bbc	37_msm_nuc_SPI_TFT4_czcionki.elf
 Finished building: default.size.stdout
  
+21:33:35 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/GFX_Color.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_Color.d" -MT"Core/Src/GFX_Color.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_Color.o"
+arm-none-eabi-gcc "../Core/Src/GFX_EnhancedFonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_EnhancedFonts.d" -MT"Core/Src/GFX_EnhancedFonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_EnhancedFonts.o"
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1732	  11776	   2e00	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:33:39 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1732	  11776	   2e00	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:34:09 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1732	  11776	   2e00	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:34:13 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1732	  11776	   2e00	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:35:44 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/GFX_Color.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_Color.d" -MT"Core/Src/GFX_Color.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_Color.o"
+arm-none-eabi-gcc "../Core/Src/GFX_EnhancedFonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_EnhancedFonts.d" -MT"Core/Src/GFX_EnhancedFonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_EnhancedFonts.o"
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1732	  11776	   2e00	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:35:49 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1732	  11776	   2e00	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:41:40 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/GFX_Color.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_Color.d" -MT"Core/Src/GFX_Color.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_Color.o"
+arm-none-eabi-gcc "../Core/Src/GFX_EnhancedFonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/GFX_EnhancedFonts.d" -MT"Core/Src/GFX_EnhancedFonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GFX_EnhancedFonts.o"
+arm-none-eabi-gcc "../Core/Src/TFT_ILI9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/TFT_ILI9341.d" -MT"Core/Src/TFT_ILI9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TFT_ILI9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10472	     24	   1736	  12232	   2fc8	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:41:43 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10472	     24	   1736	  12232	   2fc8	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:42:05 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10468	     24	   1736	  12228	   2fc4	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+ 
+21:42:09 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10468	     24	   1736	  12228	   2fc4	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:53:17 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124904	     20	   1732	 126656	  1eec0	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:53:21 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124904	     20	   1732	 126656	  1eec0	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:53:59 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124900	     20	   1732	 126652	  1eebc	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+ 
+21:54:03 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124900	     20	   1732	 126652	  1eebc	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:56:09 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124900	     20	   1732	 126652	  1eebc	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:56:12 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124900	     20	   1732	 126652	  1eebc	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:57:16 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124900	     20	   1732	 126652	  1eebc	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+21:57:20 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124900	     20	   1732	 126652	  1eebc	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+21:59:57 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124748	     20	   1732	 126500	  1ee24	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+22:00:00 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124748	     20	   1732	 126500	  1ee24	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+22:01:19 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "37_msm_nuc_SPI_TFT4_czcionki.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="37_msm_nuc_SPI_TFT4_czcionki.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 37_msm_nuc_SPI_TFT4_czcionki.elf
+ 
+arm-none-eabi-objdump -h -S  37_msm_nuc_SPI_TFT4_czcionki.elf  > "37_msm_nuc_SPI_TFT4_czcionki.list"
+arm-none-eabi-objcopy  -O binary  37_msm_nuc_SPI_TFT4_czcionki.elf  "37_msm_nuc_SPI_TFT4_czcionki.bin"
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124748	     20	   1732	 126500	  1ee24	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.bin
+Finished building: 37_msm_nuc_SPI_TFT4_czcionki.list
+ 
+ 
+22:01:23 **** Incremental Build of configuration Debug for project 37_msm_nuc_SPI_TFT4_czcionki ****
+make -j4 all 
+arm-none-eabi-size   37_msm_nuc_SPI_TFT4_czcionki.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 124748	     20	   1732	 126500	  1ee24	37_msm_nuc_SPI_TFT4_czcionki.elf
+Finished building: default.size.stdout
+ 
