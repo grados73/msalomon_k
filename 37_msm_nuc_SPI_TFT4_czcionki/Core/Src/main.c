@@ -10,6 +10,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <EnhancedFonts/arialBlack_20ptFontInfo.h>
 #include "main.h"
 #include "spi.h"
 #include "usart.h"
@@ -22,7 +23,9 @@
 #include "fonts/fonts.h"
 #include "logo.h"
 #include "GFX_EnhancedFonts.h"
-
+#include "EnhancedFonts/ArialBlack_28pts_bold.h"
+#include "string.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +45,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t Msg[32];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -91,11 +94,19 @@ int main(void)
   GFX_SetFont(font_8x5);
 
 
-  ILI9341_ClearDisplay(ILI9341_RED);
+  ILI9341_ClearDisplay(ILI9341_NAVY);
   //GFX_DrawRectangle(250, 100, 50, 100, ILI9341_BLUE);
   //GFX_DrawString(10, 10, "GRAD", ILI9341_BLACK);
   //GFX_Image(40, 0, logo, 240, 240); // softwerowe rysowanie
-  ILI9341_DrawImage(40, 0, logo, 240, 240); // "sprzętowe" rysowanie
+  //ILI9341_DrawImage(40, 0, logo, 240, 240); // "sprzętowe" rysowanie
+  //GFX_DrawString(110, 220, "GRAD - DUCATI FAN", ILI9341_WHITE);
+
+  EF_SetFont(&arialBlack_20ptFontInfo);
+  uint8_t Len = sprintf(Msg, "CZEŚĆ");
+  EF_PutString(Msg, 115, 50, ILI9341_WHITE, BG_TRANSPARENT, ILI9341_BLACK);
+  Len = sprintf(Msg, "GRAD");
+  EF_PutString(Msg, 120, 90, ILI9341_BLACK, BG_TRANSPARENT, ILI9341_BLACK);
+  Len++;
 
   /* USER CODE END 2 */
 

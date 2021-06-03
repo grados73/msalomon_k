@@ -204,7 +204,7 @@ uint8_t EF_PutString(const uint8_t *pStr, uint16_t PosX, uint16_t PosY, uint16_t
 	uint8_t Lenght = strlen((char*)pStr); // Take a string length in bytes
 
 	uint8_t Loop; // Loop Iterator for current char
-	uint16_t Shift = 0; // Shift in X-axis for each char drawing
+	uint16_t Shift = 0; // Shift in X-axis for each char drawing - przesunięcie
 	uint8_t CharWidth; // Current char width
 	uint8_t CharToPrint; // Current char to print
 
