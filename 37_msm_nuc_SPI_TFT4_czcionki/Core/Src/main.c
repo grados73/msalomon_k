@@ -90,6 +90,7 @@ int main(void)
   ILI9341_Init(&hspi1);
   GFX_SetFont(font_8x5);
 
+
   ILI9341_ClearDisplay(ILI9341_RED);
   //GFX_DrawRectangle(250, 100, 50, 100, ILI9341_BLUE);
   //GFX_DrawString(10, 10, "GRAD", ILI9341_BLACK);

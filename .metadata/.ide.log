@@ -36047,3 +36047,119 @@
 2021-05-12 20:10:26,463 [INFO] ApiDbMcu:458 - Load IP Config File for PDM2PCM
 2021-05-12 20:10:26,525 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
 2021-05-12 20:10:26,664 [INFO] OpenFileManager:323 - Restore cursor
+2021-05-14 19:44:20,359 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 503338496 Bytes (661651456)
+2021-05-14 19:44:22,171 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 527455744 Bytes (661651456)
+2021-05-14 19:44:23,126 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 506909520 Bytes (661651456)
+2021-05-14 19:44:23,627 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SPI
+2021-05-14 19:44:23,627 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-14 19:44:23,627 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-05-14 19:44:23,627 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-14 19:44:23,643 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-14 19:44:23,643 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-14 19:44:23,643 [INFO] CodeGenerator:641 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\
+2021-05-14 19:44:24,111 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\license.tmp_save
+2021-05-14 19:44:24,455 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\license.tmp
+2021-05-14 19:44:24,533 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\gpio.c_save
+2021-05-14 19:44:24,643 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\gpio.c
+2021-05-14 19:44:24,643 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\gpio.h_save
+2021-05-14 19:44:24,705 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\gpio.h
+2021-05-14 19:44:24,830 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-14 19:44:24,846 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\spi.c_save
+2021-05-14 19:44:24,939 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\spi.c
+2021-05-14 19:44:24,939 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\spi.h_save
+2021-05-14 19:44:25,002 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\spi.h
+2021-05-14 19:44:25,002 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-14 19:44:25,002 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\usart.c_save
+2021-05-14 19:44:25,080 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\usart.c
+2021-05-14 19:44:25,080 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\usart.h_save
+2021-05-14 19:44:25,158 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\usart.h
+2021-05-14 19:44:25,158 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_it.c_save
+2021-05-14 19:44:25,252 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_it.c
+2021-05-14 19:44:25,267 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_it.h_save
+2021-05-14 19:44:25,314 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_it.h
+2021-05-14 19:44:25,314 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_hal_msp.c_save
+2021-05-14 19:44:25,392 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_hal_msp.c
+2021-05-14 19:44:25,392 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\system.tmp_save
+2021-05-14 19:44:25,439 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\system.tmp
+2021-05-14 19:44:25,455 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-05-14 19:44:25,517 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_hal_conf.h
+2021-05-14 19:44:25,549 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\main.h_save
+2021-05-14 19:44:25,627 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\main.h
+2021-05-14 19:44:25,627 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\main.c_save
+2021-05-14 19:44:25,720 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\main.c
+2021-05-14 19:44:27,049 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 548mS.
+2021-05-14 19:44:27,049 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-14 19:44:27,564 [INFO] ConfigFileManager:1242 - The Die is : DIE431
+2021-05-14 19:44:27,596 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-05-14 19:44:27,627 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-05-14 19:44:27,627 [INFO] ApiDbMcu:458 - Load IP Config File for LIBJPEG
+2021-05-14 19:44:27,689 [INFO] ApiDbMcu:458 - Load IP Config File for MBEDTLS
+2021-05-14 19:44:27,736 [INFO] ApiDbMcu:458 - Load IP Config File for USB_DEVICE
+2021-05-14 19:44:27,736 [INFO] ApiDbMcu:458 - Load IP Config File for USB_HOST
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 3072mS.
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : GFX_Color.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : gpio.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : main.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : spi.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : stm32f4xx_hal_msp.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : stm32f4xx_it.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : syscalls.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : sysmem.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : system_stm32f4xx.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : TFT_ILI9341.c
+2021-05-14 19:44:30,121 [INFO] ProjectBuilder:2687 - Suppression de : usart.c
+2021-05-14 19:45:01,376 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 600939144 Bytes (1007681536)
+2021-05-14 19:45:03,476 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 578279936 Bytes (1007681536)
+2021-05-14 19:45:04,332 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 627563008 Bytes (1007681536)
+2021-05-14 19:45:04,703 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SPI
+2021-05-14 19:45:04,703 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-05-14 19:45:04,703 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-05-14 19:45:04,703 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-05-14 19:45:04,703 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-05-14 19:45:04,703 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-05-14 19:45:04,703 [INFO] CodeGenerator:641 - code generatio: config db path: D:\STM32\PROGRAMS\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\
+2021-05-14 19:45:05,015 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\license.tmp_save
+2021-05-14 19:45:05,140 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\license.tmp
+2021-05-14 19:45:05,234 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\gpio.c_save
+2021-05-14 19:45:05,297 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\gpio.c
+2021-05-14 19:45:05,297 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\gpio.h_save
+2021-05-14 19:45:05,344 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\gpio.h
+2021-05-14 19:45:05,437 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-14 19:45:05,437 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\spi.c_save
+2021-05-14 19:45:05,531 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\spi.c
+2021-05-14 19:45:05,531 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\spi.h_save
+2021-05-14 19:45:05,578 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\spi.h
+2021-05-14 19:45:05,578 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-05-14 19:45:05,578 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\usart.c_save
+2021-05-14 19:45:05,656 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\usart.c
+2021-05-14 19:45:05,656 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\usart.h_save
+2021-05-14 19:45:05,703 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\usart.h
+2021-05-14 19:45:05,719 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_it.c_save
+2021-05-14 19:45:05,781 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_it.c
+2021-05-14 19:45:05,781 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_it.h_save
+2021-05-14 19:45:05,859 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_it.h
+2021-05-14 19:45:05,875 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_hal_msp.c_save
+2021-05-14 19:45:05,937 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\stm32f4xx_hal_msp.c
+2021-05-14 19:45:05,953 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\system.tmp_save
+2021-05-14 19:45:05,984 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\MXTmpFiles\system.tmp
+2021-05-14 19:45:05,984 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-05-14 19:45:06,062 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\stm32f4xx_hal_conf.h
+2021-05-14 19:45:06,093 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\main.h_save
+2021-05-14 19:45:06,140 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Inc\main.h
+2021-05-14 19:45:06,140 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\main.c_save
+2021-05-14 19:45:06,218 [INFO] CodeEngine:247 - Generated code: D:\STM32\workspace\37_msm_nuc_SPI_TFT4_czcionki\Core\Src\main.c
+2021-05-14 19:45:06,921 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 62mS.
+2021-05-14 19:45:06,937 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-05-14 19:45:07,437 [INFO] ConfigFileManager:1242 - The Die is : DIE431
+2021-05-14 19:45:09,406 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 2469mS.
+2021-05-14 19:45:09,406 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-05-14 19:45:09,406 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-06-03 18:53:28,673 [INFO] Activator:170 - 
+
+
+2021-06-03 18:53:28,675 [INFO] Activator:171 - !SESSION log4j initialized
+2021-06-03 18:53:30,533 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Could not load icon "icons/chip.png".
+2021-06-03 18:53:30,537 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Could not load icon "icons/chip.png".
+2021-06-03 18:53:30,541 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Managed Build system manifest file error: Could not load icon "icons/chip.png".
