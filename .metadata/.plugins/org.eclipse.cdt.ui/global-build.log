@@ -107,3 +107,499 @@ Finished building: Forbot_01_DS18B20.bin
  
 Finished building: Forbot_01_DS18B20.list
  
+12:27:26 **** Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/ds18b20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ds18b20.d" -MT"Core/Src/ds18b20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ds18b20.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:7: warning: implicit declaration of function 'ds18b20_init' [-Wimplicit-function-declaration]
+  104 |   if (ds18b20_init() != HAL_OK) {
+      |       ^~~~~~~~~~~~
+../Core/Src/main.c:116:5: warning: implicit declaration of function 'ds18b20_start_measure' [-Wimplicit-function-declaration]
+  116 |     ds18b20_start_measure(ds1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:121:19: warning: implicit declaration of function 'ds18b20_get_temp' [-Wimplicit-function-declaration]
+  121 |      float temp = ds18b20_get_temp(ds1);
+      |                   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  123 |        printf("Sensor error (1)...\n");
+      |        ^~~~~~
+../Core/Src/main.c:123:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+  125 |        printf("T1 = %.1f*C\n", temp);
+      |        ^~~~~~
+../Core/Src/main.c:125:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:129:8: warning: incompatible implicit declaration of built-in function 'printf'
+  129 |        printf("Sensor error (2)...\n");
+      |        ^~~~~~
+../Core/Src/main.c:129:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:131:8: warning: incompatible implicit declaration of built-in function 'printf'
+  131 |        printf("T2 = %.1f*C\n", temp);
+      |        ^~~~~~
+../Core/Src/main.c:131:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+At top level:
+../Core/Src/main.c:70:6: warning: '__io_putchar' defined but not used [-Wunused-function]
+   70 |  int __io_putchar(int ch)
+      |      ^~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c: In function 'set_baudrate':
+../Core/Src/wire.c:16:3: error: 'huart3' undeclared (first use in this function); did you mean 'huart2'?
+   16 |   huart3.Instance = USART3;
+      |   ^~~~~~
+      |   huart2
+../Core/Src/wire.c:16:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/wire.c:16:21: error: 'USART3' undeclared (first use in this function); did you mean 'USART1'?
+   16 |   huart3.Instance = USART3;
+      |                     ^~~~~~
+      |                     USART1
+../Core/Src/wire.c:24:32: error: 'UART_ONE_BIT_SAMPLE_DISABLE' undeclared (first use in this function); did you mean 'UART_ONE_BIT_SAMPLE_DISABLED'?
+   24 |   huart3.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                UART_ONE_BIT_SAMPLE_DISABLED
+../Core/Src/wire.c:25:40: error: 'UART_ADVFEATURE_RXOVERRUNDISABLE_INIT' undeclared (first use in this function)
+   25 |   huart3.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c:26:40: error: 'UART_ADVFEATURE_OVERRUN_DISABLE' undeclared (first use in this function)
+   26 |   huart3.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c: In function 'wire_reset':
+../Core/Src/wire.c:51:23: error: 'huart3' undeclared (first use in this function); did you mean 'huart2'?
+   51 |    HAL_UART_Transmit(&huart3, &data_out, 1, HAL_MAX_DELAY);
+      |                       ^~~~~~
+      |                       huart2
+../Core/Src/wire.c: In function 'write_bit':
+../Core/Src/wire.c:65:24: error: 'huart3' undeclared (first use in this function); did you mean 'huart2'?
+   65 |     HAL_UART_Transmit(&huart3, &data_out, 1, HAL_MAX_DELAY);
+      |                        ^~~~~~
+      |                        huart2
+../Core/Src/wire.c: In function 'read_bit':
+../Core/Src/wire.c:76:22: error: 'huart3' undeclared (first use in this function); did you mean 'huart2'?
+   76 |   HAL_UART_Transmit(&huart3, &data_out, 1, HAL_MAX_DELAY);
+      |                      ^~~~~~
+      |                      huart2
+../Core/Src/wire.c: At top level:
+../Core/Src/wire.c:82:13: error: redefinition of 'write_bit'
+   82 | static void write_bit(int value)
+      |             ^~~~~~~~~
+../Core/Src/wire.c:61:13: note: previous definition of 'write_bit' was here
+   61 | static void write_bit(int value)
+      |             ^~~~~~~~~
+../Core/Src/wire.c: In function 'write_bit':
+../Core/Src/wire.c:85:23: error: 'DS_GPIO_Port' undeclared (first use in this function); did you mean 'B1_GPIO_Port'?
+   85 |     HAL_GPIO_WritePin(DS_GPIO_Port, DS_Pin, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~~~
+      |                       B1_GPIO_Port
+../Core/Src/wire.c:85:37: error: 'DS_Pin' undeclared (first use in this function); did you mean 'TMS_Pin'?
+   85 |     HAL_GPIO_WritePin(DS_GPIO_Port, DS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~
+      |                                     TMS_Pin
+At top level:
+../Core/Src/wire.c:72:12: warning: 'read_bit' defined but not used [-Wunused-function]
+   72 | static int read_bit(void)
+      |            ^~~~~~~~
+../Core/Src/wire.c:61:13: warning: 'write_bit' defined but not used [-Wunused-function]
+   61 | static void write_bit(int value)
+      |             ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/wire.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:29:21 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/ds18b20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ds18b20.d" -MT"Core/Src/ds18b20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ds18b20.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:7: warning: implicit declaration of function 'ds18b20_init' [-Wimplicit-function-declaration]
+  104 |   if (ds18b20_init() != HAL_OK) {
+      |       ^~~~~~~~~~~~
+../Core/Src/main.c:116:5: warning: implicit declaration of function 'ds18b20_start_measure' [-Wimplicit-function-declaration]
+  116 |     ds18b20_start_measure(ds1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c:121:19: warning: implicit declaration of function 'ds18b20_get_temp' [-Wimplicit-function-declaration]
+  121 |      float temp = ds18b20_get_temp(ds1);
+      |                   ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:8: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  123 |        printf("Sensor error (1)...\n");
+      |        ^~~~~~
+../Core/Src/main.c:123:8: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:125:8: warning: incompatible implicit declaration of built-in function 'printf'
+  125 |        printf("T1 = %.1f*C\n", temp);
+      |        ^~~~~~
+../Core/Src/main.c:125:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:129:8: warning: incompatible implicit declaration of built-in function 'printf'
+  129 |        printf("Sensor error (2)...\n");
+      |        ^~~~~~
+../Core/Src/main.c:129:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:131:8: warning: incompatible implicit declaration of built-in function 'printf'
+  131 |        printf("T2 = %.1f*C\n", temp);
+      |        ^~~~~~
+../Core/Src/main.c:131:8: note: include '<stdio.h>' or provide a declaration of 'printf'
+At top level:
+../Core/Src/main.c:70:6: warning: '__io_putchar' defined but not used [-Wunused-function]
+   70 |  int __io_putchar(int ch)
+      |      ^~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c: In function 'set_baudrate':
+../Core/Src/wire.c:16:21: error: 'USART3' undeclared (first use in this function); did you mean 'USART1'?
+   16 |   huart1.Instance = USART3;
+      |                     ^~~~~~
+      |                     USART1
+../Core/Src/wire.c:16:21: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/wire.c:24:15: error: 'UART_InitTypeDef' {aka 'struct <anonymous>'} has no member named 'OneBitSampling'; did you mean 'OverSampling'?
+   24 |   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |               ^~~~~~~~~~~~~~
+      |               OverSampling
+../Core/Src/wire.c:24:32: error: 'UART_ONE_BIT_SAMPLE_DISABLE' undeclared (first use in this function); did you mean 'UART_ONE_BIT_SAMPLE_DISABLED'?
+   24 |   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                UART_ONE_BIT_SAMPLE_DISABLED
+../Core/Src/wire.c:25:9: error: 'UART_HandleTypeDef' {aka 'struct __UART_HandleTypeDef'} has no member named 'AdvancedInit'
+   25 |   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |         ^
+../Core/Src/wire.c:25:40: error: 'UART_ADVFEATURE_RXOVERRUNDISABLE_INIT' undeclared (first use in this function)
+   25 |   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c:26:9: error: 'UART_HandleTypeDef' {aka 'struct __UART_HandleTypeDef'} has no member named 'AdvancedInit'
+   26 |   huart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |         ^
+../Core/Src/wire.c:26:40: error: 'UART_ADVFEATURE_OVERRUN_DISABLE' undeclared (first use in this function)
+   26 |   huart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c: At top level:
+../Core/Src/wire.c:82:13: error: redefinition of 'write_bit'
+   82 | static void write_bit(int value)
+      |             ^~~~~~~~~
+../Core/Src/wire.c:61:13: note: previous definition of 'write_bit' was here
+   61 | static void write_bit(int value)
+      |             ^~~~~~~~~
+../Core/Src/wire.c: In function 'write_bit':
+../Core/Src/wire.c:85:23: error: 'DS_GPIO_Port' undeclared (first use in this function); did you mean 'B1_GPIO_Port'?
+   85 |     HAL_GPIO_WritePin(DS_GPIO_Port, DS_Pin, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~~~
+      |                       B1_GPIO_Port
+../Core/Src/wire.c:85:37: error: 'DS_Pin' undeclared (first use in this function); did you mean 'TMS_Pin'?
+   85 |     HAL_GPIO_WritePin(DS_GPIO_Port, DS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~
+      |                                     TMS_Pin
+At top level:
+../Core/Src/wire.c:72:12: warning: 'read_bit' defined but not used [-Wunused-function]
+   72 | static int read_bit(void)
+      |            ^~~~~~~~
+../Core/Src/wire.c:61:13: warning: 'write_bit' defined but not used [-Wunused-function]
+   61 | static void write_bit(int value)
+      |             ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/wire.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:29:39 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c: In function 'set_baudrate':
+../Core/Src/wire.c:24:15: error: 'UART_InitTypeDef' {aka 'struct <anonymous>'} has no member named 'OneBitSampling'; did you mean 'OverSampling'?
+   24 |   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |               ^~~~~~~~~~~~~~
+      |               OverSampling
+../Core/Src/wire.c:24:32: error: 'UART_ONE_BIT_SAMPLE_DISABLE' undeclared (first use in this function); did you mean 'UART_ONE_BIT_SAMPLE_DISABLED'?
+   24 |   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                UART_ONE_BIT_SAMPLE_DISABLED
+../Core/Src/wire.c:24:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/wire.c:25:9: error: 'UART_HandleTypeDef' {aka 'struct __UART_HandleTypeDef'} has no member named 'AdvancedInit'
+   25 |   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |         ^
+../Core/Src/wire.c:25:40: error: 'UART_ADVFEATURE_RXOVERRUNDISABLE_INIT' undeclared (first use in this function)
+   25 |   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c:26:9: error: 'UART_HandleTypeDef' {aka 'struct __UART_HandleTypeDef'} has no member named 'AdvancedInit'
+   26 |   huart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |         ^
+../Core/Src/wire.c:26:40: error: 'UART_ADVFEATURE_OVERRUN_DISABLE' undeclared (first use in this function)
+   26 |   huart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c: At top level:
+../Core/Src/wire.c:82:13: error: redefinition of 'write_bit'
+   82 | static void write_bit(int value)
+      |             ^~~~~~~~~
+../Core/Src/wire.c:61:13: note: previous definition of 'write_bit' was here
+   61 | static void write_bit(int value)
+      |             ^~~~~~~~~
+../Core/Src/wire.c: In function 'write_bit':
+../Core/Src/wire.c:85:23: error: 'DS_GPIO_Port' undeclared (first use in this function); did you mean 'B1_GPIO_Port'?
+   85 |     HAL_GPIO_WritePin(DS_GPIO_Port, DS_Pin, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~~~
+      |                       B1_GPIO_Port
+../Core/Src/wire.c:85:37: error: 'DS_Pin' undeclared (first use in this function); did you mean 'TMS_Pin'?
+   85 |     HAL_GPIO_WritePin(DS_GPIO_Port, DS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~
+      |                                     TMS_Pin
+At top level:
+../Core/Src/wire.c:72:12: warning: 'read_bit' defined but not used [-Wunused-function]
+   72 | static int read_bit(void)
+      |            ^~~~~~~~
+../Core/Src/wire.c:61:13: warning: 'write_bit' defined but not used [-Wunused-function]
+   61 | static void write_bit(int value)
+      |             ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/wire.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:30:05 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c: In function 'set_baudrate':
+../Core/Src/wire.c:24:15: error: 'UART_InitTypeDef' {aka 'struct <anonymous>'} has no member named 'OneBitSampling'; did you mean 'OverSampling'?
+   24 |   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |               ^~~~~~~~~~~~~~
+      |               OverSampling
+../Core/Src/wire.c:24:32: error: 'UART_ONE_BIT_SAMPLE_DISABLE' undeclared (first use in this function); did you mean 'UART_ONE_BIT_SAMPLE_DISABLED'?
+   24 |   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                UART_ONE_BIT_SAMPLE_DISABLED
+../Core/Src/wire.c:24:32: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/wire.c:25:9: error: 'UART_HandleTypeDef' {aka 'struct __UART_HandleTypeDef'} has no member named 'AdvancedInit'
+   25 |   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |         ^
+../Core/Src/wire.c:25:40: error: 'UART_ADVFEATURE_RXOVERRUNDISABLE_INIT' undeclared (first use in this function)
+   25 |   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/wire.c:26:9: error: 'UART_HandleTypeDef' {aka 'struct __UART_HandleTypeDef'} has no member named 'AdvancedInit'
+   26 |   huart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |         ^
+../Core/Src/wire.c:26:40: error: 'UART_ADVFEATURE_OVERRUN_DISABLE' undeclared (first use in this function)
+   26 |   huart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+../Core/Src/wire.c:72:12: warning: 'read_bit' defined but not used [-Wunused-function]
+   72 | static int read_bit(void)
+      |            ^~~~~~~~
+../Core/Src/wire.c:38:13: warning: 'delay_us' defined but not used [-Wunused-function]
+   38 | static void delay_us(uint32_t us)
+      |             ^~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/wire.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:30:52 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c:69:12: warning: 'read_bit' defined but not used [-Wunused-function]
+   69 | static int read_bit(void)
+      |            ^~~~~~~~
+../Core/Src/wire.c:35:13: warning: 'delay_us' defined but not used [-Wunused-function]
+   35 | static void delay_us(uint32_t us)
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+d:\stm32\programs\stm32_cube_ide\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/ds18b20.o: in function `ds18b20_read_scratchpad':
+D:/STM32/workspace/kurs_msalomon/Forbot_02_DS18B21_USART_DMA/Debug/../Core/Src/ds18b20.c:79: undefined reference to `wire_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: Forbot_02_DS18B21_USART_DMA.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:34:48 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c:35:13: warning: 'delay_us' defined but not used [-Wunused-function]
+   35 | static void delay_us(uint32_t us)
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33568	    488	   1808	  35864	   8c18	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:36:43 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/wire.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/wire.d" -MT"Core/Src/wire.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/wire.o"
+../Core/Src/wire.c:35:13: warning: 'delay_us' defined but not used [-Wunused-function]
+   35 | static void delay_us(uint32_t us)
+      |             ^~~~~~~~
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33568	    488	   1808	  35864	   8c18	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:41:15 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:7: warning: implicit declaration of function 'ds18b20_init' [-Wimplicit-function-declaration]
+  104 |   if (ds18b20_init() != HAL_OK) {
+      |       ^~~~~~~~~~~~
+../Core/Src/main.c:116:5: warning: implicit declaration of function 'ds18b20_start_measure' [-Wimplicit-function-declaration]
+  116 |     ds18b20_start_measure(ds1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:121:19: warning: implicit declaration of function 'ds18b20_get_temp' [-Wimplicit-function-declaration]
+  121 |      float temp = ds18b20_get_temp(ds1);
+      |                   ^~~~~~~~~~~~~~~~
+At top level:
+../Core/Src/main.c:70:6: warning: '__io_putchar' defined but not used [-Wunused-function]
+   70 |  int __io_putchar(int ch)
+      |      ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33108	    488	   1808	  35404	   8a4c	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:41:28 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:7: warning: implicit declaration of function 'ds18b20_init' [-Wimplicit-function-declaration]
+  104 |   if (ds18b20_init() != HAL_OK) {
+      |       ^~~~~~~~~~~~
+../Core/Src/main.c:116:5: warning: implicit declaration of function 'ds18b20_start_measure' [-Wimplicit-function-declaration]
+  116 |     ds18b20_start_measure(ds1);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:121:19: warning: implicit declaration of function 'ds18b20_get_temp' [-Wimplicit-function-declaration]
+  121 |      float temp = ds18b20_get_temp(ds1);
+      |                   ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33100	    488	   1808	  35396	   8a44	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:43:06 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33084	    488	   1808	  35380	   8a34	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:43:11 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33084	    488	   1808	  35380	   8a34	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+12:44:31 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33092	    488	   1808	  35388	   8a3c	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:44:43 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-gcc -o "Forbot_02_DS18B21_USART_DMA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Forbot_02_DS18B21_USART_DMA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Forbot_02_DS18B21_USART_DMA.elf
+ 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+arm-none-eabi-objdump -h -S  Forbot_02_DS18B21_USART_DMA.elf  > "Forbot_02_DS18B21_USART_DMA.list"
+arm-none-eabi-objcopy  -O binary  Forbot_02_DS18B21_USART_DMA.elf  "Forbot_02_DS18B21_USART_DMA.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33092	    488	   1808	  35388	   8a3c	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.bin
+ 
+Finished building: Forbot_02_DS18B21_USART_DMA.list
+ 
+12:44:51 **** Incremental Build of configuration Debug for project Forbot_02_DS18B21_USART_DMA ****
+make -j8 all 
+arm-none-eabi-size   Forbot_02_DS18B21_USART_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33092	    488	   1808	  35388	   8a3c	Forbot_02_DS18B21_USART_DMA.elf
+Finished building: default.size.stdout
+ 

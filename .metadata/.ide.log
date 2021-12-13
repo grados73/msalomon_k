@@ -3718,3 +3718,59 @@
 2021-12-13 12:10:45,254 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2021-12-13 12:10:45,256 [INFO] ApiDbMcu:488 - Load IP Config File for PDM2PCM
 2021-12-13 12:10:45,318 [INFO] OpenFileManager:333 - Restore cursor
+2021-12-13 12:14:54,399 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x253,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-13 12:16:25,296 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x253,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-13 12:17:25,511 [INFO] Gpio:254 - dependency for GPIO [RCC, SYS, USART2, USART6]
+2021-12-13 12:18:33,175 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2021-12-13 12:19:58,104 [INFO] Gpio:254 - dependency for GPIO [RCC, SYS, USART1, USART2]
+2021-12-13 12:23:16,247 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 863106168 Bytes (1040187392)
+2021-12-13 12:23:18,886 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 484853488 Bytes (1040187392)
+2021-12-13 12:23:23,102 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 660492016 Bytes (1040187392)
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-13 12:23:23,578 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-13 12:23:23,579 [INFO] CodeGenerator:663 - code generatio: config db path: D:\STM32\programs\STM32_Cube_IDE\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.4.0.202111222105\\db\
+2021-12-13 12:23:23,884 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\MXTmpFiles\license.tmp_save
+2021-12-13 12:23:23,938 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\MXTmpFiles\license.tmp
+2021-12-13 12:23:24,016 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\gpio.c_save
+2021-12-13 12:23:24,126 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\gpio.c
+2021-12-13 12:23:24,129 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\gpio.h_save
+2021-12-13 12:23:24,173 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\gpio.h
+2021-12-13 12:23:24,320 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\tim.c_save
+2021-12-13 12:23:24,396 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\tim.c
+2021-12-13 12:23:24,399 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\tim.h_save
+2021-12-13 12:23:24,446 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\tim.h
+2021-12-13 12:23:24,452 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\usart.c_save
+2021-12-13 12:23:24,542 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\usart.c
+2021-12-13 12:23:24,545 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\usart.h_save
+2021-12-13 12:23:24,608 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\usart.h
+2021-12-13 12:23:24,615 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\stm32f4xx_it.c_save
+2021-12-13 12:23:24,685 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\stm32f4xx_it.c
+2021-12-13 12:23:24,687 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\stm32f4xx_it.h_save
+2021-12-13 12:23:24,735 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\stm32f4xx_it.h
+2021-12-13 12:23:24,742 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\stm32f4xx_hal_msp.c_save
+2021-12-13 12:23:24,813 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\stm32f4xx_hal_msp.c
+2021-12-13 12:23:24,816 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\MXTmpFiles\system.tmp_save
+2021-12-13 12:23:24,855 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\MXTmpFiles\system.tmp
+2021-12-13 12:23:24,860 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\stm32f4xx_hal_conf.h_save
+2021-12-13 12:23:24,914 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\stm32f4xx_hal_conf.h
+2021-12-13 12:23:24,946 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\main.h_save
+2021-12-13 12:23:24,995 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Inc\main.h
+2021-12-13 12:23:24,999 [INFO] CodeEngine:239 - oldGeneratedFile, D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\main.c_save
+2021-12-13 12:23:25,072 [INFO] CodeEngine:257 - Generated code: D:\STM32\workspace\kurs_msalomon\Forbot_02_DS18B21_USART_DMA\Core\Src\main.c
+2021-12-13 12:23:26,044 [INFO] ProjectBuilder:2589 - Time for Copy HAL[1] : 204mS.
+2021-12-13 12:23:26,047 [INFO] ProjectBuilder:3665 - Project Generator version: 3.15.2
+2021-12-13 12:23:26,541 [INFO] ConfigFileManager:1273 - The Die is : DIE431
+2021-12-13 12:23:26,549 [INFO] ApiDbMcu:488 - Load IP Config File for FATFS
+2021-12-13 12:23:26,571 [INFO] ApiDbMcu:488 - Load IP Config File for FREERTOS
+2021-12-13 12:23:26,576 [INFO] ApiDbMcu:488 - Load IP Config File for LIBJPEG
+2021-12-13 12:23:26,662 [INFO] ApiDbMcu:488 - Load IP Config File for MBEDTLS
+2021-12-13 12:23:26,692 [INFO] ApiDbMcu:488 - Load IP Config File for USB_DEVICE
+2021-12-13 12:23:26,701 [INFO] ApiDbMcu:488 - Load IP Config File for USB_HOST
+2021-12-13 12:23:28,306 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 2259mS.
+2021-12-13 12:23:28,307 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 1mS.
+2021-12-13 12:23:28,309 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
