@@ -1,12 +1,14 @@
 applyBackground=false
-approved.defs.file.last.changed.time=1607625304000
+approved.defs.file.last.changed.time=1624986146000
 codemix.dont.show.upsell.until=1610803031794
 configurationInstallLocation=/D\:/STM32/programs/STM32_Cube_IDE/STM32CubeIDE_1.5.0/STM32CubeIDE/
+ct.upsell.display.after=1625985591469
 eclipse.preferences.version=1
+elearning.dont.show.until=1626676239487
 iconcolormode=primary
 iconreplacement=false
-last.download.attempt.time=1609248016190
-lastConfiguration=1609249418121
+last.download.attempt.time=1634126697161
+lastConfiguration=1639384655462
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray
