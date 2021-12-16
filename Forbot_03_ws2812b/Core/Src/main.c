@@ -25,6 +25,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include <stdlib.h>
+#include "ws2812b.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -91,45 +94,38 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_StatusTypeDef statusDMA;
-  HAL_TIM_Base_Start(&htim1);
-  //!!!!!!!!!!!!!!!!
-  //HAL_TIM_PWM_Init(&htim1); // ?
 
-  uint16_t test[40 + 16 * 24 + 1] = {0};
-
-  // Zerowanie kolorów wszystkich diod
-  for (int i = 0; i < 16 * 24; i++)
-    test[40 + i] = 64;
-
-  // Włącz jedną diodę
+//  HAL_TIM_Base_Start(&htim1);
+// FUNKCJA TESTOWA
+//  HAL_StatusTypeDef statusDMA;
+//  uint16_t test[40 + 16 * 24 + 1] = {0};
+//  // Zerowanie kolorów wszystkich diod
+//  for (int i = 0; i < 16 * 24; i++)
+//    test[40 + i] = 32;
+//  // Włącz jedną diodę
 //  test[40] = 64;
-//  test[41] = 64;
-
-  // Stan wysoki na końcu
-  test[40 + 16 * 24] = 100;
-
-  statusDMA = HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_2, &test, sizeof(test));
-  statusDMA = statusDMA;
-
-  //Spróbować rozne wersje z half-word(uint16), byte(uint8) i word(uint32)
-//  Wybraliśmy kierunek przesyłania danych z pamięci do modułu peryferyjnego,
-//  ponieważ będziemy wysyłać dane. Ciekawsze jest ustawienie szerokości danych.
-//  Większość liczników jest 16-bitowych, zatem licznik naszego TIM3 oczekuje właśnie takiego formatu danych
-//  i dlatego po stronie Peripheral wybraliśmy wielkość danych Half Word. Okres timera jest równy 100,
-//  więc przechowywanie w pamięci aż 16-bitowych wartości nie jest konieczne, wystarczy nam 8 bitów –
-//  ustawiamy po stronie Memory rozmiar danych na Byte, a mechanizm DMA uzupełni wyższe bity zerami.
+//  // Stan wysoki na końcu
+//  test[40 + 16 * 24] = 100;
+//  statusDMA = HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_2, &test, sizeof(test));
+//  statusDMA = statusDMA;
 
 
-
+  ws2812b_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
-	  HAL_Delay(500);
+	  uint8_t r = rand();
+	  uint8_t g = rand();
+	  uint8_t b = rand();
+
+	  for (int led = 0; led < 16; led++) {
+	    ws2812b_set_color(led, r, g, b);
+	    ws2812b_update();
+	    HAL_Delay(100);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
