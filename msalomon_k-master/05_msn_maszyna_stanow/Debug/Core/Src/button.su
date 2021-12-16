@@ -1,0 +1,9 @@
+button.c:12:6:ButtonInitKey	24	static
+button.c:25:6:ButtonRegisterPressCallback	16	static
+button.c:29:6:ButtonRegisterLongPressCallback	16	static
+button.c:33:6:ButtonRegisterRepeatPressCallback	16	static
+button.c:38:6:ButtonIdleRoutine	16	static
+button.c:56:6:ButtonDebounceRoutine	16	static
+button.c:81:6:ButtonPressedRoutine	16	static
+button.c:105:6:ButtonRepeatRoutine	16	static
+button.c:125:6:ButtonTask	16	static
